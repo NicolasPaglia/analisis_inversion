@@ -122,6 +122,7 @@ def render_badge_fuente(fuente_real: str) -> None:
     else:
         nombre = {"yfinance":   "Yahoo Finance",
                   "twelvedata": "Twelve Data",
+                  "local":      "Dataset local (repo)",
                   }.get(fuente_real, fuente_real)
         st.markdown(ui.badge(f"● Datos reales · {nombre}", "ok"), unsafe_allow_html=True)
 
@@ -561,9 +562,10 @@ def render_tab_ia(e: Estado) -> None:
 st.sidebar.title("📊 Decisión de inversión")
 ticker  = st.sidebar.text_input("Ticker", "AAPL").upper().strip()
 fuente  = st.sidebar.selectbox(
-    "Fuente de datos", ["auto", "yfinance", "twelvedata", "sintetica"],
-    help="'auto' aplica cascada yfinance → Twelve Data → sintética. "
-         "Twelve Data requiere `TWELVEDATA_API_KEY` (gratis en twelvedata.com).")
+    "Fuente de datos", ["auto", "local", "yfinance", "twelvedata", "sintetica"],
+    help="'auto' aplica cascada local → yfinance → Twelve Data → sintética. "
+         "'local' = dataset commiteado en el repo (datos/ohlcv/, "
+         "actualizado por GitHub Action diario).")
 periodo = st.sidebar.selectbox("Histórico", ["1y", "2y", "5y", "max"], index=1)
 dias    = st.sidebar.slider("Horizonte Monte Carlo (días hábiles)", 5, 63, 21)
 correr  = st.sidebar.button("Analizar", type="primary", use_container_width=True)

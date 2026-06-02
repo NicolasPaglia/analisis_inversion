@@ -1,0 +1,45 @@
+name: Actualizar dataset OHLCV
+
+on:
+  schedule:
+    # Lun-Vie 22:00 UTC = 19:00 AR (mercado US ya cerró)
+    - cron: "0 22 * * 1-5"
+  workflow_dispatch:    # botón manual desde Actions tab
+
+permissions:
+  contents: write       # necesario para que el bot pushee
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: "pip"
+
+      - name: Instalar deps mínimas
+        run: |
+          pip install --upgrade pip
+          pip install "yfinance>=1.4" pandas pyarrow requests
+
+      - name: Correr update
+        env:
+          TWELVEDATA_API_KEY: ${{ secrets.TWELVEDATA_API_KEY }}
+        run: python scripts/actualizar_datos.py
+
+      - name: Commit & push si hay cambios
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add datos/
+          if git diff --staged --quiet; then
+            echo "No hay cambios — saltamos commit."
+          else
+            git commit -m "datos: refresh $(date -u +%Y-%m-%d)"
+            git push
+          fi

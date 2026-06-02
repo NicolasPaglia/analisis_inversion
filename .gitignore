@@ -4,7 +4,7 @@ FinanzasApp/.streamlit/secrets.toml
 .env
 *.env
 
-# Caché de datos (se regenera solo en cada sesión)
+# Caché de datos (efímera, se regenera). NO confundir con datos/ que SÍ va al repo.
 FinanzasApp/cache_datos/
 cache_datos/
 

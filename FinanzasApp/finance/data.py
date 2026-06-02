@@ -27,9 +27,13 @@ from pathlib import Path
 import numpy as np
 import pandas as pd
 
-# Caché en disco junto a la librería
+# Caché en disco junto a la librería (datos efímeros, regenerables)
 CACHE_DIR = Path(__file__).resolve().parent.parent / "cache_datos"
 CACHE_DIR.mkdir(exist_ok=True)
+
+# Dataset commiteado en el repo (datos/ohlcv/{TICKER}.parquet). Si está, lo
+# usamos sin pegar a yfinance — actualizado por `scripts/actualizar_datos.py`.
+DATOS_LOCAL_DIR = Path(__file__).resolve().parent.parent.parent / "datos" / "ohlcv"
 
 # Tickers .BA de Yahoo para algunos símbolos locales (Rava usa otro código)
 _MAP_YF_BA = {
@@ -92,6 +96,26 @@ def _desde_yfinance(ticker: str, periodo: str) -> pd.DataFrame:
         raise ValueError(f"yfinance no devolvió datos para {simbolo}")
     if isinstance(df.columns, pd.MultiIndex):
         df.columns = df.columns.get_level_values(0)
+    return _normalizar(df)
+
+
+def _desde_local(ticker: str, periodo: str) -> pd.DataFrame:
+    """
+    Lee `datos/ohlcv/{TICKER}.parquet` (mantenido por `scripts/actualizar_datos.py`)
+    y recorta al período pedido. Lanza si el archivo no existe.
+    """
+    p = DATOS_LOCAL_DIR / f"{ticker.upper()}.parquet"
+    if not p.exists():
+        raise FileNotFoundError(f"No hay dataset local para {ticker}")
+    df = pd.read_parquet(p)
+    if df.empty:
+        raise ValueError(f"Dataset local vacío: {ticker}")
+
+    # Recortar al período pedido — convención yfinance ('1y', '2y', '6mo', etc.)
+    if periodo != "max":
+        dias = {"6mo": 200, "1y": 380, "2y": 760, "5y": 1900}.get(periodo, 760)
+        corte = df.index[-1] - pd.Timedelta(days=dias)
+        df = df[df.index >= corte]
     return _normalizar(df)
 
 
@@ -174,8 +198,8 @@ def get_data(ticker: str, fuente: str = "auto", periodo: str = "2y",
     """
     Devuelve OHLCV diario para `ticker`, con caché en disco.
 
-    fuente : 'auto' (cascada yfinance → twelvedata → sintética),
-             'yfinance', 'twelvedata', 'sintetica'.
+    fuente : 'auto' (cascada local → yfinance → twelvedata → sintética),
+             'local', 'yfinance', 'twelvedata', 'sintetica'.
     periodo: formato yfinance ('6mo', '1y', '2y', '5y', 'max').
 
     Por defecto devuelve un DataFrame. Si `devolver_fuente=True`, devuelve
@@ -197,26 +221,31 @@ def get_data(ticker: str, fuente: str = "auto", periodo: str = "2y",
             real = fuente
         return (df, real) if devolver_fuente else df
 
-    if fuente == "yfinance":
+    if fuente == "local":
+        df, real = _desde_local(ticker, periodo), "local"
+    elif fuente == "yfinance":
         df, real = _desde_yfinance(ticker, periodo), "yfinance"
     elif fuente == "twelvedata":
         df, real = _desde_twelvedata(ticker, periodo), "twelvedata"
     elif fuente == "sintetica":
         df, real = _sintetica(ticker, periodo), "sintetica"
     elif fuente == "auto":
-        # Cascada: yfinance → twelvedata (si hay key) → sintética.
+        # Cascada: local commiteado → yfinance → twelvedata → sintética.
         import sys
         try:
-            df, real = _desde_yfinance(ticker, periodo), "yfinance"
-        except Exception as exc:
-            print(f"[finance.data] yfinance falló para {ticker}: {exc}. "
-                  f"Intentando Twelve Data.", file=sys.stderr)
+            df, real = _desde_local(ticker, periodo), "local"
+        except Exception:
             try:
-                df, real = _desde_twelvedata(ticker, periodo), "twelvedata"
-            except Exception as exc2:
-                print(f"[finance.data] Twelve Data también falló: {exc2}. "
-                      f"Cayendo a serie sintética.", file=sys.stderr)
-                df, real = _sintetica(ticker, periodo), "sintetica"
+                df, real = _desde_yfinance(ticker, periodo), "yfinance"
+            except Exception as exc:
+                print(f"[finance.data] yfinance falló para {ticker}: {exc}. "
+                      f"Intentando Twelve Data.", file=sys.stderr)
+                try:
+                    df, real = _desde_twelvedata(ticker, periodo), "twelvedata"
+                except Exception as exc2:
+                    print(f"[finance.data] Twelve Data también falló: {exc2}. "
+                          f"Cayendo a serie sintética.", file=sys.stderr)
+                    df, real = _sintetica(ticker, periodo), "sintetica"
     else:
         raise ValueError(f"fuente desconocida: {fuente!r}")
 
