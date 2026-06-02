@@ -1,0 +1,18 @@
+# Tema moderno fintech — slate-50 fondo, blue-600 primario, alto contraste.
+# Paleta detallada vive en core/ui.py COLORS y CSS.
+[theme]
+base                     = "light"
+primaryColor             = "#2563eb"
+backgroundColor          = "#f8fafc"
+secondaryBackgroundColor = "#ffffff"
+textColor                = "#0f172a"
+font                     = "sans serif"
+
+[client]
+showErrorDetails = true
+
+[browser]
+gatherUsageStats = false
+
+[server]
+headless = true

@@ -1,0 +1,21 @@
+# Secretos — NUNCA commitear
+.streamlit/secrets.toml
+FinanzasApp/.streamlit/secrets.toml
+.env
+*.env
+
+# Caché de datos (se regenera solo en cada sesión)
+FinanzasApp/cache_datos/
+cache_datos/
+
+# Python / Streamlit
+__pycache__/
+*.pyc
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Notebooks archivados (no van al deploy)
+_archivo/
+
+# Estado local de Claude Code (sesiones, agentes, tasks)
+.claude/

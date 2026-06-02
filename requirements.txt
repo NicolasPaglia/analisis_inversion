@@ -1,0 +1,14 @@
+# Dependencias compartidas por las DOS apps Streamlit del repo.
+# Streamlit Cloud usa este archivo automáticamente.
+
+streamlit>=1.35
+anthropic>=0.40         # >=0.40 para web_search nativo
+plotly>=5.20
+pandas>=2.0
+numpy>=1.24
+scipy>=1.10
+scikit-learn>=1.3
+yfinance>=1.4           # <1.4 rompe con Yahoo (JSONDecodeError silencioso)
+requests                # fallback Twelve Data
+pyarrow                 # caché parquet de FinanzasApp
+python-dotenv>=1.0

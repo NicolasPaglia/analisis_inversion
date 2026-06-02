@@ -1,0 +1,11 @@
+# Secretos — NUNCA commitear
+.streamlit/secrets.toml
+.env
+
+# Caché de datos (se regenera solo)
+cache_datos/
+
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
