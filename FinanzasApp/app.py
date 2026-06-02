@@ -38,7 +38,8 @@ from finance.comparar import (
 from finance.llm import hay_api_key, stream_respuesta, PREGUNTA_INICIAL
 
 
-st.set_page_config(page_title="Decisión de inversión", page_icon="📊", layout="wide")
+st.set_page_config(page_title="Decisión de inversión", page_icon="📊",
+                    layout="wide", initial_sidebar_state="expanded")
 
 
 # ─────────────────────────────────────────────────────────────────────

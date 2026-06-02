@@ -14,7 +14,8 @@ import streamlit as st
 from core import datos, ui, secciones
 from core.clasificacion import CLASIFICACION_TICKERS
 
-st.set_page_config(page_title="Analizador de Carteras", page_icon="📊", layout="wide")
+st.set_page_config(page_title="Analizador de Carteras", page_icon="📊",
+                    layout="wide", initial_sidebar_state="expanded")
 ui.inject_css(st)
 
 TICKERS_SUGERIDOS = sorted(CLASIFICACION_TICKERS.keys())

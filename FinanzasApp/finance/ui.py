@@ -218,18 +218,23 @@ hr{ border-color: var(--line); }
 #MainMenu, footer{ visibility: hidden; }
 [data-testid="stDecoration"]{ display: none; }
 
-/* El toolbar superior lo ocultamos PERO mantenemos visible el botón que
-   reabre la sidebar cuando está colapsada (si no, queda inaccesible). */
-[data-testid="stToolbar"] > div:not([data-testid="stSidebarCollapsedControl"]){
-  visibility: hidden;
-}
+/* Botón para reabrir la sidebar cuando está colapsada — anclado en la
+   esquina superior izquierda con position fixed, así NUNCA queda oculto
+   detrás de otros elementos ni se lo lleva puesto el CSS del toolbar. */
 [data-testid="stSidebarCollapsedControl"],
-[data-testid="collapsedControl"],
-button[kind="header"]{
+[data-testid="collapsedControl"]{
   visibility: visible !important;
   display: flex !important;
   opacity: 1 !important;
-  z-index: 999 !important;
+  position: fixed !important;
+  top: 0.6rem !important;
+  left: 0.6rem !important;
+  z-index: 9999 !important;
+  background: var(--panel) !important;
+  border: 1px solid var(--line) !important;
+  border-radius: 8px !important;
+  box-shadow: 0 2px 8px rgba(15,23,42,.12) !important;
+  padding: 4px !important;
 }
 
 /* Plotly fondo transparente para que cuaje con la card */
