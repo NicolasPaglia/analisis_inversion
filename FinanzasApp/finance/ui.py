@@ -215,8 +215,22 @@ section[data-testid="stSidebar"] hr { border-color: rgba(255,255,255,.08); }
 
 /* Misc */
 hr{ border-color: var(--line); }
-#MainMenu, footer, [data-testid="stToolbar"]{ visibility: hidden; }
+#MainMenu, footer{ visibility: hidden; }
 [data-testid="stDecoration"]{ display: none; }
+
+/* El toolbar superior lo ocultamos PERO mantenemos visible el botón que
+   reabre la sidebar cuando está colapsada (si no, queda inaccesible). */
+[data-testid="stToolbar"] > div:not([data-testid="stSidebarCollapsedControl"]){
+  visibility: hidden;
+}
+[data-testid="stSidebarCollapsedControl"],
+[data-testid="collapsedControl"],
+button[kind="header"]{
+  visibility: visible !important;
+  display: flex !important;
+  opacity: 1 !important;
+  z-index: 999 !important;
+}
 
 /* Plotly fondo transparente para que cuaje con la card */
 .js-plotly-plot, .plot-container { background: transparent !important; }

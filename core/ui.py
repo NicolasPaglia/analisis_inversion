@@ -237,8 +237,22 @@ section[data-testid="stSidebar"] hr { border-color: rgba(255,255,255,.08); }
 }
 
 hr{ border-color: var(--line); }
-#MainMenu, footer, [data-testid="stToolbar"]{ visibility: hidden; }
+#MainMenu, footer{ visibility: hidden; }
 [data-testid="stDecoration"]{ display: none; }
+
+/* Mantenemos el botón de reabrir sidebar siempre accesible aunque hayamos
+   ocultado el resto del toolbar superior. */
+[data-testid="stToolbar"] > div:not([data-testid="stSidebarCollapsedControl"]){
+  visibility: hidden;
+}
+[data-testid="stSidebarCollapsedControl"],
+[data-testid="collapsedControl"],
+button[kind="header"]{
+  visibility: visible !important;
+  display: flex !important;
+  opacity: 1 !important;
+  z-index: 999 !important;
+}
 
 .js-plotly-plot, .plot-container { background: transparent !important; }
 </style>
