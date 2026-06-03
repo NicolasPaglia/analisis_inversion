@@ -11,8 +11,8 @@
  },
  "valuacion": {
   "pe": null,
-  "forward_pe": -4262.4854,
-  "pb": 0.5726645,
+  "forward_pe": -4265.5,
+  "pb": 0.5730695,
   "peg": null,
   "ev_ebitda": null
  },
@@ -31,7 +31,7 @@
   "enterprise_value": null
  },
  "precio": {
-  "actual": 85.24970245361328,
+  "actual": 85.30999755859375,
   "low_52w": 82.77,
   "high_52w": 92.19,
   "beta": null

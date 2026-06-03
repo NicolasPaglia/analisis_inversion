@@ -10,9 +10,9 @@
   "exchange": "NGM"
  },
  "valuacion": {
-  "pe": 36.266533,
+  "pe": 36.303608,
   "forward_pe": null,
-  "pb": 2.077988,
+  "pb": 2.0801122,
   "peg": null,
   "ev_ebitda": null
  },
@@ -31,7 +31,7 @@
   "enterprise_value": null
  },
  "precio": {
-  "actual": 743.4500122070312,
+  "actual": 744.2100219726562,
   "low_52w": 522.66,
   "high_52w": 748.63,
   "beta": null
