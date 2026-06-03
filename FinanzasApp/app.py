@@ -17,7 +17,7 @@ La capa Streamlit nunca hace matemática: toda la lógica vive en `finance/`.
 
 from __future__ import annotations
 
-from dataclasses import dataclass
+from dataclasses import dataclass, replace
 
 import pandas as pd
 import streamlit as st
@@ -26,7 +26,9 @@ from finance import config as cfg
 from finance import ui
 from finance import graficos as G
 from finance.data import get_data
-from finance.decision import analizar, PESOS, conclusiones_rapidas, historico_veredicto
+from finance.decision import (
+    analizar, reponderar, conclusiones_rapidas, historico_veredicto,
+    PESOS_DEFAULT, NOMBRES_FACTORES, normalizar_pesos)
 from finance.fundamentales import (
     obtener_fundamentales, rendimiento_periodos, conclusiones_fundamentales,
     fmt_pct as fpct, fmt_dec as fdec, fmt_money as fmoney)
@@ -140,9 +142,10 @@ def render_veredicto(resultado: dict) -> None:
 
 
 def render_factores(resultado: dict) -> None:
-    for k, f in resultado["factores"].items():
-        st.markdown(f"**{k.capitalize()}** · {f['score']:.0f}/100 · "
-                    f"peso {f['peso']:.0%}")
+    for k, f in sorted(resultado["factores"].items(),
+                       key=lambda kv: -kv[1]["peso"]):
+        st.markdown(f"**{NOMBRES_FACTORES.get(k, k.capitalize())}** · "
+                    f"{f['score']:.0f}/100 · peso {f['peso']:.0%}")
         st.progress(f["score"] / 100)
         st.caption(f["detalle"])
 
@@ -575,6 +578,26 @@ fuente  = st.sidebar.selectbox(
 periodo = st.sidebar.selectbox("Histórico", ["1y", "2y", "5y", "max"], index=1)
 dias    = st.sidebar.slider("Horizonte Monte Carlo (días hábiles)", 5, 63, 21)
 correr  = st.sidebar.button("Analizar", type="primary", use_container_width=True)
+
+# ── Pesos del veredicto (editables) ──────────────────────────────────
+# Se aplican vía `reponderar()` sobre el análisis cacheado: mover un slider
+# recalcula score y veredicto al instante, sin repetir backtest/Monte Carlo.
+with st.sidebar.expander("⚖️ Pesos del veredicto"):
+    st.caption("Cuánto pesa cada factor en el score 0-100. Si no suman 100, "
+               "se reescalan. Sin fundamentales (p. ej. datos sintéticos), su "
+               "peso se redistribuye entre los demás.")
+    pesos_usuario = {
+        k: st.slider(NOMBRES_FACTORES[k], 0, 100, round(v * 100), step=5,
+                     key=f"peso_{k}", format="%d%%") / 100.0
+        for k, v in PESOS_DEFAULT.items()
+    }
+    suma_pct = round(sum(pesos_usuario.values()) * 100)
+    if suma_pct != 100:
+        st.caption(f"Suman {suma_pct}% → se reescalan a 100%.")
+    if st.button("Restaurar defaults", use_container_width=True):
+        for k in PESOS_DEFAULT:
+            st.session_state.pop(f"peso_{k}", None)
+        st.rerun()
 st.sidebar.caption("⚠️ Apoyo personal. No es recomendación financiera.")
 
 
@@ -598,12 +621,18 @@ if correr:
 if "estado" not in st.session_state:
     st.info("Ingresá un ticker en la barra lateral y tocá **Analizar**.")
     st.subheader("¿Cómo se compone el veredicto?")
+    pesos_vigentes = normalizar_pesos(pesos_usuario)
     st.table(pd.DataFrame(
-        [{"Factor": k.capitalize(), "Peso": f"{v:.0%}"} for k, v in PESOS.items()]
+        [{"Factor": NOMBRES_FACTORES[k], "Peso": f"{v:.0%}"}
+         for k, v in sorted(pesos_vigentes.items(), key=lambda kv: -kv[1])]
     ).set_index("Factor"))
+    st.caption("Editables en «⚖️ Pesos del veredicto» del sidebar. Si el ticker "
+               "no tiene fundamentales, ese peso se redistribuye entre los demás.")
     st.stop()
 
 e: Estado = st.session_state["estado"]
+# Aplica los pesos del sidebar sobre el análisis cacheado (recálculo liviano).
+e = replace(e, resultado=reponderar(e.resultado, pesos_usuario))
 
 
 # ─────────────────────────────────────────────────────────────────────
@@ -636,6 +665,8 @@ with col_hist:
                "rápido del algoritmo sobre este ticker.")
     try:
         snapshots = _historico(f"{e.ticker}|{e.fuente}|{e.periodo}", e.df)
+        # Mismos pesos del sidebar para el track record (recálculo liviano).
+        snapshots = [reponderar(s, pesos_usuario) for s in snapshots]
     except Exception as exc:
         snapshots = []
         st.error(f"No se pudo armar el histórico: {exc}")

@@ -101,12 +101,9 @@ def test_comparar_grupo_forma():
         GRUPOS.pop("__TEST__", None)
 
 
-def test_analizar_con_fundamentales_redistribuye_pesos():
-    """Si paso fundamentales, aparece el 6° factor y los pesos suman 1.0."""
-    from finance.decision import PESOS_FULL
-    df = _df()
-    # Dict de fundamentales mínimo con un par de campos — el resto van como None.
-    fund = {
+def _fund_minimo():
+    """Dict de fundamentales mínimo con un par de campos — el resto None."""
+    return {
         "valuacion":    {"pe": 18.0, "forward_pe": None, "pb": None,
                           "peg": None, "ev_ebitda": None},
         "rentabilidad": {"roe": 0.18, "roa": None, "margen_operativo": None,
@@ -117,16 +114,49 @@ def test_analizar_con_fundamentales_redistribuye_pesos():
                           "beta": 1.0},
         "proximos":     {"earnings_date": None, "ex_div_date": None},
     }
-    r = analizar(df, fundamentales=fund)
+
+
+def test_analizar_con_fundamentales_redistribuye_pesos():
+    """Si paso fundamentales, aparece el 6° factor con su peso default."""
+    from finance.decision import PESOS_DEFAULT
+    df = _df()
+    r = analizar(df, fundamentales=_fund_minimo())
     assert "fundamentales" in r["factores"], "Falta el factor fundamentales"
-    assert set(r["factores"]) == set(PESOS_FULL)
-    # Los pesos deben coincidir con PESOS_FULL y sumar 1.0
+    assert set(r["factores"]) == set(PESOS_DEFAULT)
+    # Con los 6 factores presentes, los pesos son exactamente los defaults.
+    for k, f in r["factores"].items():
+        assert abs(f["peso"] - PESOS_DEFAULT[k]) < 1e-9
     suma = sum(f["peso"] for f in r["factores"].values())
     assert abs(suma - 1.0) < 1e-9, f"Pesos no suman 1 con fund: {suma}"
-    # Sin fundamentales: 5 factores como antes
+    # Sin fundamentales: 5 factores, su peso se redistribuye proporcionalmente.
     r2 = analizar(df)
     assert "fundamentales" not in r2["factores"]
     assert len(r2["factores"]) == 5
+    assert abs(sum(f["peso"] for f in r2["factores"].values()) - 1.0) < 1e-9
+    esperado = PESOS_DEFAULT["tendencia"] / (1 - PESOS_DEFAULT["fundamentales"])
+    assert abs(r2["factores"]["tendencia"]["peso"] - esperado) < 1e-9
+
+
+def test_pesos_editables_y_reponderar():
+    """`pesos` custom se normaliza, y `reponderar` recalcula sin re-analizar."""
+    from finance.decision import reponderar, normalizar_pesos
+    df = _df()
+    r = analizar(df, fundamentales=_fund_minimo())
+
+    # normalizar_pesos: reescala lo que no suma 1 y trunca negativos.
+    p = normalizar_pesos({"tendencia": 50, "momentum": -3},
+                         disponibles=["tendencia", "momentum", "riesgo"])
+    assert abs(sum(p.values()) - 1.0) < 1e-9
+    assert p["momentum"] == 0.0
+
+    # Todo el peso en un factor → el score es el de ese factor.
+    solo_fund = {k: 0 for k in r["factores"]} | {"fundamentales": 1.0}
+    r2 = reponderar(r, solo_fund)
+    assert abs(r2["score"] - r["factores"]["fundamentales"]["score"]) < 0.11
+    assert abs(r2["factores"]["fundamentales"]["peso"] - 1.0) < 1e-9
+    # reponderar con los mismos pesos es idempotente y no muta el original.
+    assert reponderar(r, None)["score"] == r["score"]
+    assert r["factores"]["tendencia"]["peso"] != 1.0
 
 
 def test_regresion_veredicto_sintetico():
@@ -151,7 +181,7 @@ def test_historico_veredicto_estructura():
     assert len(h) >= 1
     for s in h:
         assert set(s) == {"fecha", "dias_atras", "veredicto", "color",
-                          "score", "precio_close"}
+                          "score", "precio_close", "factores"}
         assert 0 <= s["score"] <= 100
         assert s["veredicto"] in ("COMPRAR", "MANTENER", "EVITAR")
         assert s["color"] in ("verde", "amarillo", "rojo")

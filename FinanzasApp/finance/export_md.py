@@ -11,6 +11,8 @@ from datetime import datetime
 
 import pandas as pd
 
+from .decision import NOMBRES_FACTORES
+
 
 def _bloque_fundamentales(fund: dict | None) -> list[str]:
     if not fund:
@@ -105,8 +107,10 @@ def exportar_analisis(ticker: str, fuente_real: str, df: pd.DataFrame,
     L.append("")
     L.append("| Factor | Score | Peso | Detalle |")
     L.append("|---|---|---|---|")
-    for k, f in resultado["factores"].items():
-        L.append(f"| {k.capitalize()} | {f['score']:.0f}/100 | {f['peso']:.0%} | {f['detalle']} |")
+    for k, f in sorted(resultado["factores"].items(),
+                       key=lambda kv: -kv[1]["peso"]):
+        nombre = NOMBRES_FACTORES.get(k, k.capitalize())
+        L.append(f"| {nombre} | {f['score']:.0f}/100 | {f['peso']:.0%} | {f['detalle']} |")
     L.append("")
 
     # ── Fundamentales (opcional) ────────────────────────────────────

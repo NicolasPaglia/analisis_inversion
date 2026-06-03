@@ -2,9 +2,11 @@
 Motor de decisión — sintetiza todos los análisis en un veredicto.
 
 Responde la pregunta central de la app: "¿conviene invertir en esta acción
-ahora?". Combina cinco factores en un puntaje 0-100, cada uno con su
-justificación legible, para que la decisión sea transparente y no una
-caja negra.
+ahora?". Combina seis factores (cinco cuantitativos + fundamentales) en un
+puntaje 0-100, cada uno con su justificación legible, para que la decisión
+sea transparente y no una caja negra. Los pesos son editables: `analizar()`
+y `reponderar()` aceptan un dict de pesos y lo normalizan sobre los
+factores disponibles.
 
     score >= 65  → Comprar
     45 a 65      → Mantener / Neutral
@@ -22,25 +24,58 @@ from .backtest import correr_todas, NOMBRES
 from .riesgo import resumen_riesgo
 from .montecarlo import resumen_montecarlo
 
-# Peso de cada factor en el puntaje final (suman 1.0).
-# `PESOS_FULL` se usa cuando el caller pasa fundamentales; `PESOS` mantiene
-# el comportamiento histórico (5 factores cuantitativos) y es el default.
-PESOS = {
-    "tendencia": 0.25,
-    "momentum": 0.15,
-    "backtest": 0.20,
-    "montecarlo": 0.20,
-    "riesgo": 0.20,
+# Peso default de cada factor en el puntaje final (suman 1.0).
+# Criterio de asignación:
+#   fundamentales 25% — QUÉ comprás: valuación y calidad del negocio. Es el
+#                       único factor que mira la empresa y no solo el precio.
+#   tendencia     20% — régimen de precio (EMA50/200, MACD): el filtro técnico
+#                       más robusto para "¿es buen momento?".
+#   riesgo        15% — cuánto podés perder (vol, VaR/CVaR): condiciona el
+#                       costo de equivocarse.
+#   momentum      15% — timing fino de entrada (RSI).
+#   backtest      15% — evidencia empírica de las estrategias, pero con
+#                       muestra corta y pocas operaciones → ruidoso.
+#   montecarlo    10% — GBM extrapola el drift histórico: aporta el rango de
+#                       escenarios pero es parcialmente redundante con
+#                       tendencia, por eso pesa menos.
+#
+# Si falta un factor (p. ej. sin fundamentales con datos sintéticos), su peso
+# se redistribuye proporcionalmente entre los presentes (`normalizar_pesos`).
+PESOS_DEFAULT = {
+    "fundamentales": 0.25,
+    "tendencia":     0.20,
+    "riesgo":        0.15,
+    "momentum":      0.15,
+    "backtest":      0.15,
+    "montecarlo":    0.10,
 }
 
-PESOS_FULL = {
-    "tendencia":     0.20,
-    "momentum":      0.10,
-    "backtest":      0.20,
-    "montecarlo":    0.15,
-    "riesgo":        0.15,
-    "fundamentales": 0.20,
+# Nombre legible de cada factor (para UI y export).
+NOMBRES_FACTORES = {
+    "fundamentales": "Fundamentales",
+    "tendencia":     "Tendencia",
+    "riesgo":        "Riesgo",
+    "momentum":      "Momentum",
+    "backtest":      "Backtest",
+    "montecarlo":    "Monte Carlo",
 }
+
+
+def normalizar_pesos(pesos: dict | None = None,
+                     disponibles=None) -> dict[str, float]:
+    """
+    Completa `pesos` con los defaults, filtra a los factores `disponibles`
+    y normaliza para que sumen 1.0. Pesos negativos se truncan a 0; si todos
+    quedan en 0, equipondera para no dividir por cero.
+    """
+    base = {**PESOS_DEFAULT, **(pesos or {})}
+    if disponibles is not None:
+        base = {k: v for k, v in base.items() if k in disponibles}
+    base = {k: max(0.0, float(v)) for k, v in base.items()}
+    total = sum(base.values())
+    if total <= 0:
+        return {k: 1.0 / len(base) for k in base}
+    return {k: v / total for k, v in base.items()}
 
 
 def _clip(x, lo=0.0, hi=100.0):
@@ -193,15 +228,29 @@ def _factor_fundamentales(fund: dict) -> tuple[float, str]:
     return _clip(score), detalle
 
 
+def _clasificar(score: float) -> tuple[str, str]:
+    """Score 0-100 → (veredicto, color) con los cortes 65/45."""
+    if score >= 65:
+        return "COMPRAR", "verde"
+    if score >= 45:
+        return "MANTENER", "amarillo"
+    return "EVITAR", "rojo"
+
+
 def analizar(df, dias_horizonte: int = 21, capital: float = 10_000,
-             commission: float = 0.006, fundamentales: dict | None = None) -> dict:
+             commission: float = 0.006, fundamentales: dict | None = None,
+             pesos: dict | None = None) -> dict:
     """
     Corre todos los análisis sobre `df` (OHLCV de un activo) y devuelve el
     veredicto con el desglose por factor.
 
     Si se pasa `fundamentales` (dict de `finance.fundamentales.obtener_fundamentales`),
-    suma un sexto factor con peso 20% — los pesos cuantitativos se reescalan
-    a 80%. Si es `None`, se mantiene el comportamiento histórico de 5 factores.
+    suma el sexto factor. Si es `None`, su peso se redistribuye entre los 5
+    factores cuantitativos.
+
+    `pesos` permite sobreescribir los defaults ({factor: peso ≥ 0}, se
+    normalizan a 1.0). Para recalcular el veredicto con otros pesos sin
+    repetir el análisis, usar `reponderar()`.
     """
     tec = resumen_tecnico(df)
     res_bt = correr_todas(df, capital, commission)
@@ -217,28 +266,40 @@ def analizar(df, dias_horizonte: int = 21, capital: float = 10_000,
     }
     if fundamentales is not None:
         factores["fundamentales"] = _factor_fundamentales(fundamentales)
-        pesos = PESOS_FULL
-    else:
-        pesos = PESOS
 
-    score_final = sum(pesos[k] * s for k, (s, _) in factores.items())
-    if score_final >= 65:
-        veredicto, color = "COMPRAR", "verde"
-    elif score_final >= 45:
-        veredicto, color = "MANTENER", "amarillo"
-    else:
-        veredicto, color = "EVITAR", "rojo"
+    p = normalizar_pesos(pesos, disponibles=factores.keys())
+    score_final = sum(p[k] * s for k, (s, _) in factores.items())
+    veredicto, color = _clasificar(score_final)
 
     return {
         "score": round(score_final, 1),
         "veredicto": veredicto,
         "color": color,
-        "factores": {k: {"score": round(s, 1), "peso": pesos[k], "detalle": d}
+        "factores": {k: {"score": round(s, 1), "peso": p[k], "detalle": d}
                      for k, (s, d) in factores.items()},
         "tecnico": tec,
         "backtest": res_bt,
         "riesgo": rg,
         "montecarlo": mc,
+    }
+
+
+def reponderar(resultado: dict, pesos: dict | None) -> dict:
+    """
+    Recalcula score y veredicto de un `resultado` de `analizar()` con otros
+    pesos, SIN repetir el análisis pesado. Devuelve una copia; los scores por
+    factor no cambian, solo su peso y el agregado.
+    """
+    p = normalizar_pesos(pesos, disponibles=resultado["factores"].keys())
+    score = sum(p[k] * f["score"] for k, f in resultado["factores"].items())
+    veredicto, color = _clasificar(score)
+    return {
+        **resultado,
+        "score": round(score, 1),
+        "veredicto": veredicto,
+        "color": color,
+        "factores": {k: {**f, "peso": p[k]}
+                     for k, f in resultado["factores"].items()},
     }
 
 
@@ -258,8 +319,9 @@ def conclusiones_rapidas(resultado: dict) -> list[dict]:
     Top-line accionable por dimensión: una bullet por factor con semáforo
     según el score y traducción a IMPLICACIÓN, no solo cifras.
 
-    Devuelve [{"nivel", "icono", "dimension", "texto"}] — 5 entradas, en el
-    mismo orden que PESOS.
+    Devuelve [{"nivel", "icono", "dimension", "texto"}] — 5 entradas (las
+    cuantitativas; las fundamentales tienen las suyas en
+    `fundamentales.conclusiones_fundamentales`).
     """
     tec = resultado["tecnico"]
     bt  = resultado["backtest"]
@@ -336,8 +398,9 @@ def historico_veredicto(df, dias_atras: list[int] | None = None,
     `dias_atras` : lista de días bursátiles hacia atrás. Default: [180, 90, 60, 30, 0].
                    0 = ahora.
 
-    Devuelve [{fecha, dias_atras, veredicto, color, score, precio_close}].
-    Snapshots con datos insuficientes se omiten silenciosamente.
+    Devuelve [{fecha, dias_atras, veredicto, color, score, precio_close, factores}].
+    `factores` permite reponderar cada snapshot con `reponderar()` sin
+    recomputar. Snapshots con datos insuficientes se omiten silenciosamente.
     """
     if dias_atras is None:
         dias_atras = [180, 90, 60, 30, 0]
@@ -363,5 +426,6 @@ def historico_veredicto(df, dias_atras: list[int] | None = None,
             "color":        r["color"],
             "score":        r["score"],
             "precio_close": float(df_sub["Close"].iloc[-1]),
+            "factores":     r["factores"],
         })
     return out
