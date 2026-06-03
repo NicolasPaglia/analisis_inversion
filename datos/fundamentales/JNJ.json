@@ -1,0 +1,44 @@
+{
+ "ticker": "JNJ",
+ "yf_symbol": "JNJ",
+ "meta": {
+  "nombre": "Johnson & Johnson",
+  "sector": "Healthcare",
+  "industria": "Drug Manufacturers - General",
+  "pais": "United States",
+  "moneda": "USD",
+  "exchange": "NYQ"
+ },
+ "valuacion": {
+  "pe": 25.98088,
+  "forward_pe": 17.630651,
+  "pb": 6.6463614,
+  "peg": 2.93,
+  "ev_ebitda": 16.591
+ },
+ "rentabilidad": {
+  "roe": 0.26416,
+  "roa": 0.08424,
+  "margen_operativo": 0.27408,
+  "margen_neto": 0.21834
+ },
+ "dividendos": {
+  "dividend_yield": 0.023329893,
+  "payout_ratio": 0.6025
+ },
+ "tamano": {
+  "market_cap": 539734114304.0,
+  "enterprise_value": 569480577024.0
+ },
+ "precio": {
+  "actual": 224.215,
+  "low_52w": 149.04,
+  "high_52w": 251.71,
+  "beta": 0.263
+ },
+ "proximos": {
+  "earnings_date": "2026-07-15",
+  "ex_div_date": "2026-05-25"
+ },
+ "obtenido": "2026-06-03"
+}

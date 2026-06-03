@@ -1,0 +1,44 @@
+{
+ "ticker": "NVDA",
+ "yf_symbol": "NVDA",
+ "meta": {
+  "nombre": "NVIDIA Corporation",
+  "sector": "Technology",
+  "industria": "Semiconductors",
+  "pais": "United States",
+  "moneda": "USD",
+  "exchange": "NMS"
+ },
+ "valuacion": {
+  "pe": 33.016846,
+  "forward_pe": 17.070185,
+  "pb": 33.312733,
+  "peg": 0.69,
+  "ev_ebitda": 32.335
+ },
+ "rentabilidad": {
+  "roe": 1.14288,
+  "roa": 0.52727,
+  "margen_operativo": 0.65596,
+  "margen_neto": 0.62966
+ },
+ "dividendos": {
+  "dividend_yield": 0.00017951708,
+  "payout_ratio": 0.0061000003
+ },
+ "tamano": {
+  "market_cap": 5222047940608.0,
+  "enterprise_value": 5351885766656.0
+ },
+ "precio": {
+  "actual": 215.6,
+  "low_52w": 138.83,
+  "high_52w": 236.54,
+  "beta": 2.244
+ },
+ "proximos": {
+  "earnings_date": "2026-08-26",
+  "ex_div_date": "2026-06-03"
+ },
+ "obtenido": "2026-06-03"
+}

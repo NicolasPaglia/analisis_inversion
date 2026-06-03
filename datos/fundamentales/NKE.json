@@ -1,0 +1,44 @@
+{
+ "ticker": "NKE",
+ "yf_symbol": "NKE",
+ "meta": {
+  "nombre": "NIKE, Inc.",
+  "sector": "Consumer Cyclical",
+  "industria": "Footwear & Accessories",
+  "pais": "United States",
+  "moneda": "USD",
+  "exchange": "NYQ"
+ },
+ "valuacion": {
+  "pe": 28.473684,
+  "forward_pe": 23.747469,
+  "pb": 4.546218,
+  "peg": 1.59,
+  "ev_ebitda": 17.567
+ },
+ "rentabilidad": {
+  "roe": 0.16016,
+  "roa": 0.05195,
+  "margen_operativo": 0.06942,
+  "margen_neto": 0.04836
+ },
+ "dividendos": {
+  "dividend_yield": 0.03704551,
+  "payout_ratio": 1.0658001
+ },
+ "tamano": {
+  "market_cap": 64092790784.0,
+  "enterprise_value": 67880189952.0
+ },
+ "precio": {
+  "actual": 43.28,
+  "low_52w": 41.35,
+  "high_52w": 80.17,
+  "beta": 1.124
+ },
+ "proximos": {
+  "earnings_date": "2026-06-30",
+  "ex_div_date": "2026-05-31"
+ },
+ "obtenido": "2026-06-03"
+}

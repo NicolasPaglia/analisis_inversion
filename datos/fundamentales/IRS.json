@@ -1,0 +1,44 @@
+{
+ "ticker": "IRS",
+ "yf_symbol": "IRS",
+ "meta": {
+  "nombre": "IRSA Inversiones y Representaciones Sociedad Anónima",
+  "sector": "Real Estate",
+  "industria": "Real Estate Services",
+  "pais": "Argentina",
+  "moneda": "USD",
+  "exchange": "NYQ"
+ },
+ "valuacion": {
+  "pe": 4.436556,
+  "forward_pe": 26.920258,
+  "pb": 0.8207844,
+  "peg": 2.73,
+  "ev_ebitda": 3.969
+ },
+ "rentabilidad": {
+  "roe": 0.22481,
+  "roa": 0.040689997,
+  "margen_operativo": 0.4436,
+  "margen_neto": 0.72512
+ },
+ "dividendos": {
+  "dividend_yield": 14.850793,
+  "payout_ratio": 0.4371
+ },
+ "tamano": {
+  "market_cap": 1242521216.0,
+  "enterprise_value": 983048650752.0
+ },
+ "precio": {
+  "actual": 14.685,
+  "low_52w": 10.87,
+  "high_52w": 19.14,
+  "beta": 0.017
+ },
+ "proximos": {
+  "earnings_date": "2026-05-06",
+  "ex_div_date": "2025-11-23"
+ },
+ "obtenido": "2026-06-03"
+}

@@ -1,0 +1,44 @@
+{
+ "ticker": "SLV",
+ "yf_symbol": "SLV",
+ "meta": {
+  "nombre": "iShares Silver Trust",
+  "sector": null,
+  "industria": null,
+  "pais": null,
+  "moneda": "USD",
+  "exchange": "PCX"
+ },
+ "valuacion": {
+  "pe": null,
+  "forward_pe": null,
+  "pb": 3.1136408,
+  "peg": null,
+  "ev_ebitda": null
+ },
+ "rentabilidad": {
+  "roe": null,
+  "roa": null,
+  "margen_operativo": null,
+  "margen_neto": null
+ },
+ "dividendos": {
+  "dividend_yield": 0.0,
+  "payout_ratio": null
+ },
+ "tamano": {
+  "market_cap": null,
+  "enterprise_value": null
+ },
+ "precio": {
+  "actual": 66.47000122070312,
+  "low_52w": 31.23,
+  "high_52w": 109.83,
+  "beta": null
+ },
+ "proximos": {
+  "earnings_date": null,
+  "ex_div_date": null
+ },
+ "obtenido": "2026-06-03"
+}

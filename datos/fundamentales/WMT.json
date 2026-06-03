@@ -1,0 +1,44 @@
+{
+ "ticker": "WMT",
+ "yf_symbol": "WMT",
+ "meta": {
+  "nombre": "Walmart Inc.",
+  "sector": "Consumer Defensive",
+  "industria": "Discount Stores",
+  "pais": "United States",
+  "moneda": "USD",
+  "exchange": "NMS"
+ },
+ "valuacion": {
+  "pe": 41.09507,
+  "forward_pe": 35.47859,
+  "pb": 9.336053,
+  "peg": 4.56,
+  "ev_ebitda": 21.66
+ },
+ "rentabilidad": {
+  "roe": 0.24132,
+  "roa": 0.06835,
+  "margen_operativo": 0.042150002,
+  "margen_neto": 0.03135
+ },
+ "dividendos": {
+  "dividend_yield": 0.008429153,
+  "payout_ratio": 0.33540002
+ },
+ "tamano": {
+  "market_cap": 928787398656.0,
+  "enterprise_value": 971201445888.0
+ },
+ "precio": {
+  "actual": 116.71,
+  "low_52w": 93.43,
+  "high_52w": 135.16,
+  "beta": 0.652
+ },
+ "proximos": {
+  "earnings_date": "2026-08-20",
+  "ex_div_date": "2026-08-20"
+ },
+ "obtenido": "2026-06-03"
+}

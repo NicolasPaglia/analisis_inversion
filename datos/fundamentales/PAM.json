@@ -1,0 +1,44 @@
+{
+ "ticker": "PAM",
+ "yf_symbol": "PAM",
+ "meta": {
+  "nombre": "Pampa Energía S.A.",
+  "sector": "Industrials",
+  "industria": "Conglomerates",
+  "pais": "Argentina",
+  "moneda": "USD",
+  "exchange": "NYQ"
+ },
+ "valuacion": {
+  "pe": 10.409697,
+  "forward_pe": 6.3178368,
+  "pb": 1.2365731,
+  "peg": null,
+  "ev_ebitda": 150.181
+ },
+ "rentabilidad": {
+  "roe": 0.121029995,
+  "roa": 0.03364,
+  "margen_operativo": 0.19372,
+  "margen_neto": 0.20306
+ },
+ "dividendos": {
+  "dividend_yield": 0.0,
+  "payout_ratio": 0.0
+ },
+ "tamano": {
+  "market_cap": 4615535104.0,
+  "enterprise_value": 117837799424.0
+ },
+ "precio": {
+  "actual": 85.88,
+  "low_52w": 54.95,
+  "high_52w": 94.5,
+  "beta": -0.196
+ },
+ "proximos": {
+  "earnings_date": "2026-08-05",
+  "ex_div_date": "2011-01-10"
+ },
+ "obtenido": "2026-06-03"
+}

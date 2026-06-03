@@ -1,0 +1,44 @@
+{
+ "ticker": "UNH",
+ "yf_symbol": "UNH",
+ "meta": {
+  "nombre": "UnitedHealth Group Incorporated",
+  "sector": "Healthcare",
+  "industria": "Healthcare Plans",
+  "pais": "United States",
+  "moneda": "USD",
+  "exchange": "NYQ"
+ },
+ "valuacion": {
+  "pe": 28.905731,
+  "forward_pe": 18.365131,
+  "pb": 3.555632,
+  "peg": 1.32,
+  "ev_ebitda": 18.512
+ },
+ "rentabilidad": {
+  "roe": 0.121759996,
+  "roa": 0.03783,
+  "margen_operativo": 0.080469996,
+  "margen_neto": 0.02678
+ },
+ "dividendos": {
+  "dividend_yield": 0.023391193,
+  "payout_ratio": 0.6657
+ },
+ "tamano": {
+  "market_cap": 348082667520.0,
+  "enterprise_value": 397331922944.0
+ },
+ "precio": {
+  "actual": 383.29,
+  "low_52w": 234.6,
+  "high_52w": 404.15,
+  "beta": 0.646
+ },
+ "proximos": {
+  "earnings_date": "2026-07-28",
+  "ex_div_date": "2026-03-08"
+ },
+ "obtenido": "2026-06-03"
+}

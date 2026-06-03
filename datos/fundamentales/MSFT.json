@@ -1,0 +1,44 @@
+{
+ "ticker": "MSFT",
+ "yf_symbol": "MSFT",
+ "meta": {
+  "nombre": "Microsoft Corporation",
+  "sector": "Technology",
+  "industria": "Software - Infrastructure",
+  "pais": "United States",
+  "moneda": "USD",
+  "exchange": "NMS"
+ },
+ "valuacion": {
+  "pe": 25.436792,
+  "forward_pe": 22.053904,
+  "pb": 7.647866,
+  "peg": 1.42,
+  "ev_ebitda": 18.028
+ },
+ "rentabilidad": {
+  "roe": 0.34013999,
+  "roa": 0.14814,
+  "margen_operativo": 0.46326,
+  "margen_neto": 0.39341998
+ },
+ "dividendos": {
+  "dividend_yield": 0.008066892,
+  "payout_ratio": 0.20729999
+ },
+ "tamano": {
+  "market_cap": 3168784613376.0,
+  "enterprise_value": 3325446586368.0
+ },
+ "precio": {
+  "actual": 426.57,
+  "low_52w": 356.28,
+  "high_52w": 555.45,
+  "beta": 1.093
+ },
+ "proximos": {
+  "earnings_date": "2026-07-29",
+  "ex_div_date": "2026-05-20"
+ },
+ "obtenido": "2026-06-03"
+}

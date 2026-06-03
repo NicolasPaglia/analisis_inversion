@@ -1,0 +1,44 @@
+{
+ "ticker": "COST",
+ "yf_symbol": "COST",
+ "meta": {
+  "nombre": "Costco Wholesale Corporation",
+  "sector": "Consumer Defensive",
+  "industria": "Discount Stores",
+  "pais": "United States",
+  "moneda": "USD",
+  "exchange": "NMS"
+ },
+ "valuacion": {
+  "pe": 48.525944,
+  "forward_pe": 42.58261,
+  "pb": 25.839369,
+  "peg": 4.86,
+  "ev_ebitda": 30.567
+ },
+ "rentabilidad": {
+  "roe": 0.29152,
+  "roa": 0.086660005,
+  "margen_operativo": 0.036730003,
+  "margen_neto": 0.0301
+ },
+ "dividendos": {
+  "dividend_yield": 0.005627338,
+  "payout_ratio": 0.2701
+ },
+ "tamano": {
+  "market_cap": 427210407936.0,
+  "enterprise_value": 421515886592.0
+ },
+ "precio": {
+  "actual": 963.24,
+  "low_52w": 844.06,
+  "high_52w": 1096.5,
+  "beta": 0.908
+ },
+ "proximos": {
+  "earnings_date": "2026-05-28",
+  "ex_div_date": "2026-04-30"
+ },
+ "obtenido": "2026-06-03"
+}

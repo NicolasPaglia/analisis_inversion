@@ -1,0 +1,44 @@
+{
+ "ticker": "VEA",
+ "yf_symbol": "VEA",
+ "meta": {
+  "nombre": "Vanguard FTSE Developed Markets Index Fund ETF Shares",
+  "sector": null,
+  "industria": null,
+  "pais": null,
+  "moneda": "USD",
+  "exchange": "PCX"
+ },
+ "valuacion": {
+  "pe": 19.12204,
+  "forward_pe": null,
+  "pb": null,
+  "peg": null,
+  "ev_ebitda": null
+ },
+ "rentabilidad": {
+  "roe": null,
+  "roa": null,
+  "margen_operativo": null,
+  "margen_neto": null
+ },
+ "dividendos": {
+  "dividend_yield": 0.0273,
+  "payout_ratio": null
+ },
+ "tamano": {
+  "market_cap": null,
+  "enterprise_value": null
+ },
+ "precio": {
+  "actual": 71.69999694824219,
+  "low_52w": 54.63,
+  "high_52w": 72.32,
+  "beta": null
+ },
+ "proximos": {
+  "earnings_date": null,
+  "ex_div_date": null
+ },
+ "obtenido": "2026-06-03"
+}

@@ -1,0 +1,44 @@
+{
+ "ticker": "CRES",
+ "yf_symbol": "CRES.BA",
+ "meta": {
+  "nombre": "Cresud Sociedad Anónima, Comercial, Inmobiliaria, Financiera y Agropecuaria",
+  "sector": "Industrials",
+  "industria": "Conglomerates",
+  "pais": "Argentina",
+  "moneda": "ARS",
+  "exchange": "BUE"
+ },
+ "valuacion": {
+  "pe": 5.9280753,
+  "forward_pe": 958.65924,
+  "pb": 0.93116844,
+  "peg": null,
+  "ev_ebitda": 22.93
+ },
+ "rentabilidad": {
+  "roe": 0.16041,
+  "roa": 0.01904,
+  "margen_operativo": 0.12199,
+  "margen_neto": 0.18038
+ },
+ "dividendos": {
+  "dividend_yield": 0.0594262,
+  "payout_ratio": 0.35889998
+ },
+ "tamano": {
+  "market_cap": 1217076396032.0,
+  "enterprise_value": 4034266398720.0
+ },
+ "precio": {
+  "actual": 1716.0,
+  "low_52w": 1217.0,
+  "high_52w": 2210.0,
+  "beta": -0.055
+ },
+ "proximos": {
+  "earnings_date": "2026-05-07",
+  "ex_div_date": "2025-11-03"
+ },
+ "obtenido": "2026-06-03"
+}

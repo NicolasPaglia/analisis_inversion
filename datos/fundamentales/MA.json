@@ -1,0 +1,44 @@
+{
+ "ticker": "MA",
+ "yf_symbol": "MA",
+ "meta": {
+  "nombre": "Mastercard Incorporated",
+  "sector": "Financial Services",
+  "industria": "Credit Services",
+  "pais": "United States",
+  "moneda": "USD",
+  "exchange": "NYQ"
+ },
+ "valuacion": {
+  "pe": 27.298437,
+  "forward_pe": 20.749577,
+  "pb": 62.300682,
+  "peg": 1.58,
+  "ev_ebitda": 20.247
+ },
+ "rentabilidad": {
+  "roe": 2.32076,
+  "roa": 0.25032,
+  "margen_operativo": 0.60836,
+  "margen_neto": 0.45876
+ },
+ "dividendos": {
+  "dividend_yield": 0.0068246527,
+  "payout_ratio": 0.1823
+ },
+ "tamano": {
+  "market_cap": 417042726912.0,
+  "enterprise_value": 432814325760.0
+ },
+ "precio": {
+  "actual": 471.99,
+  "low_52w": 464.52,
+  "high_52w": 601.77,
+  "beta": 0.759
+ },
+ "proximos": {
+  "earnings_date": "2026-07-30",
+  "ex_div_date": "2026-04-08"
+ },
+ "obtenido": "2026-06-03"
+}

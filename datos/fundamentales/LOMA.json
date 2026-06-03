@@ -1,0 +1,44 @@
+{
+ "ticker": "LOMA",
+ "yf_symbol": "LOMA.BA",
+ "meta": {
+  "nombre": "Loma Negra Compañía Industrial Argentina Sociedad Anónima",
+  "sector": "Basic Materials",
+  "industria": "Building Materials",
+  "pais": "Argentina",
+  "moneda": "ARS",
+  "exchange": "BUE"
+ },
+ "valuacion": {
+  "pe": 56.415215,
+  "forward_pe": 1.0336375,
+  "pb": 1.6891677,
+  "peg": null,
+  "ev_ebitda": 13.448
+ },
+ "rentabilidad": {
+  "roe": 0.03375,
+  "roa": 0.03017,
+  "margen_operativo": 0.13946,
+  "margen_neto": 0.04246
+ },
+ "dividendos": {
+  "dividend_yield": 0.0,
+  "payout_ratio": 0.0
+ },
+ "tamano": {
+  "market_cap": 2042191020032.0,
+  "enterprise_value": 2305753612288.0
+ },
+ "precio": {
+  "actual": 3500.0,
+  "low_52w": 2122.0,
+  "high_52w": 4130.0,
+  "beta": 0.667
+ },
+ "proximos": {
+  "earnings_date": "2026-05-04",
+  "ex_div_date": "2023-06-29"
+ },
+ "obtenido": "2026-06-03"
+}

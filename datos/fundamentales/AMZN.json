@@ -1,0 +1,44 @@
+{
+ "ticker": "AMZN",
+ "yf_symbol": "AMZN",
+ "meta": {
+  "nombre": "Amazon.com, Inc.",
+  "sector": "Consumer Cyclical",
+  "industria": "Internet Retail",
+  "pais": "United States",
+  "moneda": "USD",
+  "exchange": "NMS"
+ },
+ "valuacion": {
+  "pe": 30.620224,
+  "forward_pe": 25.17587,
+  "pb": 6.043122,
+  "peg": 1.83,
+  "ev_ebitda": 18.297
+ },
+ "rentabilidad": {
+  "roe": 0.24285,
+  "roa": 0.06845,
+  "margen_operativo": 0.1314,
+  "margen_neto": 0.12224
+ },
+ "dividendos": {
+  "dividend_yield": 0.0,
+  "payout_ratio": 0.0
+ },
+ "tamano": {
+  "market_cap": 2671313158144.0,
+  "enterprise_value": 2851864838144.0
+ },
+ "precio": {
+  "actual": 248.33,
+  "low_52w": 196.0,
+  "high_52w": 278.56,
+  "beta": 1.468
+ },
+ "proximos": {
+  "earnings_date": "2026-07-30",
+  "ex_div_date": null
+ },
+ "obtenido": "2026-06-03"
+}

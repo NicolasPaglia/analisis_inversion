@@ -67,13 +67,14 @@ class Estado:
 def _calcular(ticker: str, fuente: str, periodo: str, dias: int):
     df, fuente_real = get_data(ticker, fuente=fuente, periodo=periodo,
                                devolver_fuente=True)
-    # Traemos fundamentales para que entren al veredicto. Si la fuente es
-    # sintética o yfinance falla para el ticker, seguimos sin ellos (analizar
-    # se reescala a 5 factores automáticamente).
+    # Traemos fundamentales para que entren al veredicto (cascada yfinance →
+    # datos/fundamentales/ del repo; `df` refresca lo que depende del precio).
+    # Si la fuente es sintética o no hay dato en ninguna fuente, seguimos sin
+    # ellos (analizar redistribuye su peso automáticamente).
     fund = None
     if fuente_real != "sintetica":
         try:
-            fund = obtener_fundamentales(ticker)
+            fund = obtener_fundamentales(ticker, df=df)
         except Exception:
             fund = None
     return df, fuente_real, analizar(df, dias_horizonte=dias, fundamentales=fund)
@@ -94,14 +95,16 @@ def _comparar_seleccion(grupos: tuple, fuente: str, periodo: str,
 
 
 @st.cache_data(show_spinner=False, ttl=3600)
-def _fundamentales(ticker: str) -> dict:
+def _fundamentales(ticker: str, df=None) -> dict:
     """
     Caché 1 h de fundamentales — yfinance.Ticker.info es lento y a veces
-    falla en cloud por rate limit. Si la primera vez vino vacío,
-    `obtener_fundamentales` ya lanza RuntimeError y el except del caller
-    lo reintenta en el próximo render (Streamlit no cachea excepciones).
+    falla en cloud por rate limit (ahí entra la base local del repo como
+    fallback; `df` refresca lo que depende del precio). Si no hay dato en
+    ninguna fuente, `obtener_fundamentales` lanza RuntimeError y el except
+    del caller lo reintenta en el próximo render (Streamlit no cachea
+    excepciones).
     """
-    return obtener_fundamentales(ticker)
+    return obtener_fundamentales(ticker, df=df)
 
 
 @st.cache_data(show_spinner=False)
@@ -415,15 +418,24 @@ def _render_comparativo_sectores(grupo_sugerido: str | None,
 
 
 def render_tab_fundamentales(e: Estado) -> None:
-    """Datos fundamentales del ticker via yfinance.info + rendimiento por temporalidad."""
-    st.caption("Datos vía Yahoo Finance. Conclusiones fundamentales, KPIs, "
-               "rendimiento histórico por plazo, rango 52w y calendario.")
+    """Datos fundamentales del ticker (yfinance → base local) + rendimiento por temporalidad."""
+    st.caption("Conclusiones fundamentales, KPIs, rendimiento histórico por "
+               "plazo, rango 52w y calendario.")
     try:
         with st.spinner("Trayendo fundamentales…"):
-            f = _fundamentales(e.ticker)
+            f = _fundamentales(e.ticker, e.df)
     except Exception as exc:
         st.error(f"No se pudieron obtener fundamentales: {exc}")
         return
+
+    if f.get("fuente") == "local":
+        st.markdown(ui.badge(
+            f"● Fundamentales de la base del repo (Yahoo del "
+            f"{f.get('obtenido', '—')}) — P/E, P/B y rango 52w refrescados "
+            f"con el precio actual.", "ok"), unsafe_allow_html=True)
+    else:
+        st.markdown(ui.badge("● Fundamentales en vivo · Yahoo Finance", "ok"),
+                    unsafe_allow_html=True)
 
     m = f["meta"]
     if m["nombre"]:
@@ -687,7 +699,7 @@ with col_exp:
                 unsafe_allow_html=True)
     st.caption("Descargá el análisis completo como Markdown.")
     try:
-        fund_export = _fundamentales(e.ticker)
+        fund_export = _fundamentales(e.ticker, e.df)
     except Exception:
         fund_export = None
     md_text = exportar_analisis(

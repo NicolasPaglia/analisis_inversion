@@ -1,0 +1,44 @@
+{
+ "ticker": "BBAR",
+ "yf_symbol": "BBAR.BA",
+ "meta": {
+  "nombre": "Banco BBVA Argentina S.A.",
+  "sector": "Financial Services",
+  "industria": "Banks - Regional",
+  "pais": "Argentina",
+  "moneda": "ARS",
+  "exchange": "BUE"
+ },
+ "valuacion": {
+  "pe": 17.468098,
+  "forward_pe": 2.5457308,
+  "pb": 1.4125484,
+  "peg": 1.61,
+  "ev_ebitda": null
+ },
+ "rentabilidad": {
+  "roe": 0.07146,
+  "roa": 0.01164,
+  "margen_operativo": 0.14406,
+  "margen_neto": 0.07131
+ },
+ "dividendos": {
+  "dividend_yield": 0.0,
+  "payout_ratio": 0.35349998
+ },
+ "tamano": {
+  "market_cap": 5502136745984.0,
+  "enterprise_value": 4601741312000.0
+ },
+ "precio": {
+  "actual": 8980.0,
+  "low_52w": 3995.0,
+  "high_52w": 10920.0,
+  "beta": -0.026
+ },
+ "proximos": {
+  "earnings_date": null,
+  "ex_div_date": "2026-06-07"
+ },
+ "obtenido": "2026-06-03"
+}

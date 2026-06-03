@@ -1,18 +1,31 @@
 """
-finance.fundamentales — datos fundamentales del ticker via yfinance.
+finance.fundamentales — datos fundamentales del ticker.
 
 Trae P/E, P/B, ROE, dividend yield, market cap, beta, sector/industria, rango
 52w + calendario de earnings y dividendos próximos. Es complemento al análisis
 técnico/estadístico, NO duplica nada del módulo `decision`.
+
+Cascada de fuentes (espeja la de OHLCV en `data.py`):
+    1. yfinance vivo (`.info` con fallback `.fast_info`).
+    2. Base local `datos/fundamentales/{TICKER}.json`, mantenida por
+       `scripts/actualizar_datos.py` (GitHub Action diaria). Como los
+       fundamentales cambian trimestralmente, un JSON de unos días sirve;
+       lo que sí depende del precio (P/E, P/B, rango 52w) se refresca
+       contra el OHLCV del análisis si el caller lo pasa.
 """
 from __future__ import annotations
 
+import json
 import math
 from datetime import date
+from pathlib import Path
 
 import pandas as pd
 
 from .data import _MAP_YF_BA
+
+# Base commiteada en el repo — mismo patrón que data.DATOS_LOCAL_DIR.
+FUND_LOCAL_DIR = Path(__file__).resolve().parent.parent.parent / "datos" / "fundamentales"
 
 
 def _yf_symbol(ticker: str) -> str:
@@ -53,10 +66,10 @@ def _yield(div_yield_raw, trailing_raw=None):
     return f / 100.0
 
 
-def obtener_fundamentales(ticker: str) -> dict:
+def _desde_yfinance(ticker: str) -> dict:
     """
-    Devuelve un dict con los fundamentales más útiles. Si falta un campo,
-    su valor es None — el caller decide cómo mostrarlo.
+    Fetch VIVO de fundamentales. Si falta un campo, su valor es None — el
+    caller decide cómo mostrarlo.
 
     Estrategia robusta:
         1. Intentar `Ticker.info` (endpoint principal, trae todo).
@@ -165,6 +178,69 @@ def obtener_fundamentales(ticker: str) -> dict:
             "ex_div_date":   _fecha(ex_div_date),
         },
     }
+
+
+def _desde_local(ticker: str) -> dict | None:
+    """Lee `datos/fundamentales/{TICKER}.json` (mantenido por la Action diaria)."""
+    p = FUND_LOCAL_DIR / f"{ticker.upper()}.json"
+    if not p.exists():
+        return None
+    try:
+        return json.loads(p.read_text(encoding="utf-8"))
+    except (json.JSONDecodeError, OSError):
+        return None
+
+
+def _refrescar_con_ohlcv(fund: dict, df: pd.DataFrame) -> None:
+    """
+    Pisa lo que depende del precio del día con el OHLCV del análisis (in place):
+    rango 52w y precio actual, y reescala P/E, forward P/E y P/B por el ratio
+    de precios — el denominador (EPS, book value) es trimestral y no cambió.
+    """
+    cierre = df["Close"].dropna()
+    if cierre.empty:
+        return
+    precio_nuevo = float(cierre.iloc[-1])
+    precio_viejo = fund["precio"].get("actual")
+    if precio_viejo and precio_viejo > 0:
+        ratio = precio_nuevo / precio_viejo
+        for k in ("pe", "forward_pe", "pb"):
+            if fund["valuacion"].get(k) is not None:
+                fund["valuacion"][k] = fund["valuacion"][k] * ratio
+    fund["precio"]["actual"]   = precio_nuevo
+    ult = df.iloc[-252:]
+    fund["precio"]["high_52w"] = float(ult["High"].max())
+    fund["precio"]["low_52w"]  = float(ult["Low"].min())
+
+
+def obtener_fundamentales(ticker: str, df: pd.DataFrame | None = None) -> dict:
+    """
+    Cascada: yfinance vivo → base local del repo. Lanza RuntimeError si no hay
+    dato en ninguna fuente.
+
+    El dict devuelto suma dos claves de trazabilidad:
+        fuente   : "yfinance" | "local"
+        obtenido : fecha ISO en que se obtuvo el dato de Yahoo
+
+    Si la fuente es local y se pasa `df` (OHLCV del análisis), refresca
+    precio actual, rango 52w y reescala P/E, forward P/E y P/B — así el dato
+    "viejo" solo conserva lo trimestral, que es lo que no cambia.
+    """
+    try:
+        fund = _desde_yfinance(ticker)
+        fund["fuente"] = "yfinance"
+        fund["obtenido"] = date.today().isoformat()
+        return fund
+    except Exception as exc_vivo:
+        fund = _desde_local(ticker)
+        if fund is None:
+            raise RuntimeError(
+                f"Sin fundamentales para {ticker}: yfinance falló ({exc_vivo}) "
+                f"y no hay JSON en datos/fundamentales/.") from exc_vivo
+        fund["fuente"] = "local"
+        if df is not None:
+            _refrescar_con_ohlcv(fund, df)
+        return fund
 
 
 def fmt_pct(v: float | None) -> str:

@@ -1,0 +1,44 @@
+{
+ "ticker": "TLT",
+ "yf_symbol": "TLT",
+ "meta": {
+  "nombre": "iShares 20+ Year Treasury Bond ETF",
+  "sector": null,
+  "industria": null,
+  "pais": null,
+  "moneda": "USD",
+  "exchange": "NGM"
+ },
+ "valuacion": {
+  "pe": null,
+  "forward_pe": -4262.4854,
+  "pb": 0.5726645,
+  "peg": null,
+  "ev_ebitda": null
+ },
+ "rentabilidad": {
+  "roe": null,
+  "roa": null,
+  "margen_operativo": null,
+  "margen_neto": null
+ },
+ "dividendos": {
+  "dividend_yield": 0.02512551,
+  "payout_ratio": null
+ },
+ "tamano": {
+  "market_cap": null,
+  "enterprise_value": null
+ },
+ "precio": {
+  "actual": 85.24970245361328,
+  "low_52w": 82.77,
+  "high_52w": 92.19,
+  "beta": null
+ },
+ "proximos": {
+  "earnings_date": null,
+  "ex_div_date": null
+ },
+ "obtenido": "2026-06-03"
+}

@@ -1,7 +1,11 @@
 """
-Actualiza `datos/ohlcv/{TICKER}.parquet` para toda la lista curada en
-`tickers.TICKERS`. Diseñado para correr en GitHub Actions (cron diario) o
-manualmente cuando vos lo dispares.
+Actualiza la base commiteada del repo para toda la lista curada en
+`tickers.TICKERS`:
+
+    - `datos/ohlcv/{TICKER}.parquet`        (precios diarios)
+    - `datos/fundamentales/{TICKER}.json`   (ratios via yfinance.info)
+
+Diseñado para correr en GitHub Actions (cron diario) o manualmente.
 
 Estrategia (clave para no quemar Yahoo Finance):
 
@@ -10,11 +14,15 @@ Estrategia (clave para no quemar Yahoo Finance):
        fecha guardada hasta hoy. Primera vez baja 5 años.
     3. Fallback Twelve Data (si TWELVEDATA_API_KEY existe) por cada ticker
        que yfinance no haya devuelto.
+    4. Fundamentales: un request `.info` por ticker con pausa suave; si Yahoo
+       falla para un ticker, se CONSERVA el JSON anterior (la base nunca
+       retrocede — los ratios son trimestrales, un dato de días sirve).
 
 Uso:
-    python scripts/actualizar_datos.py [--inicial]
+    python scripts/actualizar_datos.py [--inicial] [--sin-fundamentales]
 
-    --inicial  fuerza re-descarga de 5 años para todos los tickers (no incremental).
+    --inicial            fuerza re-descarga de 5 años para todos los tickers.
+    --sin-fundamentales  solo actualiza OHLCV.
 """
 from __future__ import annotations
 
@@ -34,11 +42,15 @@ sys.path.insert(0, str(ROOT / "scripts"))
 
 from tickers import TICKERS                          # noqa: E402
 from finance.data import _MAP_YF_BA, _desde_twelvedata, _get_twelvedata_key  # noqa: E402
+from finance.fundamentales import _desde_yfinance    # noqa: E402
 
 
 DATOS_DIR = ROOT / "datos" / "ohlcv"
 DATOS_DIR.mkdir(parents=True, exist_ok=True)
+FUND_DIR = ROOT / "datos" / "fundamentales"
+FUND_DIR.mkdir(parents=True, exist_ok=True)
 DIAS_INICIALES = 5 * 365      # ~5 años para tickers nuevos
+PAUSA_FUND = 0.7              # segundos entre requests .info (anti rate-limit)
 
 
 def _yf_symbol(ticker: str) -> str:
@@ -117,6 +129,40 @@ def _fallback_twelvedata(ticker: str) -> pd.DataFrame | None:
         return None
 
 
+def actualizar_fundamentales() -> dict:
+    """
+    Refresca `datos/fundamentales/{TICKER}.json` con un request `.info` por
+    ticker. Si Yahoo falla para un ticker, conserva el JSON existente.
+    """
+    import json
+    from datetime import date
+
+    print(f"\n=== Update datos/fundamentales ===")
+    stats = {"fund_ok": 0, "fund_conservados": 0, "fund_sin_dato": 0}
+
+    for tk in TICKERS:
+        p = FUND_DIR / f"{tk}.json"
+        try:
+            fund = _desde_yfinance(tk)
+            fund["obtenido"] = date.today().isoformat()
+            p.write_text(json.dumps(fund, ensure_ascii=False, indent=1),
+                         encoding="utf-8")
+            stats["fund_ok"] += 1
+        except Exception as exc:
+            if p.exists():
+                print(f"  ! {tk}: falló ({exc}) — se conserva el JSON anterior")
+                stats["fund_conservados"] += 1
+            else:
+                print(f"  ✗ {tk}: falló y no hay JSON previo ({exc})",
+                      file=sys.stderr)
+                stats["fund_sin_dato"] += 1
+        time.sleep(PAUSA_FUND)
+
+    print(f"  ok: {stats['fund_ok']}  conservados: {stats['fund_conservados']}"
+          f"  sin dato: {stats['fund_sin_dato']}")
+    return stats
+
+
 def actualizar(inicial: bool = False) -> dict:
     """
     Recorre toda la lista de TICKERS y los actualiza. Devuelve un dict con
@@ -190,7 +236,12 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--inicial", action="store_true",
                          help="Re-descarga 5 años para TODOS los tickers (descarta incremental).")
+    parser.add_argument("--sin-fundamentales", action="store_true",
+                         help="Solo actualiza OHLCV (salta el paso de fundamentales).")
     args = parser.parse_args()
     stats = actualizar(inicial=args.inicial)
-    # Exit code != 0 si todos fallaron (útil para CI)
+    if not args.sin_fundamentales:
+        stats |= actualizar_fundamentales()
+    # Exit code != 0 si todos los OHLCV fallaron (útil para CI). Fundamentales
+    # no voltea la corrida: conservar JSONs viejos ya es un resultado válido.
     sys.exit(0 if stats["actualizados"] > 0 else 1)

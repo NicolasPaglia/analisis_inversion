@@ -1,0 +1,44 @@
+{
+ "ticker": "MRK",
+ "yf_symbol": "MRK",
+ "meta": {
+  "nombre": "Merck & Co., Inc.",
+  "sector": "Healthcare",
+  "industria": "Drug Manufacturers - General",
+  "pais": "United States",
+  "moneda": "USD",
+  "exchange": "NYQ"
+ },
+ "valuacion": {
+  "pe": 32.47324,
+  "forward_pe": 12.05361,
+  "pb": 6.205857,
+  "peg": 5.52,
+  "ev_ebitda": 11.15
+ },
+ "rentabilidad": {
+  "roe": 0.18944,
+  "roa": 0.12578,
+  "margen_operativo": 0.38604,
+  "margen_neto": 0.13586001
+ },
+ "dividendos": {
+  "dividend_yield": 0.028361434,
+  "payout_ratio": 0.9352
+ },
+ "tamano": {
+  "market_cap": 284721381376.0,
+  "enterprise_value": 329103179776.0
+ },
+ "precio": {
+  "actual": 115.28,
+  "low_52w": 76.66,
+  "high_52w": 125.14,
+  "beta": 0.195
+ },
+ "proximos": {
+  "earnings_date": "2026-08-04",
+  "ex_div_date": "2026-06-14"
+ },
+ "obtenido": "2026-06-03"
+}

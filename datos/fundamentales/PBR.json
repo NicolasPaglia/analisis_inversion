@@ -1,0 +1,44 @@
+{
+ "ticker": "PBR",
+ "yf_symbol": "PBR",
+ "meta": {
+  "nombre": "Petróleo Brasileiro S.A. - Petrobras",
+  "sector": "Energy",
+  "industria": "Oil & Gas Integrated",
+  "pais": "Brazil",
+  "moneda": "USD",
+  "exchange": "NYQ"
+ },
+ "valuacion": {
+  "pe": 5.70677,
+  "forward_pe": 4.467378,
+  "pb": 1.4162074,
+  "peg": 4.7,
+  "ev_ebitda": 2.784
+ },
+ "rentabilidad": {
+  "roe": 0.25601,
+  "roa": 0.08231,
+  "margen_operativo": 0.31947002,
+  "margen_neto": 0.21599
+ },
+ "dividendos": {
+  "dividend_yield": 0.16224836,
+  "payout_ratio": 0.4158
+ },
+ "tamano": {
+  "market_cap": 118420381696.0,
+  "enterprise_value": 566551052288.0
+ },
+ "precio": {
+  "actual": 18.3758,
+  "low_52w": 11.04,
+  "high_52w": 22.24,
+  "beta": -0.064
+ },
+ "proximos": {
+  "earnings_date": "2026-08-06",
+  "ex_div_date": "2026-06-02"
+ },
+ "obtenido": "2026-06-03"
+}

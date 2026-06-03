@@ -1,0 +1,44 @@
+{
+ "ticker": "VTI",
+ "yf_symbol": "VTI",
+ "meta": {
+  "nombre": "Vanguard Total Stock Market Index Fund ETF Shares",
+  "sector": null,
+  "industria": null,
+  "pais": null,
+  "moneda": "USD",
+  "exchange": "PCX"
+ },
+ "valuacion": {
+  "pe": 27.646744,
+  "forward_pe": null,
+  "pb": 2.6677706,
+  "peg": null,
+  "ev_ebitda": null
+ },
+ "rentabilidad": {
+  "roe": null,
+  "roa": null,
+  "margen_operativo": null,
+  "margen_neto": null
+ },
+ "dividendos": {
+  "dividend_yield": 0.0074847746,
+  "payout_ratio": null
+ },
+ "tamano": {
+  "market_cap": null,
+  "enterprise_value": null
+ },
+ "precio": {
+  "actual": 372.1400146484375,
+  "low_52w": 291.07,
+  "high_52w": 374.7,
+  "beta": null
+ },
+ "proximos": {
+  "earnings_date": null,
+  "ex_div_date": null
+ },
+ "obtenido": "2026-06-03"
+}

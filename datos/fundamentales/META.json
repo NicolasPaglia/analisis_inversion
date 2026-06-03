@@ -1,0 +1,44 @@
+{
+ "ticker": "META",
+ "yf_symbol": "META",
+ "meta": {
+  "nombre": "Meta Platforms, Inc.",
+  "sector": "Communication Services",
+  "industria": "Internet Content & Information",
+  "pais": "United States",
+  "moneda": "USD",
+  "exchange": "NMS"
+ },
+ "valuacion": {
+  "pe": 22.488544,
+  "forward_pe": 17.095514,
+  "pb": 6.4388165,
+  "peg": 0.91,
+  "ev_ebitda": 13.93
+ },
+ "rentabilidad": {
+  "roe": 0.32930002,
+  "roa": 0.16395001,
+  "margen_operativo": 0.40617,
+  "margen_neto": 0.32837
+ },
+ "dividendos": {
+  "dividend_yield": 0.0035138796,
+  "payout_ratio": 0.0764
+ },
+ "tamano": {
+  "market_cap": 1569278918656.0,
+  "enterprise_value": 1522626854912.0
+ },
+ "precio": {
+  "actual": 618.2101,
+  "low_52w": 520.26,
+  "high_52w": 796.25,
+  "beta": 1.243
+ },
+ "proximos": {
+  "earnings_date": "2026-07-29",
+  "ex_div_date": "2026-06-14"
+ },
+ "obtenido": "2026-06-03"
+}

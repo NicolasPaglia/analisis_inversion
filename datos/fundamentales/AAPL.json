@@ -1,0 +1,44 @@
+{
+ "ticker": "AAPL",
+ "yf_symbol": "AAPL",
+ "meta": {
+  "nombre": "Apple Inc.",
+  "sector": "Technology",
+  "industria": "Consumer Electronics",
+  "pais": "United States",
+  "moneda": "USD",
+  "exchange": "NMS"
+ },
+ "valuacion": {
+  "pe": 37.46852,
+  "forward_pe": 32.211967,
+  "pb": 42.629475,
+  "peg": 2.72,
+  "ev_ebitda": 29.04
+ },
+ "rentabilidad": {
+  "roe": 1.4147099,
+  "roa": 0.26229,
+  "margen_operativo": 0.32275,
+  "margen_neto": 0.27152002
+ },
+ "dividendos": {
+  "dividend_yield": 0.0032994922,
+  "payout_ratio": 0.1259
+ },
+ "tamano": {
+  "market_cap": 4545589542912.0,
+  "enterprise_value": 4645658820608.0
+ },
+ "precio": {
+  "actual": 309.49,
+  "low_52w": 195.07,
+  "high_52w": 316.94,
+  "beta": 1.065
+ },
+ "proximos": {
+  "earnings_date": "2026-07-30",
+  "ex_div_date": "2026-05-10"
+ },
+ "obtenido": "2026-06-03"
+}

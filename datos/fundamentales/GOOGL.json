@@ -1,0 +1,44 @@
+{
+ "ticker": "GOOGL",
+ "yf_symbol": "GOOGL",
+ "meta": {
+  "nombre": "Alphabet Inc.",
+  "sector": "Communication Services",
+  "industria": "Internet Content & Information",
+  "pais": "United States",
+  "moneda": "USD",
+  "exchange": "NMS"
+ },
+ "valuacion": {
+  "pe": 27.593893,
+  "forward_pe": 24.937946,
+  "pb": 9.14815,
+  "peg": 1.5,
+  "ev_ebitda": 26.986
+ },
+ "rentabilidad": {
+  "roe": 0.38884997,
+  "roa": 0.14641,
+  "margen_operativo": 0.36121,
+  "margen_neto": 0.37919
+ },
+ "dividendos": {
+  "dividend_yield": 0.0023214037,
+  "payout_ratio": 0.0641
+ },
+ "tamano": {
+  "market_cap": 4379490648064.0,
+  "enterprise_value": 4353210712064.0
+ },
+ "precio": {
+  "actual": 361.48,
+  "low_52w": 162.0,
+  "high_52w": 408.61,
+  "beta": 1.267
+ },
+ "proximos": {
+  "earnings_date": "2026-07-23",
+  "ex_div_date": "2026-06-07"
+ },
+ "obtenido": "2026-06-03"
+}

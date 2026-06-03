@@ -159,6 +159,37 @@ def test_pesos_editables_y_reponderar():
     assert r["factores"]["tendencia"]["peso"] != 1.0
 
 
+def test_fundamentales_fallback_local(tmp_path, monkeypatch):
+    """Si yfinance falla, cae a datos/fundamentales/ y refresca lo que depende del precio."""
+    import json
+    import pytest
+    from finance import fundamentales as F
+
+    def _yf_caido(_):
+        raise RuntimeError("rate limit simulado")
+
+    monkeypatch.setattr(F, "FUND_LOCAL_DIR", tmp_path)
+    monkeypatch.setattr(F, "_desde_yfinance", _yf_caido)
+    base = _fund_minimo() | {"obtenido": "2026-06-01"}
+    (tmp_path / "TEST.json").write_text(json.dumps(base), encoding="utf-8")
+
+    df = _df()
+    r = F.obtener_fundamentales("TEST", df=df)
+    assert r["fuente"] == "local"
+    # Precio y rango 52w refrescados con el OHLCV del análisis…
+    ult = float(df["Close"].dropna().iloc[-1])
+    assert abs(r["precio"]["actual"] - ult) < 1e-9
+    assert r["precio"]["high_52w"] == float(df["High"].iloc[-252:].max())
+    # …y el P/E reescalado por el ratio de precios (base: pe=18 a precio=100).
+    assert abs(r["valuacion"]["pe"] - 18.0 * ult / 100.0) < 1e-6
+    # ROE trimestral intacto.
+    assert r["rentabilidad"]["roe"] == 0.18
+
+    # Sin JSON previo → RuntimeError accionable.
+    with pytest.raises(RuntimeError, match="Sin fundamentales"):
+        F.obtener_fundamentales("NOEXISTE")
+
+
 def test_regresion_veredicto_sintetico():
     """
     Snapshot: sobre la serie sintética determinística TEST, el veredicto y el

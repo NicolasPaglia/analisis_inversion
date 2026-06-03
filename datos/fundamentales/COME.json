@@ -1,0 +1,44 @@
+{
+ "ticker": "COME",
+ "yf_symbol": "COME.BA",
+ "meta": {
+  "nombre": "Sociedad Comercial del Plata S.A.",
+  "sector": "Industrials",
+  "industria": "Conglomerates",
+  "pais": "Argentina",
+  "moneda": "ARS",
+  "exchange": "BUE"
+ },
+ "valuacion": {
+  "pe": null,
+  "forward_pe": 12.177945,
+  "pb": 0.57174796,
+  "peg": null,
+  "ev_ebitda": 25.931
+ },
+ "rentabilidad": {
+  "roe": -0.07818,
+  "roa": -0.0091,
+  "margen_operativo": -0.02448,
+  "margen_neto": -0.06716
+ },
+ "dividendos": {
+  "dividend_yield": 0.0,
+  "payout_ratio": 0.0
+ },
+ "tamano": {
+  "market_cap": 340130004992.0,
+  "enterprise_value": 351627345920.0
+ },
+ "precio": {
+  "actual": 48.59,
+  "low_52w": 29.1,
+  "high_52w": 85.0,
+  "beta": -0.208
+ },
+ "proximos": {
+  "earnings_date": null,
+  "ex_div_date": "2025-05-11"
+ },
+ "obtenido": "2026-06-03"
+}

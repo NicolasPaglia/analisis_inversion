@@ -1,0 +1,44 @@
+{
+ "ticker": "GGAL",
+ "yf_symbol": "GGAL.BA",
+ "meta": {
+  "nombre": "Grupo Financiero Galicia S.A.",
+  "sector": "Financial Services",
+  "industria": "Banks - Regional",
+  "pais": "Argentina",
+  "moneda": "ARS",
+  "exchange": "BUE"
+ },
+ "valuacion": {
+  "pe": 138.98305,
+  "forward_pe": 8.009164,
+  "pb": 1.3600858,
+  "peg": 0.02,
+  "ev_ebitda": null
+ },
+ "rentabilidad": {
+  "roe": 0.00899,
+  "roa": 0.0017200001,
+  "margen_operativo": 0.01777,
+  "margen_neto": 0.011360001
+ },
+ "dividendos": {
+  "dividend_yield": 0.0,
+  "payout_ratio": 4.3610997
+ },
+ "tamano": {
+  "market_cap": 11854152728576.0,
+  "enterprise_value": 11758122041344.0
+ },
+ "precio": {
+  "actual": 7380.0,
+  "low_52w": 3990.0,
+  "high_52w": 9395.0,
+  "beta": 0.334
+ },
+ "proximos": {
+  "earnings_date": "2026-05-13",
+  "ex_div_date": "2026-05-04"
+ },
+ "obtenido": "2026-06-03"
+}

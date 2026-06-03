@@ -1,0 +1,44 @@
+{
+ "ticker": "METR",
+ "yf_symbol": "METR.BA",
+ "meta": {
+  "nombre": "MetroGAS S.A.",
+  "sector": "Utilities",
+  "industria": "Utilities - Regulated Gas",
+  "pais": "Argentina",
+  "moneda": "ARS",
+  "exchange": "BUE"
+ },
+ "valuacion": {
+  "pe": 9.147222,
+  "forward_pe": null,
+  "pb": 1.1662943,
+  "peg": null,
+  "ev_ebitda": 4.77
+ },
+ "rentabilidad": {
+  "roe": 0.13956,
+  "roa": 0.08883,
+  "margen_operativo": 0.15205,
+  "margen_neto": 0.09936
+ },
+ "dividendos": {
+  "dividend_yield": 0.0,
+  "payout_ratio": 0.0
+ },
+ "tamano": {
+  "market_cap": 1117515939840.0,
+  "enterprise_value": 1085348577280.0
+ },
+ "precio": {
+  "actual": 1964.0,
+  "low_52w": 1000.0,
+  "high_52w": 2890.0,
+  "beta": 0.16
+ },
+ "proximos": {
+  "earnings_date": null,
+  "ex_div_date": null
+ },
+ "obtenido": "2026-06-03"
+}

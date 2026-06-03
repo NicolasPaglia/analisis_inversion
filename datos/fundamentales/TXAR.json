@@ -1,0 +1,44 @@
+{
+ "ticker": "TXAR",
+ "yf_symbol": "TXAR.BA",
+ "meta": {
+  "nombre": "Ternium Argentina S.A.",
+  "sector": "Basic Materials",
+  "industria": "Steel",
+  "pais": "Argentina",
+  "moneda": "ARS",
+  "exchange": "BUE"
+ },
+ "valuacion": {
+  "pe": 12.380609,
+  "forward_pe": 10.472561,
+  "pb": 0.45550475,
+  "peg": null,
+  "ev_ebitda": 10.298
+ },
+ "rentabilidad": {
+  "roe": 0.04204,
+  "roa": 0.008640001,
+  "margen_operativo": 0.025390001,
+  "margen_neto": 0.09508
+ },
+ "dividendos": {
+  "dividend_yield": 0.0,
+  "payout_ratio": 0.4946
+ },
+ "tamano": {
+  "market_cap": 3103243370496.0,
+  "enterprise_value": 2174893948928.0
+ },
+ "precio": {
+  "actual": 687.0,
+  "low_52w": 450.0,
+  "high_52w": 950.0,
+  "beta": -0.329
+ },
+ "proximos": {
+  "earnings_date": "2026-08-04",
+  "ex_div_date": "2026-04-09"
+ },
+ "obtenido": "2026-06-03"
+}

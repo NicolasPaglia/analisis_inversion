@@ -1,0 +1,44 @@
+{
+ "ticker": "INTC",
+ "yf_symbol": "INTC",
+ "meta": {
+  "nombre": "Intel Corporation",
+  "sector": "Technology",
+  "industria": "Semiconductors",
+  "pais": "United States",
+  "moneda": "USD",
+  "exchange": "NMS"
+ },
+ "valuacion": {
+  "pe": null,
+  "forward_pe": 72.302765,
+  "pb": 5.037426,
+  "peg": 1.36,
+  "ev_ebitda": 40.094
+ },
+ "rentabilidad": {
+  "roe": -0.02911,
+  "roa": 0.0063099996,
+  "margen_operativo": 0.06879,
+  "margen_neto": -0.05904
+ },
+ "dividendos": {
+  "dividend_yield": 0.0,
+  "payout_ratio": 0.0
+ },
+ "tamano": {
+  "market_cap": 561479548928.0,
+  "enterprise_value": 568293195776.0
+ },
+ "precio": {
+  "actual": 111.715,
+  "low_52w": 18.97,
+  "high_52w": 132.75,
+  "beta": 2.19
+ },
+ "proximos": {
+  "earnings_date": "2026-07-23",
+  "ex_div_date": "2024-08-06"
+ },
+ "obtenido": "2026-06-03"
+}

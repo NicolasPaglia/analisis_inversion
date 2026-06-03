@@ -1,0 +1,44 @@
+{
+ "ticker": "LLY",
+ "yf_symbol": "LLY",
+ "meta": {
+  "nombre": "Eli Lilly and Company",
+  "sector": "Healthcare",
+  "industria": "Drug Manufacturers - General",
+  "pais": "United States",
+  "moneda": "USD",
+  "exchange": "NYQ"
+ },
+ "valuacion": {
+  "pe": 38.73156,
+  "forward_pe": 24.56087,
+  "pb": 31.28075,
+  "peg": 1.45,
+  "ev_ebitda": 27.255
+ },
+ "rentabilidad": {
+  "roe": 1.07459,
+  "roa": 0.20739001,
+  "margen_operativo": 0.49386,
+  "margen_neto": 0.34986
+ },
+ "dividendos": {
+  "dividend_yield": 0.0058544376,
+  "payout_ratio": 0.22129999
+ },
+ "tamano": {
+  "market_cap": 973986660352.0,
+  "enterprise_value": 987034615808.0
+ },
+ "precio": {
+  "actual": 1092.23,
+  "low_52w": 623.78,
+  "high_52w": 1149.1,
+  "beta": 0.481
+ },
+ "proximos": {
+  "earnings_date": "2026-08-05",
+  "ex_div_date": "2026-05-14"
+ },
+ "obtenido": "2026-06-03"
+}

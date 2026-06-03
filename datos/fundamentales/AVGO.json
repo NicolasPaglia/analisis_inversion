@@ -1,0 +1,44 @@
+{
+ "ticker": "AVGO",
+ "yf_symbol": "AVGO",
+ "meta": {
+  "nombre": "Broadcom Inc.",
+  "sector": "Technology",
+  "industria": "Semiconductors",
+  "pais": "United States",
+  "moneda": "USD",
+  "exchange": "NMS"
+ },
+ "valuacion": {
+  "pe": 93.96116,
+  "forward_pe": 26.162413,
+  "pb": 28.692558,
+  "peg": 0.97,
+  "ev_ebitda": 62.657
+ },
+ "rentabilidad": {
+  "roe": 0.33370999,
+  "roa": 0.10663,
+  "margen_operativo": 0.44943002,
+  "margen_neto": 0.36571997
+ },
+ "dividendos": {
+  "dividend_yield": 0.005149822,
+  "payout_ratio": 0.47169998
+ },
+ "tamano": {
+  "market_cap": 2291106054144.0,
+  "enterprise_value": 2331957264384.0
+ },
+ "precio": {
+  "actual": 483.9,
+  "low_52w": 241.11,
+  "high_52w": 495.0,
+  "beta": 1.44
+ },
+ "proximos": {
+  "earnings_date": "2026-06-03",
+  "ex_div_date": "2026-03-22"
+ },
+ "obtenido": "2026-06-03"
+}

@@ -1,0 +1,44 @@
+{
+ "ticker": "YPF",
+ "yf_symbol": "YPF",
+ "meta": {
+  "nombre": "YPF Sociedad Anónima",
+  "sector": "Energy",
+  "industria": "Oil & Gas Integrated",
+  "pais": "Argentina",
+  "moneda": "USD",
+  "exchange": "NYQ"
+ },
+ "valuacion": {
+  "pe": null,
+  "forward_pe": 9.657397,
+  "pb": 1.888804,
+  "peg": 0.1,
+  "ev_ebitda": 1.843
+ },
+ "rentabilidad": {
+  "roe": -0.029409999,
+  "roa": 0.05393,
+  "margen_operativo": 0.18993,
+  "margen_neto": -0.018229999
+ },
+ "dividendos": {
+  "dividend_yield": 0.0,
+  "payout_ratio": 0.0
+ },
+ "tamano": {
+  "market_cap": 22978648064.0,
+  "enterprise_value": 12879509061632.0
+ },
+ "precio": {
+  "actual": 54.46,
+  "low_52w": 22.82,
+  "high_52w": 56.15,
+  "beta": -0.045
+ },
+ "proximos": {
+  "earnings_date": "2026-08-04",
+  "ex_div_date": "2019-07-08"
+ },
+ "obtenido": "2026-06-03"
+}

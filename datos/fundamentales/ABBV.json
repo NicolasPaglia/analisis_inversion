@@ -1,0 +1,44 @@
+{
+ "ticker": "ABBV",
+ "yf_symbol": "ABBV",
+ "meta": {
+  "nombre": "AbbVie Inc.",
+  "sector": "Healthcare",
+  "industria": "Drug Manufacturers - General",
+  "pais": "United States",
+  "moneda": "USD",
+  "exchange": "NYQ"
+ },
+ "valuacion": {
+  "pe": 107.00001,
+  "forward_pe": 13.515286,
+  "pb": -58.229362,
+  "peg": 0.59,
+  "ev_ebitda": 14.846
+ },
+ "rentabilidad": {
+  "roe": null,
+  "roa": 0.10032,
+  "margen_operativo": 0.32156,
+  "margen_neto": 0.05786
+ },
+ "dividendos": {
+  "dividend_yield": 0.03129062,
+  "payout_ratio": 3.2598002
+ },
+ "tamano": {
+  "market_cap": 387546021888.0,
+  "enterprise_value": 444132163584.0
+ },
+ "precio": {
+  "actual": 219.35,
+  "low_52w": 181.73,
+  "high_52w": 244.81,
+  "beta": 0.305
+ },
+ "proximos": {
+  "earnings_date": "2026-07-30",
+  "ex_div_date": "2026-04-14"
+ },
+ "obtenido": "2026-06-03"
+}

@@ -1,0 +1,44 @@
+{
+ "ticker": "TGSU2",
+ "yf_symbol": "TGSU2.BA",
+ "meta": {
+  "nombre": "Transportadora de Gas del Sur S.A.",
+  "sector": "Energy",
+  "industria": "Oil & Gas Integrated",
+  "pais": "Argentina",
+  "moneda": "ARS",
+  "exchange": "BUE"
+ },
+ "valuacion": {
+  "pe": 15.976718,
+  "forward_pe": 10.823594,
+  "pb": 2.2393696,
+  "peg": null,
+  "ev_ebitda": 6.814
+ },
+ "rentabilidad": {
+  "roe": 0.1434,
+  "roa": 0.10629,
+  "margen_operativo": 0.51495,
+  "margen_neto": 0.24672002
+ },
+ "dividendos": {
+  "dividend_yield": 0.0,
+  "payout_ratio": 0.45610002
+ },
+ "tamano": {
+  "market_cap": 7004442066944.0,
+  "enterprise_value": 6893888077824.0
+ },
+ "precio": {
+  "actual": 9305.0,
+  "low_52w": 5900.0,
+  "high_52w": 10700.0,
+  "beta": -0.435
+ },
+ "proximos": {
+  "earnings_date": "2026-08-04",
+  "ex_div_date": "2025-06-04"
+ },
+ "obtenido": "2026-06-03"
+}

@@ -1,0 +1,44 @@
+{
+ "ticker": "DIS",
+ "yf_symbol": "DIS",
+ "meta": {
+  "nombre": "The Walt Disney Company",
+  "sector": "Communication Services",
+  "industria": "Entertainment",
+  "pais": "United States",
+  "moneda": "USD",
+  "exchange": "NYQ"
+ },
+ "valuacion": {
+  "pe": 15.9344,
+  "forward_pe": 13.288411,
+  "pb": 1.5986323,
+  "peg": 2.58,
+  "ev_ebitda": 11.378
+ },
+ "rentabilidad": {
+  "roe": 0.1101,
+  "roa": 0.04449,
+  "margen_operativo": 0.15512,
+  "margen_neto": 0.1154
+ },
+ "dividendos": {
+  "dividend_yield": 0.01479144,
+  "payout_ratio": 0.2
+ },
+ "tamano": {
+  "market_cap": 172939165696.0,
+  "enterprise_value": 224379617280.0
+ },
+ "precio": {
+  "actual": 99.59,
+  "low_52w": 92.19,
+  "high_52w": 124.69,
+  "beta": 1.416
+ },
+ "proximos": {
+  "earnings_date": "2026-08-05",
+  "ex_div_date": "2026-06-29"
+ },
+ "obtenido": "2026-06-03"
+}

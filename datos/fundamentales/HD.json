@@ -1,0 +1,44 @@
+{
+ "ticker": "HD",
+ "yf_symbol": "HD",
+ "meta": {
+  "nombre": "The Home Depot, Inc.",
+  "sector": "Consumer Cyclical",
+  "industria": "Home Improvement Retail",
+  "pais": "United States",
+  "moneda": "USD",
+  "exchange": "NYQ"
+ },
+ "valuacion": {
+  "pe": 22.12784,
+  "forward_pe": 19.34408,
+  "pb": 22.388617,
+  "peg": 1.79,
+  "ev_ebitda": 14.942
+ },
+ "rentabilidad": {
+  "roe": 1.2838,
+  "roa": 0.12519,
+  "margen_operativo": 0.11926,
+  "margen_neto": 0.08411
+ },
+ "dividendos": {
+  "dividend_yield": 0.022245763,
+  "payout_ratio": 0.65550005
+ },
+ "tamano": {
+  "market_cap": 310661677056.0,
+  "enterprise_value": 372751794176.0
+ },
+ "precio": {
+  "actual": 311.56,
+  "low_52w": 289.1,
+  "high_52w": 426.75,
+  "beta": 0.999
+ },
+ "proximos": {
+  "earnings_date": "2026-08-18",
+  "ex_div_date": "2026-06-03"
+ },
+ "obtenido": "2026-06-03"
+}

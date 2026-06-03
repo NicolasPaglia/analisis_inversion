@@ -1,0 +1,44 @@
+{
+ "ticker": "NFLX",
+ "yf_symbol": "NFLX",
+ "meta": {
+  "nombre": "Netflix, Inc.",
+  "sector": "Communication Services",
+  "industria": "Entertainment",
+  "pais": "United States",
+  "moneda": "USD",
+  "exchange": "NMS"
+ },
+ "valuacion": {
+  "pe": 26.34355,
+  "forward_pe": 21.258623,
+  "pb": 11.05224,
+  "peg": 1.69,
+  "ev_ebitda": 24.881
+ },
+ "rentabilidad": {
+  "roe": 0.48494998,
+  "roa": 0.15402001,
+  "margen_operativo": 0.32303002,
+  "margen_neto": 0.28521
+ },
+ "dividendos": {
+  "dividend_yield": 0.0,
+  "payout_ratio": 0.0
+ },
+ "tamano": {
+  "market_cap": 343874863104.0,
+  "enterprise_value": 355505897472.0
+ },
+ "precio": {
+  "actual": 81.665,
+  "low_52w": 75.01,
+  "high_52w": 134.115,
+  "beta": 1.548
+ },
+ "proximos": {
+  "earnings_date": "2026-07-16",
+  "ex_div_date": null
+ },
+ "obtenido": "2026-06-03"
+}

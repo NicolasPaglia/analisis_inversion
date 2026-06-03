@@ -1,0 +1,44 @@
+{
+ "ticker": "CVX",
+ "yf_symbol": "CVX",
+ "meta": {
+  "nombre": "Chevron Corporation",
+  "sector": "Energy",
+  "industria": "Oil & Gas Integrated",
+  "pais": "United States",
+  "moneda": "USD",
+  "exchange": "NYQ"
+ },
+ "valuacion": {
+  "pe": 33.212543,
+  "forward_pe": 15.160408,
+  "pb": 2.0519664,
+  "peg": 0.81,
+  "ev_ebitda": 10.991
+ },
+ "rentabilidad": {
+  "roe": 0.06638,
+  "roa": 0.0346,
+  "margen_operativo": 0.07312,
+  "margen_neto": 0.059270002
+ },
+ "dividendos": {
+  "dividend_yield": 0.03684351,
+  "payout_ratio": 1.2038
+ },
+ "tamano": {
+  "market_cap": 379678195712.0,
+  "enterprise_value": 416623951872.0
+ },
+ "precio": {
+  "actual": 190.64,
+  "low_52w": 136.7,
+  "high_52w": 214.71,
+  "beta": 0.501
+ },
+ "proximos": {
+  "earnings_date": "2026-07-31",
+  "ex_div_date": "2026-05-18"
+ },
+ "obtenido": "2026-06-03"
+}

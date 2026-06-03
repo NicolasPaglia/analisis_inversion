@@ -1,0 +1,44 @@
+{
+ "ticker": "BBD",
+ "yf_symbol": "BBD",
+ "meta": {
+  "nombre": "Banco Bradesco S.A.",
+  "sector": "Financial Services",
+  "industria": "Banks - Regional",
+  "pais": "Brazil",
+  "moneda": "USD",
+  "exchange": "NYQ"
+ },
+ "valuacion": {
+  "pe": 8.095,
+  "forward_pe": 6.0457716,
+  "pb": 1.008035,
+  "peg": 1.84,
+  "ev_ebitda": null
+ },
+ "rentabilidad": {
+  "roe": 0.13366,
+  "roa": 0.0104600005,
+  "margen_operativo": 0.35085,
+  "margen_neto": 0.25358
+ },
+ "dividendos": {
+  "dividend_yield": 0.36450446,
+  "payout_ratio": 0.5907
+ },
+ "tamano": {
+  "market_cap": 35939364864.0,
+  "enterprise_value": 533373616128.0
+ },
+ "precio": {
+  "actual": 3.3999,
+  "low_52w": 2.73,
+  "high_52w": 4.3,
+  "beta": 0.327
+ },
+ "proximos": {
+  "earnings_date": "2026-08-05",
+  "ex_div_date": "2026-06-02"
+ },
+ "obtenido": "2026-06-03"
+}

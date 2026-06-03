@@ -1,0 +1,44 @@
+{
+ "ticker": "TMO",
+ "yf_symbol": "TMO",
+ "meta": {
+  "nombre": "Thermo Fisher Scientific Inc.",
+  "sector": "Healthcare",
+  "industria": "Diagnostics & Research",
+  "pais": "United States",
+  "moneda": "USD",
+  "exchange": "NYQ"
+ },
+ "valuacion": {
+  "pe": 26.084755,
+  "forward_pe": 17.384867,
+  "pb": 3.338781,
+  "peg": 1.62,
+  "ev_ebitda": 19.404
+ },
+ "rentabilidad": {
+  "roe": 0.13523,
+  "roa": 0.04997,
+  "margen_operativo": 0.17892,
+  "margen_neto": 0.15151
+ },
+ "dividendos": {
+  "dividend_yield": 0.0036508464,
+  "payout_ratio": 0.0968
+ },
+ "tamano": {
+  "market_cap": 176133701632.0,
+  "enterprise_value": 219184283648.0
+ },
+ "precio": {
+  "actual": 473.96,
+  "low_52w": 385.46,
+  "high_52w": 643.99,
+  "beta": 0.883
+ },
+ "proximos": {
+  "earnings_date": "2026-07-22",
+  "ex_div_date": "2026-06-14"
+ },
+ "obtenido": "2026-06-03"
+}

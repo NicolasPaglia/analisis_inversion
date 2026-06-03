@@ -1,0 +1,44 @@
+{
+ "ticker": "PAMP",
+ "yf_symbol": "PAMP.BA",
+ "meta": {
+  "nombre": "Pampa Energía S.A.",
+  "sector": "Industrials",
+  "industria": "Conglomerates",
+  "pais": "Argentina",
+  "moneda": "ARS",
+  "exchange": "BUE"
+ },
+ "valuacion": {
+  "pe": 10.970689,
+  "forward_pe": 7.395052,
+  "pb": 1.3144907,
+  "peg": 0.59,
+  "ev_ebitda": 8988.638
+ },
+ "rentabilidad": {
+  "roe": 0.121029995,
+  "roa": 0.03364,
+  "margen_operativo": 0.19372,
+  "margen_neto": 0.20306
+ },
+ "dividendos": {
+  "dividend_yield": 0.0,
+  "payout_ratio": 0.0
+ },
+ "tamano": {
+  "market_cap": 6939694596096.0,
+  "enterprise_value": 7052844859392.0
+ },
+ "precio": {
+  "actual": 5165.0,
+  "low_52w": 3205.0,
+  "high_52w": 5750.0,
+  "beta": -0.196
+ },
+ "proximos": {
+  "earnings_date": "2026-08-05",
+  "ex_div_date": "2011-03-20"
+ },
+ "obtenido": "2026-06-03"
+}

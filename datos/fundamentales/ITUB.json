@@ -1,0 +1,44 @@
+{
+ "ticker": "ITUB",
+ "yf_symbol": "ITUB",
+ "meta": {
+  "nombre": "Itaú Unibanco Holding S.A.",
+  "sector": "Financial Services",
+  "industria": "Banks - Regional",
+  "pais": "Brazil",
+  "moneda": "USD",
+  "exchange": "NYQ"
+ },
+ "valuacion": {
+  "pe": 9.280488,
+  "forward_pe": 7.626168,
+  "pb": 2.0166693,
+  "peg": 1.34,
+  "ev_ebitda": null
+ },
+ "rentabilidad": {
+  "roe": 0.21816,
+  "roa": 0.01574,
+  "margen_operativo": 0.33075002,
+  "margen_neto": 0.33278
+ },
+ "dividendos": {
+  "dividend_yield": 0.42735368,
+  "payout_ratio": 0.7488
+ },
+ "tamano": {
+  "market_cap": 83874332672.0,
+  "enterprise_value": 718809858048.0
+ },
+ "precio": {
+  "actual": 7.61,
+  "low_52w": 5.932039,
+  "high_52w": 9.6,
+  "beta": 0.221
+ },
+ "proximos": {
+  "earnings_date": "2026-08-04",
+  "ex_div_date": "2026-06-21"
+ },
+ "obtenido": "2026-06-03"
+}

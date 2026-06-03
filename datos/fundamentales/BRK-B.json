@@ -1,0 +1,44 @@
+{
+ "ticker": "BRK-B",
+ "yf_symbol": "BRK-B",
+ "meta": {
+  "nombre": "Berkshire Hathaway Inc.",
+  "sector": "Financial Services",
+  "industria": "Insurance - Diversified",
+  "pais": "United States",
+  "moneda": "USD",
+  "exchange": "NYQ"
+ },
+ "valuacion": {
+  "pe": 14.243074,
+  "forward_pe": 22.440523,
+  "pb": 0.0009457642,
+  "peg": 10.06,
+  "ev_ebitda": -2.25
+ },
+ "rentabilidad": {
+  "roe": 0.10499,
+  "roa": 0.053940002,
+  "margen_operativo": 0.14352,
+  "margen_neto": 0.19305
+ },
+ "dividendos": {
+  "dividend_yield": 0.0,
+  "payout_ratio": 0.0
+ },
+ "tamano": {
+  "market_cap": 1031278100480.0,
+  "enterprise_value": -265550020608.0
+ },
+ "precio": {
+  "actual": 478.14,
+  "low_52w": 455.19,
+  "high_52w": 516.85,
+  "beta": 0.622
+ },
+ "proximos": {
+  "earnings_date": "2026-08-01",
+  "ex_div_date": null
+ },
+ "obtenido": "2026-06-03"
+}

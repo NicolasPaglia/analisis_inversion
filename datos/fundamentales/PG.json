@@ -1,0 +1,44 @@
+{
+ "ticker": "PG",
+ "yf_symbol": "PG",
+ "meta": {
+  "nombre": "The Procter & Gamble Company",
+  "sector": "Consumer Defensive",
+  "industria": "Household & Personal Products",
+  "pais": "United States",
+  "moneda": "USD",
+  "exchange": "NYQ"
+ },
+ "valuacion": {
+  "pe": 20.685673,
+  "forward_pe": 19.967909,
+  "pb": 6.130151,
+  "peg": 4.03,
+  "ev_ebitda": 14.121
+ },
+ "rentabilidad": {
+  "roe": 0.31112,
+  "roa": 0.10925999,
+  "margen_operativo": 0.23047,
+  "margen_neto": 0.19162
+ },
+ "dividendos": {
+  "dividend_yield": 0.030017043,
+  "payout_ratio": 0.618
+ },
+ "tamano": {
+  "market_cap": 329473490944.0,
+  "enterprise_value": 353618296832.0
+ },
+ "precio": {
+  "actual": 141.49,
+  "low_52w": 137.62,
+  "high_52w": 168.05,
+  "beta": 0.398
+ },
+ "proximos": {
+  "earnings_date": "2026-07-29",
+  "ex_div_date": "2026-04-23"
+ },
+ "obtenido": "2026-06-03"
+}

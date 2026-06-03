@@ -1,0 +1,44 @@
+{
+ "ticker": "TGS",
+ "yf_symbol": "TGS",
+ "meta": {
+  "nombre": "Transportadora de Gas del Sur S.A.",
+  "sector": "Energy",
+  "industria": "Oil & Gas Integrated",
+  "pais": "Argentina",
+  "moneda": "USD",
+  "exchange": "NYQ"
+ },
+ "valuacion": {
+  "pe": 14.922331,
+  "forward_pe": 11.217954,
+  "pb": 2.0607193,
+  "peg": null,
+  "ev_ebitda": -0.209
+ },
+ "rentabilidad": {
+  "roe": 0.1434,
+  "roa": 0.10629,
+  "margen_operativo": 0.51495,
+  "margen_neto": 0.24672002
+ },
+ "dividendos": {
+  "dividend_yield": 0.0,
+  "payout_ratio": 0.38639998
+ },
+ "tamano": {
+  "market_cap": 4627974656.0,
+  "enterprise_value": -211107250176.0
+ },
+ "precio": {
+  "actual": 30.74,
+  "low_52w": 19.74,
+  "high_52w": 36.35,
+  "beta": -0.435
+ },
+ "proximos": {
+  "earnings_date": "2026-08-04",
+  "ex_div_date": "2025-06-29"
+ },
+ "obtenido": "2026-06-03"
+}

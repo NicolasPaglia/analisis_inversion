@@ -1,0 +1,44 @@
+{
+ "ticker": "YPFD",
+ "yf_symbol": "YPFD.BA",
+ "meta": {
+  "nombre": "YPF Sociedad Anónima",
+  "sector": "Energy",
+  "industria": "Oil & Gas Integrated",
+  "pais": "Argentina",
+  "moneda": "ARS",
+  "exchange": "BUE"
+ },
+ "valuacion": {
+  "pe": null,
+  "forward_pe": 26.938814,
+  "pb": 2.073734,
+  "peg": 0.13,
+  "ev_ebitda": 6.528
+ },
+ "rentabilidad": {
+  "roe": -0.029409999,
+  "roa": 0.05393,
+  "margen_operativo": 0.18993,
+  "margen_neto": -0.018229999
+ },
+ "dividendos": {
+  "dividend_yield": 0.0,
+  "payout_ratio": 0.0
+ },
+ "tamano": {
+  "market_cap": 32452361846784.0,
+  "enterprise_value": 45610879156224.0
+ },
+ "precio": {
+  "actual": 82700.0,
+  "low_52w": 35520.0,
+  "high_52w": 84325.0,
+  "beta": -0.045
+ },
+ "proximos": {
+  "earnings_date": "2026-08-04",
+  "ex_div_date": "2019-07-04"
+ },
+ "obtenido": "2026-06-03"
+}

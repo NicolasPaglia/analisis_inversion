@@ -1,0 +1,44 @@
+{
+ "ticker": "AMD",
+ "yf_symbol": "AMD",
+ "meta": {
+  "nombre": "Advanced Micro Devices, Inc.",
+  "sector": "Technology",
+  "industria": "Semiconductors",
+  "pais": "United States",
+  "moneda": "USD",
+  "exchange": "NMS"
+ },
+ "valuacion": {
+  "pe": 177.88246,
+  "forward_pe": 41.294777,
+  "pb": 13.583963,
+  "peg": 1.23,
+  "ev_ebitda": 113.317
+ },
+ "rentabilidad": {
+  "roe": 0.08063,
+  "roa": 0.03647,
+  "margen_operativo": 0.14396,
+  "margen_neto": 0.13374
+ },
+ "dividendos": {
+  "dividend_yield": 0.0,
+  "payout_ratio": 0.0
+ },
+ "tamano": {
+  "market_cap": 875966824448.0,
+  "enterprise_value": 841947480064.0
+ },
+ "precio": {
+  "actual": 537.205,
+  "low_52w": 114.71,
+  "high_52w": 544.04,
+  "beta": 2.399
+ },
+ "proximos": {
+  "earnings_date": "2026-08-04",
+  "ex_div_date": "1995-04-26"
+ },
+ "obtenido": "2026-06-03"
+}

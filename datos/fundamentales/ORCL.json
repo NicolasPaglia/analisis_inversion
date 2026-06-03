@@ -1,0 +1,44 @@
+{
+ "ticker": "ORCL",
+ "yf_symbol": "ORCL",
+ "meta": {
+  "nombre": "Oracle Corporation",
+  "sector": "Technology",
+  "industria": "Software - Infrastructure",
+  "pais": "United States",
+  "moneda": "USD",
+  "exchange": "NYQ"
+ },
+ "valuacion": {
+  "pe": 41.275986,
+  "forward_pe": 28.605354,
+  "pb": 19.742842,
+  "peg": 1.57,
+  "ev_ebitda": 30.318
+ },
+ "rentabilidad": {
+  "roe": 0.57572,
+  "roa": 0.06335,
+  "margen_operativo": 0.32676,
+  "margen_neto": 0.25298
+ },
+ "dividendos": {
+  "dividend_yield": 0.008177283,
+  "payout_ratio": 0.35909998
+ },
+ "tamano": {
+  "market_cap": 662410952704.0,
+  "enterprise_value": 831966347264.0
+ },
+ "precio": {
+  "actual": 230.32,
+  "low_52w": 134.57,
+  "high_52w": 345.72,
+  "beta": 1.544
+ },
+ "proximos": {
+  "earnings_date": "2026-06-10",
+  "ex_div_date": "2026-04-08"
+ },
+ "obtenido": "2026-06-03"
+}
