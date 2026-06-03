@@ -106,7 +106,12 @@ def _fundamentales(ticker: str) -> dict:
 
 @st.cache_data(show_spinner=False)
 def _historico(ticker_key: str, df) -> list[dict]:
-    """Caché del histórico de veredictos. ticker_key incluye fuente+periodo."""
+    """
+    Caché del histórico de veredictos. ticker_key incluye fuente+periodo y una
+    versión del esquema: st.cache_data NO se invalida cuando cambia el código
+    de `historico_veredicto` (solo hashea esta función), así que ante un cambio
+    de esquema de los snapshots hay que subir la versión en el call site.
+    """
     return historico_veredicto(df)
 
 
@@ -664,9 +669,11 @@ with col_hist:
     st.caption("Qué hubiera dicho el motor hace 30/60/90/180 días. Track record "
                "rápido del algoritmo sobre este ticker.")
     try:
-        snapshots = _historico(f"{e.ticker}|{e.fuente}|{e.periodo}", e.df)
+        snapshots = _historico(f"{e.ticker}|{e.fuente}|{e.periodo}|v2", e.df)
         # Mismos pesos del sidebar para el track record (recálculo liviano).
-        snapshots = [reponderar(s, pesos_usuario) for s in snapshots]
+        # Snapshots de un caché viejo sin 'factores' se dejan como están.
+        snapshots = [reponderar(s, pesos_usuario) if "factores" in s else s
+                     for s in snapshots]
     except Exception as exc:
         snapshots = []
         st.error(f"No se pudo armar el histórico: {exc}")
