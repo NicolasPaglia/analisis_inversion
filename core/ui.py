@@ -312,6 +312,30 @@ def chart_equity(equity, benchmark=None, titulo="Curva de Equity"):
     return fig
 
 
+def chart_vs_benchmarks(cartera, benchmarks, titulo="Cartera vs Merval y SPY"):
+    """Retorno acumulado (%) de la cartera contra los índices de referencia.
+
+    `cartera` es una Series en %, `benchmarks` un dict nombre -> Series en %.
+    La cartera va resaltada; los benchmarks, punteados, para leer de un
+    vistazo si quedó por encima o por debajo.
+    """
+    fig = go.Figure()
+    fig.add_trace(go.Scatter(x=cartera.index, y=cartera.values, name="Cartera",
+        line=dict(color=COLORS["primary"], width=2.8),
+        fill="tozeroy", fillcolor="rgba(37,99,235,0.06)",
+        hovertemplate="%{x|%d %b %Y}<br><b>%{y:+.1f}%</b><extra>Cartera</extra>"))
+    estilos = {"Merval": COLORS["neutro"], "SPY": COLORS["violeta"]}
+    for nombre, serie in benchmarks.items():
+        fig.add_trace(go.Scatter(x=serie.index, y=serie.values, name=nombre,
+            line=dict(color=estilos.get(nombre, COLORS["text_muted"]),
+                      width=1.6, dash="dash"),
+            hovertemplate="%{x|%d %b %Y}<br>%{y:+.1f}%<extra>" + nombre + "</extra>"))
+    fig.add_hline(y=0, line_color=COLORS["border"], line_width=1)
+    fig.update_layout(**LAYOUT_BASE, title=titulo, height=380,
+                      yaxis_ticksuffix="%")
+    return fig
+
+
 def chart_lineas(df, titulo="Retorno acumulado (%)"):
     fig = go.Figure()
     for i, col in enumerate(df.columns):

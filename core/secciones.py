@@ -13,7 +13,7 @@ import plotly.graph_objects as go
 import streamlit as st
 
 from core import ui, metricas, markowitz, backtesting as bt, ia, contexto as ctx_mod
-from core.app_helpers import resumen_actual
+from core.app_helpers import resumen_actual, benchmarks_comparacion
 from core.clasificacion import clasificar
 
 
@@ -63,7 +63,25 @@ def render_rendimientos() -> None:
     c4.markdown(ui.kpi_card("Capital final", f"${res['equity'].iloc[-1]:,.0f}"),
                 unsafe_allow_html=True)
 
+    # ¿Quedó por encima o por debajo del mercado? — Merval y SPY siempre
     st.markdown("<br>", unsafe_allow_html=True)
+    acum_cartera = (1 + res["ret_cartera"]).cumprod().sub(1).mul(100)
+    benchs = benchmarks_comparacion(precios)
+    if benchs:
+        st.plotly_chart(ui.chart_vs_benchmarks(acum_cartera, benchs),
+                        use_container_width=True)
+        partes = []
+        for nombre, serie in benchs.items():
+            diff = acum_cartera.iloc[-1] - serie.iloc[-1]
+            estado = "por encima del" if diff >= 0 else "por debajo del"
+            partes.append(f"**{diff:+.1f} pp** {estado} {nombre}")
+        st.caption("La cartera terminó " + " · ".join(partes) +
+                   " en el período. Merval en ARS y SPY en USD: la comparación "
+                   "es de retorno acumulado en la moneda de cada serie.")
+    else:
+        st.caption("⚠️ No se pudieron descargar Merval/SPY para comparar "
+                   "(Yahoo Finance no respondió).")
+
     col1, col2 = st.columns([3, 2])
     with col1:
         st.plotly_chart(ui.chart_equity(res["equity"], titulo="Equity de la cartera"),

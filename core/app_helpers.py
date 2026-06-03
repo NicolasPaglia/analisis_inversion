@@ -45,6 +45,30 @@ def retornos_benchmark(precios: pd.DataFrame) -> pd.Series | None:
     return serie.pct_change().dropna()
 
 
+BENCHMARKS_COMPARACION = {"Merval": "^MERV", "SPY": "SPY"}
+
+
+def benchmarks_comparacion(precios: pd.DataFrame) -> dict[str, pd.Series]:
+    """Retorno acumulado (%) del Merval y SPY alineado al período de la cartera.
+
+    Independiente del benchmark elegido en la sidebar: se usa para el gráfico
+    fijo de comparación en el tab Rendimientos.
+    """
+    inicio = str(precios.index[0].date())
+    fin = str((precios.index[-1] + pd.Timedelta(days=1)).date())
+    out: dict[str, pd.Series] = {}
+    for nombre, symbol in BENCHMARKS_COMPARACION.items():
+        s = _benchmark_yf(symbol, inicio, fin)
+        if s is None or s.empty:
+            continue
+        # Alinear a las fechas de la cartera (ffill cubre feriados distintos)
+        s = s.reindex(precios.index.union(s.index)).ffill().reindex(precios.index).dropna()
+        if len(s) < 2:
+            continue
+        out[nombre] = (s / s.iloc[0] - 1) * 100
+    return out
+
+
 def resumen_actual():
     """Calcula el resumen de cartera con la config actual del session_state."""
     ss = st.session_state
