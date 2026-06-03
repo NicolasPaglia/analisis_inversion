@@ -58,14 +58,13 @@ def obtener_fundamentales(ticker: str) -> dict:
     Devuelve un dict con los fundamentales más útiles. Si falta un campo,
     su valor es None — el caller decide cómo mostrarlo.
 
-    Campos:
-      - meta: nombre_largo, sector, industria, pais, moneda, exchange
-      - valuacion: pe, forward_pe, pb, peg, ev_ebitda
-      - rentabilidad: roe, roa, margen_operativo, margen_neto
-      - dividendos: dividend_yield, payout_ratio
-      - tamaño: market_cap, enterprise_value
-      - precio: precio_actual, low_52w, high_52w, beta
-      - próximos: earnings_date, ex_div_date
+    Estrategia robusta:
+        1. Intentar `Ticker.info` (endpoint principal, trae todo).
+        2. Si falla o devuelve dict vacío, usar `Ticker.fast_info` (endpoint
+           más liviano que sigue andando cuando `.info` está rate-limited).
+        3. Mergear lo que se haya podido obtener.
+
+    Campos: meta, valuacion, rentabilidad, dividendos, tamaño, precio, próximos.
     """
     try:
         import yfinance as yf
@@ -74,7 +73,32 @@ def obtener_fundamentales(ticker: str) -> dict:
 
     sym = _yf_symbol(ticker)
     tk = yf.Ticker(sym)
-    info = tk.info or {}
+
+    # 1) Primario: .info (puede fallar en cloud por rate limit)
+    try:
+        info = tk.info or {}
+    except Exception:
+        info = {}
+
+    # 2) Fallback: .fast_info (endpoint distinto, más confiable bajo rate limit).
+    # Lo usamos para llenar lo crítico (market_cap, precio, rango 52w) si .info
+    # no trajo nada.
+    if not info or not info.get("currentPrice"):
+        try:
+            fi = tk.fast_info
+            info = info or {}
+            # fast_info usa nombres distintos — traducimos
+            info.setdefault("currentPrice",     getattr(fi, "last_price", None))
+            info.setdefault("marketCap",        getattr(fi, "market_cap", None))
+            info.setdefault("fiftyTwoWeekHigh", getattr(fi, "year_high", None))
+            info.setdefault("fiftyTwoWeekLow",  getattr(fi, "year_low", None))
+            info.setdefault("currency",         getattr(fi, "currency", None))
+            info.setdefault("exchange",         getattr(fi, "exchange", None))
+        except Exception:
+            pass
+
+    if not info:
+        raise RuntimeError(f"yfinance no devolvió fundamentales para {sym}")
 
     # Calendario: yfinance devuelve dict {Earnings Date, Ex-Dividend Date, ...}
     earnings_date = None

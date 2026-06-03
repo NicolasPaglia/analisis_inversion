@@ -93,7 +93,12 @@ def _comparar_seleccion(grupos: tuple, fuente: str, periodo: str,
 
 @st.cache_data(show_spinner=False, ttl=3600)
 def _fundamentales(ticker: str) -> dict:
-    """Caché 1 h de fundamentales — yfinance.Ticker.info es lento."""
+    """
+    Caché 1 h de fundamentales — yfinance.Ticker.info es lento y a veces
+    falla en cloud por rate limit. Si la primera vez vino vacío,
+    `obtener_fundamentales` ya lanza RuntimeError y el except del caller
+    lo reintenta en el próximo render (Streamlit no cachea excepciones).
+    """
     return obtener_fundamentales(ticker)
 
 
