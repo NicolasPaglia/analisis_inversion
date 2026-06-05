@@ -22,7 +22,7 @@ import numpy as np
 from .tecnico import resumen_tecnico
 from .backtest import correr_todas, NOMBRES
 from .riesgo import resumen_riesgo
-from .montecarlo import resumen_montecarlo
+from .montecarlo import resumen_montecarlo, fmt_horizonte
 
 # Peso default de cada factor en el puntaje final (suman 1.0).
 # Criterio de asignación:
@@ -126,7 +126,7 @@ def _factor_backtest(res_bt: dict) -> tuple[float, str]:
 def _factor_montecarlo(mc: dict) -> tuple[float, str]:
     p = mc["prob_ganancia"]
     score = _clip(p * 130 - 15)  # 0.5→50, 0.6→63, 0.7→76
-    detalle = (f"Prob. de ganancia a {mc['dias']} días hábiles: {p:.0%}. "
+    detalle = (f"Prob. de ganancia a {fmt_horizonte(mc['dias'])}: {p:.0%}. "
                f"Rend. esperado {mc['rendimiento_esperado']:+.1%} "
                f"(rango P5-P95: {mc['p05']:.1f}–{mc['p95']:.1f}).")
     return score, detalle
@@ -371,7 +371,7 @@ def conclusiones_rapidas(resultado: dict) -> list[dict]:
     n = _nivel(fac["montecarlo"]["score"])
     p, rend = mc["prob_ganancia"], mc["rendimiento_esperado"]
     cuali = "favorable" if p >= 0.60 else ("desfavorable" if p <= 0.40 else "incierto")
-    texto = (f"Pronóstico a {mc['dias']}d {cuali} — "
+    texto = (f"Pronóstico a {fmt_horizonte(mc['dias'])} {cuali} — "
              f"{p:.0%} prob. de ganancia, retorno esperado {rend:+.1%}.")
     out.append({"nivel": n, "icono": _ICONOS[n], "dimension": "Monte Carlo", "texto": texto})
 

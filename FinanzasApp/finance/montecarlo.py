@@ -13,6 +13,20 @@ import pandas as pd
 from .tecnico import log_returns
 
 
+def fmt_horizonte(dias: int) -> str:
+    """Etiqueta legible del horizonte: '756 días hábiles (~3 años)'."""
+    if dias >= 252:
+        n = dias / 252
+        aprox = f"~{n:.0f} año" + ("s" if n >= 1.5 else "")
+    elif dias >= 21:
+        n = dias / 21
+        aprox = f"~{n:.0f} mes" + ("es" if n >= 1.5 else "")
+    else:
+        n = max(1, round(dias / 5))
+        aprox = f"~{n} semana" + ("s" if n > 1 else "")
+    return f"{dias} días hábiles ({aprox})"
+
+
 def simular_gbm(df: pd.DataFrame, dias: int = 21, n_sim: int = 10_000,
                 seed: int | None = 42) -> np.ndarray:
     """

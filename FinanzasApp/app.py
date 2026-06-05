@@ -108,14 +108,14 @@ def _fundamentales(ticker: str, df=None) -> dict:
 
 
 @st.cache_data(show_spinner=False)
-def _historico(ticker_key: str, df) -> list[dict]:
+def _historico(ticker_key: str, df, dias: int = 21) -> list[dict]:
     """
     Caché del histórico de veredictos. ticker_key incluye fuente+periodo y una
     versión del esquema: st.cache_data NO se invalida cuando cambia el código
     de `historico_veredicto` (solo hashea esta función), así que ante un cambio
     de esquema de los snapshots hay que subir la versión en el call site.
     """
-    return historico_veredicto(df)
+    return historico_veredicto(df, dias_horizonte=dias)
 
 
 # ─────────────────────────────────────────────────────────────────────
@@ -593,7 +593,15 @@ fuente  = st.sidebar.selectbox(
          "'local' = dataset commiteado en el repo (datos/ohlcv/, "
          "actualizado por GitHub Action diario).")
 periodo = st.sidebar.selectbox("Histórico", ["1y", "2y", "5y", "max"], index=1)
-dias    = st.sidebar.slider("Horizonte Monte Carlo (días hábiles)", 5, 63, 21)
+# Horizonte Monte Carlo en días hábiles (252/año). A horizontes largos el
+# GBM extrapola el drift histórico — el rango P5-P95 se abre acorde.
+HORIZONTES_MC = {
+    "1 semana":  5,   "1 mes":   21,  "3 meses": 63, "6 meses": 126,
+    "1 año":     252, "2 años":  504, "3 años":  756,
+}
+hor_sel = st.sidebar.select_slider("Horizonte Monte Carlo",
+                                   options=list(HORIZONTES_MC), value="3 años")
+dias    = HORIZONTES_MC[hor_sel]
 correr  = st.sidebar.button("Analizar", type="primary", use_container_width=True)
 
 # ── Pesos del veredicto (editables) ──────────────────────────────────
@@ -681,7 +689,8 @@ with col_hist:
     st.caption("Qué hubiera dicho el motor hace 30/60/90/180 días. Track record "
                "rápido del algoritmo sobre este ticker.")
     try:
-        snapshots = _historico(f"{e.ticker}|{e.fuente}|{e.periodo}|v2", e.df)
+        snapshots = _historico(f"{e.ticker}|{e.fuente}|{e.periodo}|v2", e.df,
+                               e.dias)
         # Mismos pesos del sidebar para el track record (recálculo liviano).
         # Snapshots de un caché viejo sin 'factores' se dejan como están.
         snapshots = [reponderar(s, pesos_usuario) if "factores" in s else s

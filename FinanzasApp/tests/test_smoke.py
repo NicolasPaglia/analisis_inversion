@@ -59,6 +59,25 @@ def test_montecarlo_probabilidad_valida():
     assert mc["p05"] <= mc["p50"] <= mc["p95"]
 
 
+def test_montecarlo_horizonte_3_anios():
+    """El horizonte largo (756d = 3 años) simula sin problemas y el rango se abre."""
+    df = _df()
+    corto = resumen_montecarlo(df, dias=21, n_sim=2000)
+    largo = resumen_montecarlo(df, dias=756, n_sim=2000)
+    assert largo["dias"] == 756
+    assert 0 <= largo["prob_ganancia"] <= 1
+    # Más horizonte → más incertidumbre: el rango P5-P95 relativo debe crecer.
+    assert (largo["p95"] - largo["p05"]) > (corto["p95"] - corto["p05"])
+
+
+def test_fmt_horizonte():
+    from finance.montecarlo import fmt_horizonte
+    assert fmt_horizonte(5)   == "5 días hábiles (~1 semana)"
+    assert "(~1 mes)"  in fmt_horizonte(21)
+    assert "(~6 meses)" in fmt_horizonte(126)
+    assert "(~3 años)" in fmt_horizonte(756)
+
+
 def test_decision_estructura_y_rango():
     r = analizar(_df())
     assert 0 <= r["score"] <= 100
