@@ -12,7 +12,7 @@
  "valuacion": {
   "pe": null,
   "forward_pe": null,
-  "pb": 0.8038717,
+  "pb": 0.8047252,
   "peg": null,
   "ev_ebitda": null
  },
@@ -23,7 +23,7 @@
   "margen_neto": null
  },
  "dividendos": {
-  "dividend_yield": 0.009900361,
+  "dividend_yield": 0.00991718,
   "payout_ratio": null
  },
  "tamano": {
@@ -31,7 +31,7 @@
   "enterprise_value": null
  },
  "precio": {
-  "actual": 94.18000030517578,
+  "actual": 94.27999877929688,
   "low_52w": 92.95,
   "high_52w": 98.05,
   "beta": null
@@ -40,5 +40,5 @@
   "earnings_date": null,
   "ex_div_date": null
  },
- "obtenido": "2026-06-12"
+ "obtenido": "2026-06-15"
 }
