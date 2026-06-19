@@ -13,7 +13,7 @@
   "pe": 15.568215,
   "forward_pe": 13.819097,
   "pb": 2.5332804,
-  "peg": 1.76,
+  "peg": 1.73,
   "ev_ebitda": null
  },
  "rentabilidad": {
@@ -40,5 +40,5 @@
   "earnings_date": "2026-07-14",
   "ex_div_date": null
  },
- "obtenido": "2026-06-18"
+ "obtenido": "2026-06-19"
 }
