@@ -12,8 +12,8 @@
  "valuacion": {
   "pe": 8.365854,
   "forward_pe": 6.099296,
-  "pb": 1.0401936,
-  "peg": 1.78,
+  "pb": 1.0396091,
+  "peg": 1.84,
   "ev_ebitda": null
  },
  "rentabilidad": {
@@ -23,12 +23,12 @@
   "margen_neto": 0.25358
  },
  "dividendos": {
-  "dividend_yield": 0.38035715,
+  "dividend_yield": 0.37259474,
   "payout_ratio": 0.5907
  },
  "tamano": {
   "market_cap": 36257542144.0,
-  "enterprise_value": 531788005376.0
+  "enterprise_value": 532527972352.0
  },
  "precio": {
   "actual": 3.43,
@@ -40,5 +40,5 @@
   "earnings_date": "2026-08-05",
   "ex_div_date": "2026-07-06"
  },
- "obtenido": "2026-06-22"
+ "obtenido": "2026-06-23"
 }
