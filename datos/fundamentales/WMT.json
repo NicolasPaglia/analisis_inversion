@@ -10,11 +10,11 @@
   "exchange": "NMS"
  },
  "valuacion": {
-  "pe": 40.767605,
-  "forward_pe": 35.22125,
-  "pb": 9.772114,
+  "pe": 40.735916,
+  "forward_pe": 35.193874,
+  "pb": 9.764518,
   "peg": 4.68,
-  "ev_ebitda": 22.714
+  "ev_ebitda": 22.143
  },
  "rentabilidad": {
   "roe": 0.24132,
@@ -23,15 +23,15 @@
   "margen_neto": 0.03135
  },
  "dividendos": {
-  "dividend_yield": 0.00800773,
+  "dividend_yield": 0.008231129,
   "payout_ratio": 0.33540002
  },
  "tamano": {
-  "market_cap": 921386352640.0,
-  "enterprise_value": 1018472431616.0
+  "market_cap": 920670175232.0,
+  "enterprise_value": 992847396864.0
  },
  "precio": {
-  "actual": 115.78,
+  "actual": 115.69,
   "low_52w": 94.23,
   "high_52w": 135.16,
   "beta": 0.599
@@ -40,5 +40,5 @@
   "earnings_date": "2026-08-20",
   "ex_div_date": "2026-08-21"
  },
- "obtenido": "2026-06-25"
+ "obtenido": "2026-06-26"
 }
