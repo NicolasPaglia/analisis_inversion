@@ -24,21 +24,21 @@
  },
  "dividendos": {
   "dividend_yield": 0.0,
-  "payout_ratio": null
+  "payout_ratio": 0.38639998
  },
  "tamano": {
   "market_cap": 4275682560.0,
-  "enterprise_value": -230443909120.0
+  "enterprise_value": -230483050496.0
  },
  "precio": {
   "actual": 28.4,
   "low_52w": 19.74,
   "high_52w": 36.35,
-  "beta": -0.462
+  "beta": -0.453
  },
  "proximos": {
   "earnings_date": "2026-08-04",
-  "ex_div_date": null
+  "ex_div_date": "2025-06-30"
  },
- "obtenido": "2026-07-02"
+ "obtenido": "2026-07-03"
 }

@@ -10,9 +10,9 @@
   "exchange": "BUE"
  },
  "valuacion": {
-  "pe": 19.918304,
-  "forward_pe": 2.8507738,
-  "pb": 1.6107457,
+  "pe": 20.173136,
+  "forward_pe": 2.8816695,
+  "pb": 1.6311946,
   "peg": 1.61,
   "ev_ebitda": null
  },
@@ -24,21 +24,21 @@
  },
  "dividendos": {
   "dividend_yield": 0.0,
-  "payout_ratio": null
+  "payout_ratio": 0.35349998
  },
  "tamano": {
-  "market_cap": 6274151350272.0,
-  "enterprise_value": 6137227247616.0
+  "market_cap": 6353803280384.0,
+  "enterprise_value": 6198498164736.0
  },
  "precio": {
-  "actual": 10240.0,
+  "actual": 10370.0,
   "low_52w": 3995.0,
   "high_52w": 11250.0,
-  "beta": 0.036
+  "beta": 0.027
  },
  "proximos": {
   "earnings_date": null,
-  "ex_div_date": null
+  "ex_div_date": "2026-07-01"
  },
- "obtenido": "2026-07-02"
+ "obtenido": "2026-07-03"
 }

@@ -28,17 +28,17 @@
  },
  "tamano": {
   "market_cap": 1337709312.0,
-  "enterprise_value": 972633604096.0
+  "enterprise_value": 972661194752.0
  },
  "precio": {
   "actual": 15.81,
   "low_52w": 10.87,
   "high_52w": 19.14,
-  "beta": 0.036
+  "beta": 0.037
  },
  "proximos": {
   "earnings_date": "2026-05-06",
   "ex_div_date": "2025-11-24"
  },
- "obtenido": "2026-07-02"
+ "obtenido": "2026-07-03"
 }
