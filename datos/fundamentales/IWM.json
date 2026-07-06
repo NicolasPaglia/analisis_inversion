@@ -10,9 +10,9 @@
   "exchange": "PCX"
  },
  "valuacion": {
-  "pe": 19.895508,
+  "pe": 19.98376,
   "forward_pe": null,
-  "pb": 1.360714,
+  "pb": 1.3667499,
   "peg": null,
   "ev_ebitda": null
  },
@@ -23,7 +23,7 @@
   "margen_neto": null
  },
  "dividendos": {
-  "dividend_yield": 0.0067386073,
+  "dividend_yield": 0.0067780092,
   "payout_ratio": null
  },
  "tamano": {
@@ -31,7 +31,7 @@
   "enterprise_value": null
  },
  "precio": {
-  "actual": 297.5799865722656,
+  "actual": 298.8999938964844,
   "low_52w": 212.34,
   "high_52w": 302.72,
   "beta": null
@@ -40,5 +40,5 @@
   "earnings_date": null,
   "ex_div_date": null
  },
- "obtenido": "2026-07-03"
+ "obtenido": "2026-07-06"
 }
