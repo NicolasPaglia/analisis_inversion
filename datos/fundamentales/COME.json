@@ -11,10 +11,10 @@
  },
  "valuacion": {
   "pe": null,
-  "forward_pe": 11.43609,
-  "pb": 0.5369183,
+  "forward_pe": 11.142857,
+  "pb": 0.52315116,
   "peg": null,
-  "ev_ebitda": 24.006
+  "ev_ebitda": 23.944
  },
  "rentabilidad": {
   "roe": -0.07818,
@@ -24,21 +24,21 @@
  },
  "dividendos": {
   "dividend_yield": 0.0,
-  "payout_ratio": 0.0
+  "payout_ratio": null
  },
  "tamano": {
-  "market_cap": 319410012160.0,
-  "enterprise_value": 325517344768.0
+  "market_cap": 311219978240.0,
+  "enterprise_value": 324677337088.0
  },
  "precio": {
-  "actual": 45.63,
+  "actual": 44.46,
   "low_52w": 29.1,
   "high_52w": 85.0,
   "beta": -0.175
  },
  "proximos": {
   "earnings_date": null,
-  "ex_div_date": "2025-05-12"
+  "ex_div_date": null
  },
- "obtenido": "2026-07-15"
+ "obtenido": "2026-07-16"
 }
