@@ -2,7 +2,7 @@
  "ticker": "BAC",
  "yf_symbol": "BAC",
  "meta": {
-  "nombre": null,
+  "nombre": "Bank of America Corporation",
   "sector": "Financial Services",
   "industria": "Banks - Diversified",
   "pais": "United States",
@@ -10,10 +10,10 @@
   "exchange": "NYQ"
  },
  "valuacion": {
-  "pe": 14.150116,
-  "forward_pe": 11.666899,
-  "pb": 1.5573688,
-  "peg": 1.08,
+  "pe": 13.953811,
+  "forward_pe": 11.487783,
+  "pb": 1.5357633,
+  "peg": 1.07,
   "ev_ebitda": null
  },
  "rentabilidad": {
@@ -23,22 +23,22 @@
   "margen_neto": 0.29524
  },
  "dividendos": {
-  "dividend_yield": 0.018214343,
+  "dividend_yield": 0.018279746,
   "payout_ratio": 0.2587
  },
  "tamano": {
-  "market_cap": 434808127488.0,
-  "enterprise_value": 175711813632.0
+  "market_cap": 424025587712.0,
+  "enterprise_value": 168202600448.0
  },
  "precio": {
-  "actual": 61.27,
+  "actual": 60.42,
   "low_52w": 44.75,
-  "high_52w": 62.115,
+  "high_52w": 62.12,
   "beta": 1.175
  },
  "proximos": {
   "earnings_date": "2026-10-14",
   "ex_div_date": "2026-06-05"
  },
- "obtenido": "2026-07-17"
+ "obtenido": "2026-07-20"
 }

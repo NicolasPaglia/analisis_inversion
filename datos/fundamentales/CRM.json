@@ -2,7 +2,7 @@
  "ticker": "CRM",
  "yf_symbol": "CRM",
  "meta": {
-  "nombre": null,
+  "nombre": "Salesforce, Inc.",
   "sector": "Technology",
   "industria": "Software - Application",
   "pais": "United States",
@@ -10,11 +10,11 @@
   "exchange": "NYQ"
  },
  "valuacion": {
-  "pe": 19.787949,
-  "forward_pe": 10.999522,
-  "pb": 4.085309,
-  "peg": 0.7,
-  "ev_ebitda": 13.349
+  "pe": 20.161253,
+  "forward_pe": 11.203916,
+  "pb": 4.157556,
+  "peg": 0.71,
+  "ev_ebitda": 13.228
  },
  "rentabilidad": {
   "roe": 0.16908,
@@ -23,15 +23,15 @@
   "margen_neto": 0.18733
  },
  "dividendos": {
-  "dividend_yield": 0.009775307,
+  "dividend_yield": 0.00988464,
   "payout_ratio": 0.19559999
  },
  "tamano": {
-  "market_cap": 139860639744.0,
-  "enterprise_value": 172135923712.0
+  "market_cap": 142334001152.0,
+  "enterprise_value": 170571628544.0
  },
  "precio": {
-  "actual": 170.77,
+  "actual": 173.79,
   "low_52w": 146.32,
   "high_52w": 274.0,
   "beta": 1.178
@@ -40,5 +40,5 @@
   "earnings_date": "2026-09-02",
   "ex_div_date": "2026-06-11"
  },
- "obtenido": "2026-07-17"
+ "obtenido": "2026-07-20"
 }

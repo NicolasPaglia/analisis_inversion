@@ -2,7 +2,7 @@
  "ticker": "V",
  "yf_symbol": "V",
  "meta": {
-  "nombre": null,
+  "nombre": "Visa Inc.",
   "sector": "Financial Services",
   "industria": "Credit Services",
   "pais": "United States",
@@ -10,11 +10,11 @@
   "exchange": "NYQ"
  },
  "valuacion": {
-  "pe": 31.26068,
-  "forward_pe": 24.116596,
-  "pb": 19.233988,
-  "peg": 1.56,
-  "ev_ebitda": 23.179
+  "pe": 31.435919,
+  "forward_pe": 24.251787,
+  "pb": 19.341808,
+  "peg": 1.58,
+  "ev_ebitda": 22.893
  },
  "rentabilidad": {
   "roe": 0.60349,
@@ -23,15 +23,15 @@
   "margen_neto": 0.51679003
  },
  "dividendos": {
-  "dividend_yield": 0.0071205557,
+  "dividend_yield": 0.007251227,
   "payout_ratio": 0.2197
  },
  "tamano": {
-  "market_cap": 681889234944.0,
-  "enterprise_value": 698675036160.0
+  "market_cap": 685711753216.0,
+  "enterprise_value": 690063212544.0
  },
  "precio": {
-  "actual": 358.56,
+  "actual": 360.57,
   "low_52w": 293.89,
   "high_52w": 365.14,
   "beta": 0.754
@@ -40,5 +40,5 @@
   "earnings_date": "2026-07-28",
   "ex_div_date": "2026-05-12"
  },
- "obtenido": "2026-07-17"
+ "obtenido": "2026-07-20"
 }
