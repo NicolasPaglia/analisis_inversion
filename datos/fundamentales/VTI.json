@@ -2,7 +2,7 @@
  "ticker": "VTI",
  "yf_symbol": "VTI",
  "meta": {
-  "nombre": "Vanguard Total Stock Market Index Fund ETF Shares",
+  "nombre": "Vanguard Morningstar Total Stock Market ETF",
   "sector": null,
   "industria": null,
   "pais": null,
@@ -10,9 +10,9 @@
   "exchange": "PCX"
  },
  "valuacion": {
-  "pe": 26.069462,
+  "pe": null,
   "forward_pe": null,
-  "pb": 2.6234715,
+  "pb": null,
   "peg": null,
   "ev_ebitda": null
  },
@@ -23,7 +23,7 @@
   "margen_neto": null
  },
  "dividendos": {
-  "dividend_yield": 0.0076729287,
+  "dividend_yield": 0.0105,
   "payout_ratio": null
  },
  "tamano": {
@@ -31,7 +31,7 @@
   "enterprise_value": null
  },
  "precio": {
-  "actual": 365.989990234375,
+  "actual": 360.4200134277344,
   "low_52w": 304.4,
   "high_52w": 374.7,
   "beta": null
@@ -40,5 +40,5 @@
   "earnings_date": null,
   "ex_div_date": null
  },
- "obtenido": "2026-07-28"
+ "obtenido": "2026-07-29"
 }
