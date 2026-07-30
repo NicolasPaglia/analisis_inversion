@@ -2,7 +2,7 @@
  "ticker": "KO",
  "yf_symbol": "KO",
  "meta": {
-  "nombre": "Coca-Cola Company (The)",
+  "nombre": "The Coca-Cola Company",
   "sector": "Consumer Defensive",
   "industria": "Beverages - Non-Alcoholic",
   "pais": "United States",
@@ -10,35 +10,35 @@
   "exchange": "NYQ"
  },
  "valuacion": {
-  "pe": 28.012579,
-  "forward_pe": 25.290653,
-  "pb": 11.397135,
+  "pe": 26.573574,
+  "forward_pe": 25.093435,
+  "pb": 10.53327,
   "peg": 4.11,
-  "ev_ebitda": 23.852
+  "ev_ebitda": 24.231
  },
  "rentabilidad": {
   "roe": 0.42054,
-  "roa": 0.09493,
+  "roa": 0.0942,
   "margen_operativo": 0.34917998,
   "margen_neto": 0.28558
  },
  "dividendos": {
-  "dividend_yield": 0.011555455,
-  "payout_ratio": 0.64779997
+  "dividend_yield": 0.023349797,
+  "payout_ratio": 0.6246
  },
  "tamano": {
-  "market_cap": 383311249408.0,
-  "enterprise_value": 409162809344.0
+  "market_cap": 380772450304.0,
+  "enterprise_value": 412648243200.0
  },
  "precio": {
-  "actual": 89.08,
+  "actual": 88.49,
   "low_52w": 65.35,
-  "high_52w": 90.89,
-  "beta": null
+  "high_52w": 90.92,
+  "beta": 0.349
  },
  "proximos": {
   "earnings_date": "2026-10-20",
   "ex_div_date": "2026-09-15"
  },
- "obtenido": "2026-07-29"
+ "obtenido": "2026-07-30"
 }

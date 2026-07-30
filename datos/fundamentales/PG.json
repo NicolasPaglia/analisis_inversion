@@ -2,7 +2,7 @@
  "ticker": "PG",
  "yf_symbol": "PG",
  "meta": {
-  "nombre": "Procter & Gamble Company (The)",
+  "nombre": "The Procter & Gamble Company",
   "sector": "Consumer Defensive",
   "industria": "Household & Personal Products",
   "pais": "United States",
@@ -10,35 +10,35 @@
   "exchange": "NYQ"
  },
  "valuacion": {
-  "pe": 21.390924,
-  "forward_pe": 19.655724,
-  "pb": 6.329882,
-  "peg": 4.18,
-  "ev_ebitda": 14.87
+  "pe": 21.046783,
+  "forward_pe": 19.419231,
+  "pb": 6.2371655,
+  "peg": 4.1,
+  "ev_ebitda": 16.223
  },
  "rentabilidad": {
-  "roe": 0.31112,
-  "roa": 0.10925999,
-  "margen_operativo": 0.23047,
-  "margen_neto": 0.19162
+  "roe": 0.30290002,
+  "roa": 0.098050006,
+  "margen_operativo": 0.18625,
+  "margen_neto": 0.18437
  },
  "dividendos": {
-  "dividend_yield": 0.0,
+  "dividend_yield": 0.029151265,
   "payout_ratio": 0.618
  },
  "tamano": {
-  "market_cap": null,
-  "enterprise_value": 372386824192.0
+  "market_cap": 335225126912.0,
+  "enterprise_value": 371640074240.0
  },
  "precio": {
-  "actual": 146.1,
+  "actual": 143.96,
   "low_52w": 137.62,
   "high_52w": 167.25,
-  "beta": 0.38
+  "beta": null
  },
  "proximos": {
-  "earnings_date": "2026-07-29",
+  "earnings_date": "2026-10-22",
   "ex_div_date": "2026-07-24"
  },
- "obtenido": "2026-07-29"
+ "obtenido": "2026-07-30"
 }
