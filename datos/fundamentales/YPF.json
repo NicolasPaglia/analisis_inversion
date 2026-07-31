@@ -11,8 +11,8 @@
  },
  "valuacion": {
   "pe": null,
-  "forward_pe": 9.080256,
-  "pb": 1.9496437,
+  "forward_pe": 9.148163,
+  "pb": 1.964224,
   "peg": 0.1,
   "ev_ebitda": 1.843
  },
@@ -27,11 +27,11 @@
   "payout_ratio": 0.0
  },
  "tamano": {
-  "market_cap": 20449417216.0,
-  "enterprise_value": 12877546127360.0
+  "market_cap": 20602347520.0,
+  "enterprise_value": 12878266499072.0
  },
  "precio": {
-  "actual": 52.15,
+  "actual": 52.54,
   "low_52w": 22.82,
   "high_52w": 57.49,
   "beta": -0.005
@@ -40,5 +40,5 @@
   "earnings_date": "2026-08-10",
   "ex_div_date": "2019-07-09"
  },
- "obtenido": "2026-07-30"
+ "obtenido": "2026-07-31"
 }
