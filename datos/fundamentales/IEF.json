@@ -2,7 +2,7 @@
  "ticker": "IEF",
  "yf_symbol": "IEF",
  "meta": {
-  "nombre": "iShares 7-10 Year Treasury Bond",
+  "nombre": "iShares 7-10 Year Treasury Bond ETF",
   "sector": null,
   "industria": null,
   "pais": null,
@@ -12,7 +12,7 @@
  "valuacion": {
   "pe": null,
   "forward_pe": null,
-  "pb": null,
+  "pb": 0.79226345,
   "peg": null,
   "ev_ebitda": null
  },
@@ -23,7 +23,7 @@
   "margen_neto": null
  },
  "dividendos": {
-  "dividend_yield": 0.0388,
+  "dividend_yield": 0.010048414,
   "payout_ratio": null
  },
  "tamano": {
@@ -31,8 +31,8 @@
   "enterprise_value": null
  },
  "precio": {
-  "actual": 92.94999694824219,
-  "low_52w": 92.73,
+  "actual": 92.81999969482422,
+  "low_52w": 92.69,
   "high_52w": 98.05,
   "beta": null
  },
@@ -40,5 +40,5 @@
   "earnings_date": null,
   "ex_div_date": null
  },
- "obtenido": "2026-07-31"
+ "obtenido": "2026-08-03"
 }

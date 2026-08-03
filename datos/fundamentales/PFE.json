@@ -2,7 +2,7 @@
  "ticker": "PFE",
  "yf_symbol": "PFE",
  "meta": {
-  "nombre": "Pfizer, Inc.",
+  "nombre": "Pfizer Inc.",
   "sector": "Healthcare",
   "industria": "Drug Manufacturers - General",
   "pais": "United States",
@@ -10,11 +10,11 @@
   "exchange": "NYQ"
  },
  "valuacion": {
-  "pe": 19.091604,
-  "forward_pe": 8.831901,
-  "pb": 1.5819101,
-  "peg": 2.96,
-  "ev_ebitda": 7.617
+  "pe": 19.10687,
+  "forward_pe": 8.855099,
+  "pb": 1.5831752,
+  "peg": 2.94,
+  "ev_ebitda": 7.639
  },
  "rentabilidad": {
   "roe": 0.083100006,
@@ -23,22 +23,22 @@
   "margen_neto": 0.118310004
  },
  "dividendos": {
-  "dividend_yield": 0.069048576,
+  "dividend_yield": 0.068772495,
   "payout_ratio": 1.3130001
  },
  "tamano": {
-  "market_cap": null,
-  "enterprise_value": 193926152192.0
+  "market_cap": 142657093632.0,
+  "enterprise_value": 194496102400.0
  },
  "precio": {
-  "actual": 25.01,
-  "low_52w": 23.11,
+  "actual": 25.03,
+  "low_52w": 23.4,
   "high_52w": 28.75,
-  "beta": 0.307
+  "beta": 0.28
  },
  "proximos": {
   "earnings_date": "2026-08-04",
   "ex_div_date": "2026-07-24"
  },
- "obtenido": "2026-07-31"
+ "obtenido": "2026-08-03"
 }
