@@ -2,7 +2,7 @@
  "ticker": "EDN",
  "yf_symbol": "EDN.BA",
  "meta": {
-  "nombre": "Empresa Distribuidora y Comercializadora Norte Sociedad Anónima",
+  "nombre": "EMPRESA DISTR Y COMERC NORTE ED",
   "sector": "Utilities",
   "industria": "Utilities - Regulated Electric",
   "pais": "Argentina",
@@ -10,9 +10,9 @@
   "exchange": "BUE"
  },
  "valuacion": {
-  "pe": 5.65403,
-  "forward_pe": 842.45996,
-  "pb": 0.6866333,
+  "pe": 5.727532,
+  "forward_pe": null,
+  "pb": 0.6955595,
   "peg": 8.71,
   "ev_ebitda": 2.913
  },
@@ -27,11 +27,11 @@
   "payout_ratio": 0.0
  },
  "tamano": {
-  "market_cap": 1751364665344.0,
+  "market_cap": null,
   "enterprise_value": 1335985438720.0
  },
  "precio": {
-  "actual": 2000.0,
+  "actual": 2026.0,
   "low_52w": 1137.0,
   "high_52w": 2767.5,
   "beta": -0.069
@@ -40,5 +40,5 @@
   "earnings_date": "2026-08-10",
   "ex_div_date": null
  },
- "obtenido": "2026-08-04"
+ "obtenido": "2026-08-05"
 }

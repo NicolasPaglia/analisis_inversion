@@ -2,7 +2,7 @@
  "ticker": "TEO",
  "yf_symbol": "TEO",
  "meta": {
-  "nombre": "Telecom Argentina S.A.",
+  "nombre": "Telecom Argentina SA",
   "sector": "Communication Services",
   "industria": "Telecom Services",
   "pais": "Argentina",
@@ -10,9 +10,9 @@
   "exchange": "NYQ"
  },
  "valuacion": {
-  "pe": 25.333332,
-  "forward_pe": 16.363636,
-  "pb": 1.0914577,
+  "pe": 25.962267,
+  "forward_pe": 16.45933,
+  "pb": 1.096197,
   "peg": 1.41,
   "ev_ebitda": 1.997
  },
@@ -23,15 +23,15 @@
   "margen_neto": 0.03925
  },
  "dividendos": {
-  "dividend_yield": 0.98142546,
+  "dividend_yield": 0.9964912,
   "payout_ratio": 0.0774
  },
  "tamano": {
-  "market_cap": 5892490752.0,
+  "market_cap": null,
   "enterprise_value": 4951933190144.0
  },
  "precio": {
-  "actual": 13.68,
+  "actual": 13.76,
   "low_52w": 6.43,
   "high_52w": 16.34,
   "beta": 0.348
@@ -40,5 +40,5 @@
   "earnings_date": "2026-08-10",
   "ex_div_date": "2025-11-24"
  },
- "obtenido": "2026-08-04"
+ "obtenido": "2026-08-05"
 }

@@ -2,7 +2,7 @@
  "ticker": "DIA",
  "yf_symbol": "DIA",
  "meta": {
-  "nombre": "State Street SPDR Dow Jones Industrial Average ETF Trust",
+  "nombre": "State Street SPDR Dow Jones Ind",
   "sector": null,
   "industria": null,
   "pais": null,
@@ -10,9 +10,9 @@
   "exchange": "PCX"
  },
  "valuacion": {
-  "pe": 25.53602,
+  "pe": null,
   "forward_pe": null,
-  "pb": 1.5087634,
+  "pb": null,
   "peg": null,
   "ev_ebitda": null
  },
@@ -23,7 +23,7 @@
   "margen_neto": null
  },
  "dividendos": {
-  "dividend_yield": 0.010579421,
+  "dividend_yield": 0.0138,
   "payout_ratio": null
  },
  "tamano": {
@@ -31,14 +31,14 @@
   "enterprise_value": null
  },
  "precio": {
-  "actual": 540.4299926757812,
+  "actual": 542.8099975585938,
   "low_52w": 437.98,
-  "high_52w": 542.08,
+  "high_52w": 546.75,
   "beta": null
  },
  "proximos": {
   "earnings_date": null,
   "ex_div_date": null
  },
- "obtenido": "2026-08-04"
+ "obtenido": "2026-08-05"
 }
