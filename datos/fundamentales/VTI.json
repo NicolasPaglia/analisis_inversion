@@ -31,14 +31,14 @@
   "enterprise_value": null
  },
  "precio": {
-  "actual": 381.7799987792969,
+  "actual": 381.6300048828125,
   "low_52w": 310.4,
-  "high_52w": 382.0709,
+  "high_52w": 383.29,
   "beta": null
  },
  "proximos": {
   "earnings_date": null,
   "ex_div_date": null
  },
- "obtenido": "2026-08-07"
+ "obtenido": "2026-08-10"
 }
