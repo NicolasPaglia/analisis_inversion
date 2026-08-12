@@ -14,21 +14,21 @@
   "forward_pe": 16.148325,
   "pb": 1.0754839,
   "peg": 1.41,
-  "ev_ebitda": 1.883
+  "ev_ebitda": 1.983
  },
  "rentabilidad": {
   "roe": 0.10831001,
-  "roa": 0.03644,
+  "roa": 0.03121,
   "margen_operativo": 0.13954,
   "margen_neto": 0.08915
  },
  "dividendos": {
-  "dividend_yield": 0.9532867,
+  "dividend_yield": 1.0097778,
   "payout_ratio": 0.0339
  },
  "tamano": {
-  "market_cap": 5814957568.0,
-  "enterprise_value": 5159879442432.0
+  "market_cap": null,
+  "enterprise_value": 5159534985216.0
  },
  "precio": {
   "actual": 13.5,
@@ -40,5 +40,5 @@
   "earnings_date": "2026-08-07",
   "ex_div_date": "2025-11-24"
  },
- "obtenido": "2026-08-11"
+ "obtenido": "2026-08-12"
 }
