@@ -2,7 +2,7 @@
  "ticker": "HD",
  "yf_symbol": "HD",
  "meta": {
-  "nombre": "The Home Depot, Inc.",
+  "nombre": "Home Depot, Inc. (The)",
   "sector": "Consumer Cyclical",
   "industria": "Home Improvement Retail",
   "pais": "United States",
@@ -10,28 +10,28 @@
   "exchange": "NYQ"
  },
  "valuacion": {
-  "pe": 24.110643,
-  "forward_pe": 21.451591,
-  "pb": 24.741304,
-  "peg": 1.91,
-  "ev_ebitda": 15.98
+  "pe": 23.407278,
+  "forward_pe": 20.84038,
+  "pb": 26.00202,
+  "peg": 1.94,
+  "ev_ebitda": 15.897
  },
  "rentabilidad": {
-  "roe": 1.2838,
-  "roa": 0.12519,
-  "margen_operativo": 0.11926,
-  "margen_neto": 0.08411
+  "roe": 1.0429599,
+  "roa": 0.12547,
+  "margen_operativo": 0.14288999,
+  "margen_neto": 0.0841
  },
  "dividendos": {
-  "dividend_yield": 0.020533942,
+  "dividend_yield": 0.013447575,
   "payout_ratio": 0.648
  },
  "tamano": {
-  "market_cap": 343307255808.0,
-  "enterprise_value": 398646902784.0
+  "market_cap": null,
+  "enterprise_value": 402716196864.0
  },
  "precio": {
-  "actual": 344.3,
+  "actual": 334.49,
   "low_52w": 289.1,
   "high_52w": 426.75,
   "beta": 0.959
@@ -40,5 +40,5 @@
   "earnings_date": "2026-11-17",
   "ex_div_date": "2026-06-04"
  },
- "obtenido": "2026-08-19"
+ "obtenido": "2026-08-20"
 }

@@ -2,7 +2,7 @@
  "ticker": "JPM",
  "yf_symbol": "JPM",
  "meta": {
-  "nombre": "JPMorgan Chase & Co.",
+  "nombre": "JP Morgan Chase & Co.",
   "sector": "Financial Services",
   "industria": "Banks - Diversified",
   "pais": "United States",
@@ -10,10 +10,10 @@
   "exchange": "NYQ"
  },
  "valuacion": {
-  "pe": 15.293664,
-  "forward_pe": 14.286406,
-  "pb": 2.686024,
-  "peg": 1.77,
+  "pe": 15.068581,
+  "forward_pe": 14.058068,
+  "pb": 2.6430938,
+  "peg": 1.75,
   "ev_ebitda": null
  },
  "rentabilidad": {
@@ -23,22 +23,22 @@
   "margen_neto": 0.34921002
  },
  "dividendos": {
-  "dividend_yield": 0.01651755,
-  "payout_ratio": null
+  "dividend_yield": 0.016794492,
+  "payout_ratio": 0.2571
  },
  "tamano": {
-  "market_cap": 949663629312.0,
-  "enterprise_value": 803514155008.0
+  "market_cap": 934485360640.0,
+  "enterprise_value": 787591593984.0
  },
  "precio": {
-  "actual": 357.26,
+  "actual": 351.55,
   "low_52w": 279.1,
   "high_52w": 366.5,
   "beta": 0.977
  },
  "proximos": {
   "earnings_date": "2026-10-13",
-  "ex_div_date": null
+  "ex_div_date": "2026-07-06"
  },
- "obtenido": "2026-08-19"
+ "obtenido": "2026-08-20"
 }
