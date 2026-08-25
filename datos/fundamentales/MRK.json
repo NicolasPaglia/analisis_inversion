@@ -10,11 +10,11 @@
   "exchange": "NYQ"
  },
  "valuacion": {
-  "pe": 120.528,
-  "forward_pe": 15.793247,
-  "pb": 8.8696575,
+  "pe": 125.159996,
+  "forward_pe": 16.394455,
+  "pb": 9.210526,
   "peg": 10.47,
-  "ev_ebitda": 14.658
+  "ev_ebitda": 14.496
  },
  "rentabilidad": {
   "roe": 0.06961,
@@ -23,22 +23,22 @@
   "margen_neto": 0.047659997
  },
  "dividendos": {
-  "dividend_yield": 0.021763355,
+  "dividend_yield": 0.022036372,
   "payout_ratio": 2.688
  },
  "tamano": {
-  "market_cap": 371704070144.0,
-  "enterprise_value": 423188037632.0
+  "market_cap": 385988984832.0,
+  "enterprise_value": 418525085696.0
  },
  "precio": {
-  "actual": 150.66,
+  "actual": 156.45,
   "low_52w": 77.58,
-  "high_52w": 154.49,
+  "high_52w": 156.9199,
   "beta": 0.211
  },
  "proximos": {
   "earnings_date": "2026-10-29",
   "ex_div_date": "2026-09-15"
  },
- "obtenido": "2026-08-24"
+ "obtenido": "2026-08-25"
 }
