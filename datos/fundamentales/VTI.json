@@ -10,7 +10,7 @@
   "exchange": "PCX"
  },
  "valuacion": {
-  "pe": 25.374643,
+  "pe": 25.174679,
   "forward_pe": null,
   "pb": null,
   "peg": null,
@@ -31,7 +31,7 @@
   "enterprise_value": null
  },
  "precio": {
-  "actual": 378.1499938964844,
+  "actual": 375.1700134277344,
   "low_52w": 310.4,
   "high_52w": 385.12,
   "beta": null

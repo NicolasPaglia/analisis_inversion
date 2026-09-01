@@ -10,10 +10,10 @@
   "exchange": "NYQ"
  },
  "valuacion": {
-  "pe": 21.954613,
-  "forward_pe": 19.611341,
-  "pb": 6.3241377,
-  "peg": 4.1,
+  "pe": 22.119516,
+  "forward_pe": 19.758644,
+  "pb": 6.3716393,
+  "peg": 4.12,
   "ev_ebitda": 14.681
  },
  "rentabilidad": {
@@ -23,15 +23,15 @@
   "margen_neto": 0.18437
  },
  "dividendos": {
-  "dividend_yield": 0.029621644,
+  "dividend_yield": 0.029348126,
   "payout_ratio": 0.6433
  },
  "tamano": {
-  "market_cap": 337321721856.0,
+  "market_cap": 339597950976.0,
   "enterprise_value": 363390730240.0
  },
  "precio": {
-  "actual": 145.12,
+  "actual": 146.21,
   "low_52w": 137.62,
   "high_52w": 167.25,
   "beta": 0.377
