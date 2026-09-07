@@ -10,10 +10,10 @@
   "exchange": "NMS"
  },
  "valuacion": {
-  "pe": 16.982437,
+  "pe": 16.97392,
   "forward_pe": 22.785429,
   "pb": 6.650031,
-  "peg": 1.27,
+  "peg": 1.25,
   "ev_ebitda": 23.306
  },
  "rentabilidad": {
@@ -32,7 +32,7 @@
  },
  "precio": {
   "actual": 338.46,
-  "low_52w": 231.9,
+  "low_52w": 233.23,
   "high_52w": 408.61,
   "beta": 1.225
  },
@@ -40,5 +40,5 @@
   "earnings_date": "2026-10-28",
   "ex_div_date": "2026-09-04"
  },
- "obtenido": "2026-09-04"
+ "obtenido": "2026-09-07"
 }

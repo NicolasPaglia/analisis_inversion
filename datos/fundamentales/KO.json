@@ -13,8 +13,8 @@
   "pe": 26.447449,
   "forward_pe": 24.974619,
   "pb": 10.483275,
-  "peg": 4.03,
-  "ev_ebitda": 24.248
+  "peg": 4.0,
+  "ev_ebitda": 24.061
  },
  "rentabilidad": {
   "roe": 0.42054,
@@ -28,7 +28,7 @@
  },
  "tamano": {
   "market_cap": 378925481984.0,
-  "enterprise_value": 412164390912.0
+  "enterprise_value": 408980520960.0
  },
  "precio": {
   "actual": 88.07,
@@ -40,5 +40,5 @@
   "earnings_date": "2026-10-20",
   "ex_div_date": "2026-09-15"
  },
- "obtenido": "2026-09-04"
+ "obtenido": "2026-09-07"
 }

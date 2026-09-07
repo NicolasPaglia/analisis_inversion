@@ -32,7 +32,7 @@
  },
  "precio": {
   "actual": 73.76000213623047,
-  "low_52w": 58.79,
+  "low_52w": 58.82,
   "high_52w": 74.04,
   "beta": null
  },
@@ -40,5 +40,5 @@
   "earnings_date": null,
   "ex_div_date": null
  },
- "obtenido": "2026-09-04"
+ "obtenido": "2026-09-07"
 }

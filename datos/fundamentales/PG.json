@@ -10,10 +10,10 @@
   "exchange": "NYQ"
  },
  "valuacion": {
-  "pe": 22.08748,
+  "pe": 22.120846,
   "forward_pe": 19.789724,
   "pb": 6.381662,
-  "peg": 3.76,
+  "peg": 3.75,
   "ev_ebitda": 14.805
  },
  "rentabilidad": {
@@ -40,5 +40,5 @@
   "earnings_date": "2026-10-22",
   "ex_div_date": "2026-07-24"
  },
- "obtenido": "2026-09-04"
+ "obtenido": "2026-09-07"
 }

@@ -23,7 +23,7 @@
   "margen_neto": null
  },
  "dividendos": {
-  "dividend_yield": 0.0173,
+  "dividend_yield": 0.0166,
   "payout_ratio": null
  },
  "tamano": {
@@ -32,7 +32,7 @@
  },
  "precio": {
   "actual": 68.69999694824219,
-  "low_52w": 50.18,
+  "low_52w": 50.63,
   "high_52w": 71.57,
   "beta": null
  },
@@ -40,5 +40,5 @@
   "earnings_date": null,
   "ex_div_date": null
  },
- "obtenido": "2026-09-04"
+ "obtenido": "2026-09-07"
 }
