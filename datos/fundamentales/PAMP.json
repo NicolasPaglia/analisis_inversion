@@ -10,9 +10,9 @@
   "exchange": "BUE"
  },
  "valuacion": {
-  "pe": 8.313807,
-  "forward_pe": 6.6876903,
-  "pb": 1.2055535,
+  "pe": 8.091372,
+  "forward_pe": 6.6937313,
+  "pb": 1.2030027,
   "peg": 0.59,
   "ev_ebitda": 7820.069
  },
@@ -27,11 +27,11 @@
   "payout_ratio": 0.0
  },
  "tamano": {
-  "market_cap": 7417421627392.0,
+  "market_cap": 7443544801280.0,
   "enterprise_value": 7324589621248.0
  },
  "precio": {
-  "actual": 5535.0,
+  "actual": 5540.0,
   "low_52w": 3412.5,
   "high_52w": 5750.0,
   "beta": -0.237

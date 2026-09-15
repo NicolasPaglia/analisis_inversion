@@ -11,8 +11,8 @@
  },
  "valuacion": {
   "pe": null,
-  "forward_pe": 47.530552,
-  "pb": 5.598825,
+  "forward_pe": 47.5061,
+  "pb": 5.595945,
   "peg": 1.36,
   "ev_ebitda": 31.273
  },
@@ -27,12 +27,12 @@
   "payout_ratio": 0.0
  },
  "tamano": {
-  "market_cap": 513756561408.0,
+  "market_cap": 513492254720.0,
   "enterprise_value": 526637367296.0
  },
  "precio": {
-  "actual": 97.19,
-  "low_52w": 24.22,
+  "actual": 97.14,
+  "low_52w": 24.45,
   "high_52w": 142.35,
   "beta": 2.231
  },
