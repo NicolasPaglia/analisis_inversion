@@ -13,7 +13,7 @@
   "pe": 10.109756,
   "forward_pe": 8.390773,
   "pb": 2.156932,
-  "peg": 1.29,
+  "peg": 1.31,
   "ev_ebitda": null
  },
  "rentabilidad": {
@@ -23,7 +23,7 @@
   "margen_neto": 0.32584
  },
  "dividendos": {
-  "dividend_yield": 0.35774815,
+  "dividend_yield": 0.35645354,
   "payout_ratio": 0.7354
  },
  "tamano": {
@@ -40,5 +40,5 @@
   "earnings_date": "2026-11-03",
   "ex_div_date": "2026-10-02"
  },
- "obtenido": "2026-09-16"
+ "obtenido": "2026-09-17"
 }

@@ -24,7 +24,7 @@
  },
  "dividendos": {
   "dividend_yield": 0.0,
-  "payout_ratio": null
+  "payout_ratio": 2.83
  },
  "tamano": {
   "market_cap": 569910624256.0,
@@ -38,7 +38,7 @@
  },
  "proximos": {
   "earnings_date": null,
-  "ex_div_date": null
+  "ex_div_date": "2026-05-12"
  },
- "obtenido": "2026-09-16"
+ "obtenido": "2026-09-17"
 }
