@@ -11,8 +11,8 @@
  },
  "valuacion": {
   "pe": null,
-  "forward_pe": -4090.0002,
-  "pb": 0.54949117,
+  "forward_pe": -4087.5,
+  "pb": 0.54915524,
   "peg": null,
   "ev_ebitda": null
  },
@@ -23,7 +23,7 @@
   "margen_neto": null
  },
  "dividendos": {
-  "dividend_yield": 0.026486153,
+  "dividend_yield": 0.026308067,
   "payout_ratio": null
  },
  "tamano": {
@@ -31,7 +31,7 @@
   "enterprise_value": null
  },
  "precio": {
-  "actual": 81.8,
+  "actual": 81.75,
   "low_52w": 80.46,
   "high_52w": 92.19,
   "beta": null

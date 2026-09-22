@@ -11,9 +11,9 @@
  },
  "valuacion": {
   "pe": 17.190475,
-  "forward_pe": 15.838751,
+  "forward_pe": 15.892372,
   "pb": 3.6013565,
-  "peg": 1.38,
+  "peg": 1.4,
   "ev_ebitda": 11.274
  },
  "rentabilidad": {
@@ -23,7 +23,7 @@
   "margen_neto": 0.066989996
  },
  "dividendos": {
-  "dividend_yield": 0.045902565,
+  "dividend_yield": 0.045152355,
   "payout_ratio": 0.77620006
  },
  "tamano": {
