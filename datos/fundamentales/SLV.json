@@ -12,7 +12,7 @@
  "valuacion": {
   "pe": null,
   "forward_pe": null,
-  "pb": 2.5459058,
+  "pb": null,
   "peg": null,
   "ev_ebitda": null
  },
@@ -31,7 +31,7 @@
   "enterprise_value": null
  },
  "precio": {
-  "actual": 54.349998474121094,
+  "actual": 53.49,
   "low_52w": 41.7,
   "high_52w": 109.83,
   "beta": null
@@ -40,5 +40,5 @@
   "earnings_date": null,
   "ex_div_date": null
  },
- "obtenido": "2026-10-13"
+ "obtenido": "2026-10-14"
 }

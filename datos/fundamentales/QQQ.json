@@ -10,9 +10,9 @@
   "exchange": "NGM"
  },
  "valuacion": {
-  "pe": 30.407549,
+  "pe": 28.471838,
   "forward_pe": null,
-  "pb": 2.085227,
+  "pb": 2.0783234,
   "peg": null,
   "ev_ebitda": null
  },
@@ -23,7 +23,7 @@
   "margen_neto": null
  },
  "dividendos": {
-  "dividend_yield": 0.0023560105,
+  "dividend_yield": 0.002372527,
   "payout_ratio": null
  },
  "tamano": {
@@ -31,7 +31,7 @@
   "enterprise_value": null
  },
  "precio": {
-  "actual": 746.0399780273438,
+  "actual": 743.57,
   "low_52w": 555.6,
   "high_52w": 762.86,
   "beta": null
@@ -40,5 +40,5 @@
   "earnings_date": null,
   "ex_div_date": null
  },
- "obtenido": "2026-10-13"
+ "obtenido": "2026-10-14"
 }
