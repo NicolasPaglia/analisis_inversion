@@ -28,11 +28,11 @@
  },
  "tamano": {
   "market_cap": 1021226844160.0,
-  "enterprise_value": 1087977160704.0
+  "enterprise_value": 1076158398464.0
  },
  "precio": {
   "actual": 2333.0,
-  "low_52w": 1889.0,
+  "low_52w": 1890.0,
   "high_52w": 4265.0,
   "beta": 0.38
  },
@@ -40,5 +40,5 @@
   "earnings_date": "2026-11-17",
   "ex_div_date": "2025-04-29"
  },
- "obtenido": "2026-10-20"
+ "obtenido": "2026-10-21"
 }
