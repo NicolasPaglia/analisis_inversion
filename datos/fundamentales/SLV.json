@@ -31,7 +31,7 @@
   "enterprise_value": null
  },
  "precio": {
-  "actual": 49.06,
+  "actual": 47.28,
   "low_52w": 42.51,
   "high_52w": 109.83,
   "beta": null
@@ -40,5 +40,5 @@
   "earnings_date": null,
   "ex_div_date": null
  },
- "obtenido": "2026-10-29"
+ "obtenido": "2026-10-30"
 }
