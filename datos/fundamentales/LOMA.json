@@ -10,7 +10,7 @@
   "exchange": "BUE"
  },
  "valuacion": {
-  "pe": 33.85356,
+  "pe": 22.122383,
   "forward_pe": 0.86161065,
   "pb": 1.2255958,
   "peg": null,
@@ -40,5 +40,5 @@
   "earnings_date": "2026-11-05",
   "ex_div_date": "2023-06-30"
  },
- "obtenido": "2026-11-10"
+ "obtenido": "2026-11-11"
 }
