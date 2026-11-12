@@ -19,11 +19,11 @@
  "rentabilidad": {
   "roe": 0.00262,
   "roa": 0.06973,
-  "margen_operativo": 0.19313999,
+  "margen_operativo": 0.24377,
   "margen_neto": 0.010140001
  },
  "dividendos": {
-  "dividend_yield": 0.4689223,
+  "dividend_yield": 0.484715,
   "payout_ratio": 5.2696004
  },
  "tamano": {
@@ -40,5 +40,5 @@
   "earnings_date": "2026-10-29",
   "ex_div_date": "2026-08-13"
  },
- "obtenido": "2026-11-11"
+ "obtenido": "2026-11-12"
 }
