@@ -2,43 +2,43 @@
  "ticker": "GGAL",
  "yf_symbol": "GGAL.BA",
  "meta": {
-  "nombre": "Grupo Financiero Galicia S.A.",
-  "sector": "Financial Services",
-  "industria": "Banks - Regional",
-  "pais": "Argentina",
+  "nombre": null,
+  "sector": null,
+  "industria": null,
+  "pais": null,
   "moneda": "ARS",
   "exchange": "BUE"
  },
  "valuacion": {
-  "pe": 36.430855,
-  "forward_pe": 4.6644344,
-  "pb": 0.79591095,
-  "peg": 0.02,
+  "pe": null,
+  "forward_pe": null,
+  "pb": null,
+  "peg": null,
   "ev_ebitda": null
  },
  "rentabilidad": {
-  "roe": 0.010930001,
-  "roa": 0.002,
-  "margen_operativo": -0.00039,
-  "margen_neto": 0.01496
+  "roe": null,
+  "roa": null,
+  "margen_operativo": null,
+  "margen_neto": null
  },
  "dividendos": {
-  "dividend_yield": 0.0,
-  "payout_ratio": 3.6271
+  "dividend_yield": null,
+  "payout_ratio": null
  },
  "tamano": {
-  "market_cap": 7320501223424.0,
-  "enterprise_value": 7590480183296.0
+  "market_cap": 7320501369917.5,
+  "enterprise_value": null
  },
  "precio": {
   "actual": 4557.5,
   "low_52w": 4365.0,
   "high_52w": 8725.0,
-  "beta": 0.318
+  "beta": null
  },
  "proximos": {
-  "earnings_date": "2026-11-24",
-  "ex_div_date": "2026-09-07"
+  "earnings_date": null,
+  "ex_div_date": null
  },
- "obtenido": "2026-11-21"
+ "obtenido": "2026-11-24"
 }

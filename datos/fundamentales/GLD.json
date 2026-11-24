@@ -2,7 +2,7 @@
  "ticker": "GLD",
  "yf_symbol": "GLD",
  "meta": {
-  "nombre": "SPDR Gold Shares",
+  "nombre": null,
   "sector": null,
   "industria": null,
   "pais": null,
@@ -12,7 +12,7 @@
  "valuacion": {
   "pe": null,
   "forward_pe": null,
-  "pb": 1.8990453,
+  "pb": null,
   "peg": null,
   "ev_ebitda": null
  },
@@ -23,7 +23,7 @@
   "margen_neto": null
  },
  "dividendos": {
-  "dividend_yield": 0.0,
+  "dividend_yield": null,
   "payout_ratio": null
  },
  "tamano": {
@@ -31,14 +31,14 @@
   "enterprise_value": null
  },
  "precio": {
-  "actual": 322.8699951171875,
-  "low_52w": 320.95,
-  "high_52w": 509.7,
+  "actual": 333.0199890136719,
+  "low_52w": 320.95001220703125,
+  "high_52w": 509.70001220703125,
   "beta": null
  },
  "proximos": {
   "earnings_date": null,
   "ex_div_date": null
  },
- "obtenido": "2026-11-21"
+ "obtenido": "2026-11-24"
 }

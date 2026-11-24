@@ -2,7 +2,7 @@
  "ticker": "SPY",
  "yf_symbol": "SPY",
  "meta": {
-  "nombre": "State Street SPDR S&P 500 ETF Trust",
+  "nombre": null,
   "sector": null,
   "industria": null,
   "pais": null,
@@ -10,9 +10,9 @@
   "exchange": "PCX"
  },
  "valuacion": {
-  "pe": 21.945845,
+  "pe": null,
   "forward_pe": null,
-  "pb": 1.6071246,
+  "pb": null,
   "peg": null,
   "ev_ebitda": null
  },
@@ -23,7 +23,7 @@
   "margen_neto": null
  },
  "dividendos": {
-  "dividend_yield": 0.007909258,
+  "dividend_yield": null,
   "payout_ratio": null
  },
  "tamano": {
@@ -31,14 +31,14 @@
   "enterprise_value": null
  },
  "precio": {
-  "actual": 689.8099975585938,
-  "low_52w": 629.28,
-  "high_52w": 781.62,
+  "actual": 722.2899780273438,
+  "low_52w": 629.280029296875,
+  "high_52w": 781.6199951171875,
   "beta": null
  },
  "proximos": {
   "earnings_date": null,
   "ex_div_date": null
  },
- "obtenido": "2026-11-21"
+ "obtenido": "2026-11-24"
 }

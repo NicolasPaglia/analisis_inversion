@@ -2,43 +2,43 @@
  "ticker": "ITUB",
  "yf_symbol": "ITUB",
  "meta": {
-  "nombre": "Itaú Unibanco Holding S.A.",
-  "sector": "Financial Services",
-  "industria": "Banks - Regional",
-  "pais": "Brazil",
+  "nombre": null,
+  "sector": null,
+  "industria": null,
+  "pais": null,
   "moneda": "USD",
   "exchange": "NYQ"
  },
  "valuacion": {
-  "pe": 8.049382,
-  "forward_pe": 7.151475,
-  "pb": 1.5755354,
-  "peg": 1.12,
+  "pe": null,
+  "forward_pe": null,
+  "pb": null,
+  "peg": null,
   "ev_ebitda": null
  },
  "rentabilidad": {
-  "roe": 0.20955,
-  "roa": 0.01545,
-  "margen_operativo": 0.36563998,
-  "margen_neto": 0.32458
+  "roe": null,
+  "roa": null,
+  "margen_operativo": null,
+  "margen_neto": null
  },
  "dividendos": {
-  "dividend_yield": 0.44170403,
-  "payout_ratio": 0.7075
+  "dividend_yield": null,
+  "payout_ratio": null
  },
  "tamano": {
-  "market_cap": 71863607296.0,
-  "enterprise_value": 652757630976.0
+  "market_cap": 73737353915.06538,
+  "enterprise_value": null
  },
  "precio": {
-  "actual": 6.52,
-  "low_52w": 6.51,
-  "high_52w": 10.2,
-  "beta": 0.171
+  "actual": 6.690000057220459,
+  "low_52w": 6.510000228881836,
+  "high_52w": 10.199999809265137,
+  "beta": null
  },
  "proximos": {
-  "earnings_date": "2027-02-03",
-  "ex_div_date": "2026-12-02"
+  "earnings_date": null,
+  "ex_div_date": null
  },
- "obtenido": "2026-11-21"
+ "obtenido": "2026-11-24"
 }

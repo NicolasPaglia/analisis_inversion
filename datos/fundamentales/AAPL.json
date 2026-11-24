@@ -2,43 +2,43 @@
  "ticker": "AAPL",
  "yf_symbol": "AAPL",
  "meta": {
-  "nombre": "Apple Inc.",
-  "sector": "Technology",
-  "industria": "Consumer Electronics",
-  "pais": "United States",
+  "nombre": null,
+  "sector": null,
+  "industria": null,
+  "pais": null,
   "moneda": "USD",
   "exchange": "NMS"
  },
  "valuacion": {
-  "pe": 38.146996,
-  "forward_pe": 32.400333,
-  "pb": 44.41333,
-  "peg": 2.82,
-  "ev_ebitda": 29.274
+  "pe": null,
+  "forward_pe": null,
+  "pb": null,
+  "peg": null,
+  "ev_ebitda": null
  },
  "rentabilidad": {
-  "roe": 1.42257,
-  "roa": 0.25868,
-  "margen_operativo": 0.33009997,
-  "margen_neto": 0.27604
+  "roe": null,
+  "roa": null,
+  "margen_operativo": null,
+  "margen_neto": null
  },
  "dividendos": {
-  "dividend_yield": 0.0030354226,
-  "payout_ratio": 0.118
+  "dividend_yield": null,
+  "payout_ratio": null
  },
  "tamano": {
-  "market_cap": 4978144444416.0,
-  "enterprise_value": 5020042919936.0
+  "market_cap": 5072893897425.721,
+  "enterprise_value": null
  },
  "precio": {
-  "actual": 342.56,
-  "low_52w": 243.42,
-  "high_52w": 360.83,
-  "beta": 1.089
+  "actual": 349.0799865722656,
+  "low_52w": 243.4199981689453,
+  "high_52w": 360.8299865722656,
+  "beta": null
  },
  "proximos": {
-  "earnings_date": "2027-01-28",
-  "ex_div_date": "2026-11-12"
+  "earnings_date": null,
+  "ex_div_date": null
  },
- "obtenido": "2026-11-21"
+ "obtenido": "2026-11-24"
 }

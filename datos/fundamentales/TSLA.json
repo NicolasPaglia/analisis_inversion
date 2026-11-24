@@ -2,43 +2,43 @@
  "ticker": "TSLA",
  "yf_symbol": "TSLA",
  "meta": {
-  "nombre": "Tesla, Inc.",
-  "sector": "Consumer Cyclical",
-  "industria": "Auto Manufacturers",
-  "pais": "United States",
+  "nombre": null,
+  "sector": null,
+  "industria": null,
+  "pais": null,
   "moneda": "USD",
   "exchange": "NMS"
  },
  "valuacion": {
-  "pe": 380.02197,
-  "forward_pe": 160.1597,
-  "pb": 15.3099,
-  "peg": 4.37,
-  "ev_ebitda": 136.205
+  "pe": null,
+  "forward_pe": null,
+  "pb": null,
+  "peg": null,
+  "ev_ebitda": null
  },
  "rentabilidad": {
-  "roe": 0.03844,
-  "roa": 0.01345,
-  "margen_operativo": 0.03026,
-  "margen_neto": 0.031070001
+  "roe": null,
+  "roa": null,
+  "margen_operativo": null,
+  "margen_neto": null
  },
  "dividendos": {
-  "dividend_yield": 0.0,
-  "payout_ratio": 0.0
+  "dividend_yield": null,
+  "payout_ratio": null
  },
  "tamano": {
-  "market_cap": 1366942810112.0,
-  "enterprise_value": 1339983527936.0
+  "market_cap": 1523630044089.152,
+  "enterprise_value": null
  },
  "precio": {
-  "actual": 345.82,
-  "low_52w": 297.38,
-  "high_52w": 498.83,
-  "beta": 1.743
+  "actual": 385.4599914550781,
+  "low_52w": 297.3800048828125,
+  "high_52w": 498.8299865722656,
+  "beta": null
  },
  "proximos": {
-  "earnings_date": "2027-01-27",
+  "earnings_date": null,
   "ex_div_date": null
  },
- "obtenido": "2026-11-21"
+ "obtenido": "2026-11-24"
 }

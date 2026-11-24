@@ -2,43 +2,43 @@
  "ticker": "EDN",
  "yf_symbol": "EDN.BA",
  "meta": {
-  "nombre": "Empresa Distribuidora y Comercializadora Norte Sociedad Anónima",
-  "sector": "Utilities",
-  "industria": "Utilities - Regulated Electric",
-  "pais": "Argentina",
+  "nombre": null,
+  "sector": null,
+  "industria": null,
+  "pais": null,
   "moneda": "ARS",
   "exchange": "BUE"
  },
  "valuacion": {
-  "pe": 3.4056838,
-  "forward_pe": 160.436,
-  "pb": 0.309386,
-  "peg": 8.71,
-  "ev_ebitda": 2.878
+  "pe": null,
+  "forward_pe": null,
+  "pb": null,
+  "peg": null,
+  "ev_ebitda": null
  },
  "rentabilidad": {
-  "roe": 0.08417,
-  "roa": 0.03034,
-  "margen_operativo": 0.09924,
-  "margen_neto": 0.06508
+  "roe": null,
+  "roa": null,
+  "margen_operativo": null,
+  "margen_neto": null
  },
  "dividendos": {
-  "dividend_yield": 0.0,
-  "payout_ratio": 0.0
+  "dividend_yield": null,
+  "payout_ratio": null
  },
  "tamano": {
-  "market_cap": null,
-  "enterprise_value": 1533339369472.0
+  "market_cap": 915088025445.0,
+  "enterprise_value": null
  },
  "precio": {
   "actual": 1045.0,
   "low_52w": 1040.0,
   "high_52w": 2767.5,
-  "beta": 0.013
+  "beta": null
  },
  "proximos": {
-  "earnings_date": "2026-11-10",
+  "earnings_date": null,
   "ex_div_date": null
  },
- "obtenido": "2026-11-21"
+ "obtenido": "2026-11-24"
 }

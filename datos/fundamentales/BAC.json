@@ -2,43 +2,43 @@
  "ticker": "BAC",
  "yf_symbol": "BAC",
  "meta": {
-  "nombre": "Bank of America Corporation",
-  "sector": "Financial Services",
-  "industria": "Banks - Diversified",
-  "pais": "United States",
+  "nombre": null,
+  "sector": null,
+  "industria": null,
+  "pais": null,
   "moneda": "USD",
   "exchange": "NYQ"
  },
  "valuacion": {
-  "pe": 11.22673,
-  "forward_pe": 9.080906,
-  "pb": 1.1983187,
-  "peg": 0.88,
+  "pe": null,
+  "forward_pe": null,
+  "pb": null,
+  "peg": null,
   "ev_ebitda": null
  },
  "rentabilidad": {
-  "roe": 0.1073,
-  "roa": 0.00944,
-  "margen_operativo": 0.35306,
-  "margen_neto": 0.28064
+  "roe": null,
+  "roa": null,
+  "margen_operativo": null,
+  "margen_neto": null
  },
  "dividendos": {
-  "dividend_yield": 0.023883054,
-  "payout_ratio": 0.2762
+  "dividend_yield": null,
+  "payout_ratio": null
  },
  "tamano": {
-  "market_cap": 324585848832.0,
-  "enterprise_value": 288109821952.0
+  "market_cap": 332176057337.2866,
+  "enterprise_value": null
  },
  "precio": {
-  "actual": 47.04,
-  "low_52w": 46.12,
-  "high_52w": 65.23,
-  "beta": 1.192
+  "actual": 48.13999938964844,
+  "low_52w": 46.119998931884766,
+  "high_52w": 65.2300033569336,
+  "beta": null
  },
  "proximos": {
-  "earnings_date": "2027-01-15",
-  "ex_div_date": "2026-12-04"
+  "earnings_date": null,
+  "ex_div_date": null
  },
- "obtenido": "2026-11-21"
+ "obtenido": "2026-11-24"
 }

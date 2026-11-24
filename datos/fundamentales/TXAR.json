@@ -2,43 +2,43 @@
  "ticker": "TXAR",
  "yf_symbol": "TXAR.BA",
  "meta": {
-  "nombre": "Ternium Argentina S.A.",
-  "sector": "Basic Materials",
-  "industria": "Steel",
-  "pais": "Argentina",
+  "nombre": null,
+  "sector": null,
+  "industria": null,
+  "pais": null,
   "moneda": "ARS",
   "exchange": "BUE"
  },
  "valuacion": {
-  "pe": 5.346678,
-  "forward_pe": 10.708841,
-  "pb": 0.42172816,
+  "pe": null,
+  "forward_pe": null,
+  "pb": null,
   "peg": null,
-  "ev_ebitda": 9.389
+  "ev_ebitda": null
  },
  "rentabilidad": {
-  "roe": 0.08422,
-  "roa": 0.00903,
-  "margen_operativo": 0.03897,
-  "margen_neto": 0.2054
+  "roe": null,
+  "roa": null,
+  "margen_operativo": null,
+  "margen_neto": null
  },
  "dividendos": {
-  "dividend_yield": 0.037771508,
-  "payout_ratio": 0.20809999
+  "dividend_yield": null,
+  "payout_ratio": null
  },
  "tamano": {
-  "market_cap": 3173258362880.0,
-  "enterprise_value": 2274753773568.0
+  "market_cap": 3173258551157.5,
+  "enterprise_value": null
  },
  "precio": {
   "actual": 702.5,
   "low_52w": 565.0,
   "high_52w": 844.0,
-  "beta": -0.261
+  "beta": null
  },
  "proximos": {
-  "earnings_date": "2026-11-03",
-  "ex_div_date": "2026-04-07"
+  "earnings_date": null,
+  "ex_div_date": null
  },
- "obtenido": "2026-11-21"
+ "obtenido": "2026-11-24"
 }

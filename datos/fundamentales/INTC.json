@@ -2,43 +2,43 @@
  "ticker": "INTC",
  "yf_symbol": "INTC",
  "meta": {
-  "nombre": "Intel Corporation",
-  "sector": "Technology",
-  "industria": "Semiconductors",
-  "pais": "United States",
+  "nombre": null,
+  "sector": null,
+  "industria": null,
+  "pais": null,
   "moneda": "USD",
   "exchange": "NMS"
  },
  "valuacion": {
   "pe": null,
-  "forward_pe": 28.640684,
-  "pb": 2.3695762,
-  "peg": 1.36,
-  "ev_ebitda": 14.911
+  "forward_pe": null,
+  "pb": null,
+  "peg": null,
+  "ev_ebitda": null
  },
  "rentabilidad": {
-  "roe": -0.0962,
-  "roa": 0.01783,
-  "margen_operativo": 0.10317001,
-  "margen_neto": -0.20089
+  "roe": null,
+  "roa": null,
+  "margen_operativo": null,
+  "margen_neto": null
  },
  "dividendos": {
-  "dividend_yield": 0.0,
-  "payout_ratio": 0.0
+  "dividend_yield": null,
+  "payout_ratio": null
  },
  "tamano": {
-  "market_cap": 272553181184.0,
-  "enterprise_value": 285324214272.0
+  "market_cap": 317092899188.99536,
+  "enterprise_value": null
  },
  "precio": {
-  "actual": 51.28,
-  "low_52w": 32.89,
-  "high_52w": 142.35,
-  "beta": 2.426
+  "actual": 59.65999984741211,
+  "low_52w": 34.68000030517578,
+  "high_52w": 142.35000610351562,
+  "beta": null
  },
  "proximos": {
-  "earnings_date": "2027-01-28",
-  "ex_div_date": "2024-08-07"
+  "earnings_date": null,
+  "ex_div_date": null
  },
- "obtenido": "2026-11-21"
+ "obtenido": "2026-11-24"
 }

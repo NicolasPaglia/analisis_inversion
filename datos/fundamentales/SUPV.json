@@ -2,43 +2,43 @@
  "ticker": "SUPV",
  "yf_symbol": "SUPV.BA",
  "meta": {
-  "nombre": "Grupo Supervielle S.A.",
-  "sector": "Financial Services",
-  "industria": "Banks - Regional",
-  "pais": "Argentina",
+  "nombre": null,
+  "sector": null,
+  "industria": null,
+  "pais": null,
   "moneda": "ARS",
   "exchange": "BUE"
  },
  "valuacion": {
   "pe": null,
-  "forward_pe": 4.5162373,
-  "pb": 0.7022731,
+  "forward_pe": null,
+  "pb": null,
   "peg": null,
   "ev_ebitda": null
  },
  "rentabilidad": {
-  "roe": -0.0801,
-  "roa": -0.01149,
-  "margen_operativo": -0.18807,
-  "margen_neto": -0.112270005
+  "roe": null,
+  "roa": null,
+  "margen_operativo": null,
+  "margen_neto": null
  },
  "dividendos": {
-  "dividend_yield": 0.0,
-  "payout_ratio": 0.3161
+  "dividend_yield": null,
+  "payout_ratio": null
  },
  "tamano": {
-  "market_cap": 707373563904.0,
-  "enterprise_value": 785942642688.0
+  "market_cap": 707373564256.0,
+  "enterprise_value": null
  },
  "precio": {
   "actual": 1616.0,
   "low_52w": 1582.0,
   "high_52w": 3840.0,
-  "beta": 0.406
+  "beta": null
  },
  "proximos": {
-  "earnings_date": "2026-11-16",
-  "ex_div_date": "2025-04-29"
+  "earnings_date": null,
+  "ex_div_date": null
  },
- "obtenido": "2026-11-21"
+ "obtenido": "2026-11-24"
 }

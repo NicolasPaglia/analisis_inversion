@@ -2,43 +2,43 @@
  "ticker": "TGSU2",
  "yf_symbol": "TGSU2.BA",
  "meta": {
-  "nombre": "Transportadora de Gas del Sur S.A.",
-  "sector": "Energy",
-  "industria": "Oil & Gas Integrated",
-  "pais": "Argentina",
+  "nombre": null,
+  "sector": null,
+  "industria": null,
+  "pais": null,
   "moneda": "ARS",
   "exchange": "BUE"
  },
  "valuacion": {
-  "pe": 9.050155,
-  "forward_pe": 8.124966,
-  "pb": 1.2200658,
+  "pe": null,
+  "forward_pe": null,
+  "pb": null,
   "peg": null,
-  "ev_ebitda": 4.971
+  "ev_ebitda": null
  },
  "rentabilidad": {
-  "roe": 0.1369,
-  "roa": 0.08469,
-  "margen_operativo": 0.43485,
-  "margen_neto": 0.26633
+  "roe": null,
+  "roa": null,
+  "margen_operativo": null,
+  "margen_neto": null
  },
  "dividendos": {
-  "dividend_yield": 0.0,
-  "payout_ratio": 0.0
+  "dividend_yield": null,
+  "payout_ratio": null
  },
  "tamano": {
-  "market_cap": 5258036117504.0,
-  "enterprise_value": 4940456001536.0
+  "market_cap": 5258035990130.0,
+  "enterprise_value": null
  },
  "precio": {
   "actual": 6985.0,
   "low_52w": 6555.0,
   "high_52w": 10700.0,
-  "beta": -0.525
+  "beta": null
  },
  "proximos": {
-  "earnings_date": "2026-10-29",
-  "ex_div_date": "2025-06-05"
+  "earnings_date": null,
+  "ex_div_date": null
  },
- "obtenido": "2026-11-21"
+ "obtenido": "2026-11-24"
 }

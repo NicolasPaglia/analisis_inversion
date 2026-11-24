@@ -2,43 +2,43 @@
  "ticker": "PEP",
  "yf_symbol": "PEP",
  "meta": {
-  "nombre": "PepsiCo, Inc.",
-  "sector": "Consumer Defensive",
-  "industria": "Beverages - Non-Alcoholic",
-  "pais": "United States",
+  "nombre": null,
+  "sector": null,
+  "industria": null,
+  "pais": null,
   "moneda": "USD",
   "exchange": "NMS"
  },
  "valuacion": {
-  "pe": 17.677986,
-  "forward_pe": 16.353537,
-  "pb": 8.5994,
-  "peg": 1.49,
-  "ev_ebitda": 12.129
+  "pe": null,
+  "forward_pe": null,
+  "pb": null,
+  "peg": null,
+  "ev_ebitda": null
  },
  "rentabilidad": {
-  "roe": 0.52187,
-  "roa": 0.09017,
-  "margen_operativo": 0.16046,
-  "margen_neto": 0.11091
+  "roe": null,
+  "roa": null,
+  "margen_operativo": null,
+  "margen_neto": null
  },
  "dividendos": {
-  "dividend_yield": 0.04176259,
-  "payout_ratio": 0.7302
+  "dividend_yield": null,
+  "payout_ratio": null
  },
  "tamano": {
-  "market_cap": 191519621120.0,
-  "enterprise_value": 232521203712.0
+  "market_cap": 191069937658.5827,
+  "enterprise_value": null
  },
  "precio": {
-  "actual": 140.54,
-  "low_52w": 123.47,
-  "high_52w": 171.48,
-  "beta": 0.321
+  "actual": 140.2100067138672,
+  "low_52w": 123.47000122070312,
+  "high_52w": 171.47999572753906,
+  "beta": null
  },
  "proximos": {
-  "earnings_date": "2026-10-08",
-  "ex_div_date": "2026-12-04"
+  "earnings_date": null,
+  "ex_div_date": null
  },
- "obtenido": "2026-11-21"
+ "obtenido": "2026-11-24"
 }

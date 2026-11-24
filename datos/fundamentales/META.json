@@ -2,43 +2,43 @@
  "ticker": "META",
  "yf_symbol": "META",
  "meta": {
-  "nombre": "Meta Platforms, Inc.",
-  "sector": "Communication Services",
-  "industria": "Internet Content & Information",
-  "pais": "United States",
+  "nombre": null,
+  "sector": null,
+  "industria": null,
+  "pais": null,
   "moneda": "USD",
   "exchange": "NMS"
  },
  "valuacion": {
-  "pe": 19.134768,
-  "forward_pe": 15.720743,
-  "pb": 5.2627926,
-  "peg": 0.78,
-  "ev_ebitda": 12.628
+  "pe": null,
+  "forward_pe": null,
+  "pb": null,
+  "peg": null,
+  "ev_ebitda": null
  },
  "rentabilidad": {
-  "roe": 0.32264,
-  "roa": 0.14577,
-  "margen_operativo": 0.37777,
-  "margen_neto": 0.31145
+  "roe": null,
+  "roa": null,
+  "margen_operativo": null,
+  "margen_neto": null
  },
  "dividendos": {
-  "dividend_yield": 0.0035221898,
-  "payout_ratio": 0.0716
+  "dividend_yield": null,
+  "payout_ratio": null
  },
  "tamano": {
-  "market_cap": 1433642336256.0,
-  "enterprise_value": 1467262304256.0
+  "market_cap": 1527609710384.5664,
+  "enterprise_value": null
  },
  "precio": {
-  "actual": 560.84,
-  "low_52w": 520.26,
-  "high_52w": 779.82,
-  "beta": 1.279
+  "actual": 597.5999755859375,
+  "low_52w": 520.260009765625,
+  "high_52w": 779.8200073242188,
+  "beta": null
  },
  "proximos": {
-  "earnings_date": "2027-01-27",
-  "ex_div_date": "2026-09-21"
+  "earnings_date": null,
+  "ex_div_date": null
  },
- "obtenido": "2026-11-21"
+ "obtenido": "2026-11-24"
 }

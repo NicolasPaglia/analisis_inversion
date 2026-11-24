@@ -2,43 +2,43 @@
  "ticker": "LOMA",
  "yf_symbol": "LOMA.BA",
  "meta": {
-  "nombre": "Loma Negra Compañía Industrial Argentina Sociedad Anónima",
-  "sector": "Basic Materials",
-  "industria": "Building Materials",
-  "pais": "Argentina",
+  "nombre": null,
+  "sector": null,
+  "industria": null,
+  "pais": null,
   "moneda": "ARS",
   "exchange": "BUE"
  },
  "valuacion": {
-  "pe": 21.514532,
-  "forward_pe": 0.8394613,
-  "pb": 1.1940949,
+  "pe": null,
+  "forward_pe": null,
+  "pb": null,
   "peg": null,
-  "ev_ebitda": 11.238
+  "ev_ebitda": null
  },
  "rentabilidad": {
-  "roe": 0.05886,
-  "roa": 0.0224,
-  "margen_operativo": 0.0883,
-  "margen_neto": 0.08451
+  "roe": null,
+  "roa": null,
+  "margen_operativo": null,
+  "margen_neto": null
  },
  "dividendos": {
-  "dividend_yield": 0.0,
-  "payout_ratio": 0.0
+  "dividend_yield": null,
+  "payout_ratio": null
  },
  "tamano": {
-  "market_cap": 1658550878208.0,
-  "enterprise_value": 1855900745728.0
+  "market_cap": 1658550856717.5,
+  "enterprise_value": null
  },
  "precio": {
   "actual": 2842.5,
   "low_52w": 2625.0,
   "high_52w": 4130.0,
-  "beta": 0.68
+  "beta": null
  },
  "proximos": {
-  "earnings_date": "2026-11-05",
-  "ex_div_date": "2023-06-30"
+  "earnings_date": null,
+  "ex_div_date": null
  },
- "obtenido": "2026-11-21"
+ "obtenido": "2026-11-24"
 }

@@ -2,43 +2,43 @@
  "ticker": "BRK-B",
  "yf_symbol": "BRK-B",
  "meta": {
-  "nombre": "Berkshire Hathaway Inc.",
-  "sector": "Financial Services",
-  "industria": "Insurance - Diversified",
-  "pais": "United States",
+  "nombre": null,
+  "sector": null,
+  "industria": null,
+  "pais": null,
   "moneda": "USD",
   "exchange": "NYQ"
  },
  "valuacion": {
-  "pe": 15.952981,
-  "forward_pe": 24.98179,
-  "pb": 0.001062614,
-  "peg": 10.06,
-  "ev_ebitda": -2.04
+  "pe": null,
+  "forward_pe": null,
+  "pb": null,
+  "peg": null,
+  "ev_ebitda": null
  },
  "rentabilidad": {
-  "roe": 0.10574,
-  "roa": 0.05197,
-  "margen_operativo": 0.26602,
-  "margen_neto": 0.19497
+  "roe": null,
+  "roa": null,
+  "margen_operativo": null,
+  "margen_neto": null
  },
  "dividendos": {
-  "dividend_yield": 0.0,
-  "payout_ratio": 0.0
+  "dividend_yield": null,
+  "payout_ratio": null
  },
  "tamano": {
-  "market_cap": 1210976043008.0,
-  "enterprise_value": -243584679936.0
+  "market_cap": 1215989797078.9927,
+  "enterprise_value": null
  },
  "precio": {
-  "actual": 570.0,
-  "low_52w": 464.01,
-  "high_52w": 596.92,
-  "beta": 0.571
+  "actual": 572.3599853515625,
+  "low_52w": 464.010009765625,
+  "high_52w": 596.9199829101562,
+  "beta": null
  },
  "proximos": {
-  "earnings_date": "2026-11-09",
+  "earnings_date": null,
   "ex_div_date": null
  },
- "obtenido": "2026-11-21"
+ "obtenido": "2026-11-24"
 }

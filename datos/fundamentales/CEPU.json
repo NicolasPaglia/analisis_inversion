@@ -2,33 +2,33 @@
  "ticker": "CEPU",
  "yf_symbol": "CEPU.BA",
  "meta": {
-  "nombre": "Central Puerto S.A.",
-  "sector": "Utilities",
-  "industria": "Utilities - Regulated Electric",
-  "pais": "Argentina",
+  "nombre": null,
+  "sector": null,
+  "industria": null,
+  "pais": null,
   "moneda": "ARS",
   "exchange": "BUE"
  },
  "valuacion": {
-  "pe": 5.546043,
-  "forward_pe": 3.4509292,
-  "pb": 0.8781024,
+  "pe": null,
+  "forward_pe": null,
+  "pb": null,
   "peg": null,
-  "ev_ebitda": 4.298
+  "ev_ebitda": null
  },
  "rentabilidad": {
-  "roe": 0.1841,
-  "roa": 0.086339995,
-  "margen_operativo": 0.28039,
-  "margen_neto": 0.22628
+  "roe": null,
+  "roa": null,
+  "margen_operativo": null,
+  "margen_neto": null
  },
  "dividendos": {
-  "dividend_yield": 0.09318182,
-  "payout_ratio": 0.5212
+  "dividend_yield": null,
+  "payout_ratio": null
  },
  "tamano": {
-  "market_cap": 2615446339584.0,
-  "enterprise_value": 3571896025088.0
+  "market_cap": 2615446521369.0,
+  "enterprise_value": null
  },
  "precio": {
   "actual": 1749.0,
@@ -38,7 +38,7 @@
  },
  "proximos": {
   "earnings_date": null,
-  "ex_div_date": "2026-09-18"
+  "ex_div_date": null
  },
- "obtenido": "2026-11-21"
+ "obtenido": "2026-11-24"
 }

@@ -2,43 +2,43 @@
  "ticker": "VALE",
  "yf_symbol": "VALE",
  "meta": {
-  "nombre": "Vale S.A.",
-  "sector": "Basic Materials",
-  "industria": "Other Industrial Metals & Mining",
-  "pais": "Brazil",
+  "nombre": null,
+  "sector": null,
+  "industria": null,
+  "pais": null,
   "moneda": "USD",
   "exchange": "NYQ"
  },
  "valuacion": {
-  "pe": 59.3125,
-  "forward_pe": 5.245992,
-  "pb": 1.0423571,
-  "peg": 0.27,
-  "ev_ebitda": 1.844
+  "pe": null,
+  "forward_pe": null,
+  "pb": null,
+  "peg": null,
+  "ev_ebitda": null
  },
  "rentabilidad": {
-  "roe": 0.00262,
-  "roa": 0.06973,
-  "margen_operativo": 0.24377,
-  "margen_neto": 0.010140001
+  "roe": null,
+  "roa": null,
+  "margen_operativo": null,
+  "margen_neto": null
  },
  "dividendos": {
-  "dividend_yield": 0.57100713,
-  "payout_ratio": 5.2696004
+  "dividend_yield": null,
+  "payout_ratio": null
  },
  "tamano": {
-  "market_cap": 40387194880.0,
-  "enterprise_value": 129203191808.0
+  "market_cap": 41706485316.72251,
+  "enterprise_value": null
  },
  "precio": {
-  "actual": 9.49,
-  "low_52w": 9.46,
-  "high_52w": 17.94,
-  "beta": 0.73
+  "actual": 9.800000190734863,
+  "low_52w": 9.460000038146973,
+  "high_52w": 17.940000534057617,
+  "beta": null
  },
  "proximos": {
-  "earnings_date": "2026-10-29",
-  "ex_div_date": "2026-08-13"
+  "earnings_date": null,
+  "ex_div_date": null
  },
- "obtenido": "2026-11-21"
+ "obtenido": "2026-11-24"
 }

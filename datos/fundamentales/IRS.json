@@ -2,43 +2,43 @@
  "ticker": "IRS",
  "yf_symbol": "IRS",
  "meta": {
-  "nombre": "IRSA Inversiones y Representaciones Sociedad Anónima",
-  "sector": "Real Estate",
-  "industria": "Real Estate Services",
-  "pais": "Argentina",
+  "nombre": null,
+  "sector": null,
+  "industria": null,
+  "pais": null,
   "moneda": "USD",
   "exchange": "NYQ"
  },
  "valuacion": {
-  "pe": 6.2034883,
-  "forward_pe": 41.19691,
-  "pb": 0.5734408,
-  "peg": 2.73,
-  "ev_ebitda": 3.222
+  "pe": null,
+  "forward_pe": null,
+  "pb": null,
+  "peg": null,
+  "ev_ebitda": null
  },
  "rentabilidad": {
-  "roe": 0.08771,
-  "roa": 0.04362,
-  "margen_operativo": 0.43761003,
-  "margen_neto": 0.25244
+  "roe": null,
+  "roa": null,
+  "margen_operativo": null,
+  "margen_neto": null
  },
  "dividendos": {
-  "dividend_yield": 0.0,
-  "payout_ratio": 0.6895
+  "dividend_yield": null,
+  "payout_ratio": null
  },
  "tamano": {
-  "market_cap": 902676608.0,
-  "enterprise_value": 1028903665664.0
+  "market_cap": 933978465.7327852,
+  "enterprise_value": null
  },
  "precio": {
-  "actual": 10.67,
-  "low_52w": 10.5201,
-  "high_52w": 19.14,
-  "beta": 0.127
+  "actual": 11.039999961853027,
+  "low_52w": 10.520000457763672,
+  "high_52w": 19.139999389648438,
+  "beta": null
  },
  "proximos": {
-  "earnings_date": "2027-02-03",
-  "ex_div_date": "2026-11-02"
+  "earnings_date": null,
+  "ex_div_date": null
  },
- "obtenido": "2026-11-21"
+ "obtenido": "2026-11-24"
 }

@@ -2,43 +2,43 @@
  "ticker": "TMO",
  "yf_symbol": "TMO",
  "meta": {
-  "nombre": "Thermo Fisher Scientific Inc.",
-  "sector": "Healthcare",
-  "industria": "Diagnostics & Research",
-  "pais": "United States",
+  "nombre": null,
+  "sector": null,
+  "industria": null,
+  "pais": null,
   "moneda": "USD",
   "exchange": "NYQ"
  },
  "valuacion": {
-  "pe": 35.313293,
-  "forward_pe": 24.09878,
-  "pb": 4.5301323,
-  "peg": 2.0,
-  "ev_ebitda": 23.369
+  "pe": null,
+  "forward_pe": null,
+  "pb": null,
+  "peg": null,
+  "ev_ebitda": null
  },
  "rentabilidad": {
-  "roe": 0.13379,
-  "roa": 0.05193,
-  "margen_operativo": 0.19062,
-  "margen_neto": 0.14935
+  "roe": null,
+  "roa": null,
+  "margen_operativo": null,
+  "margen_neto": null
  },
  "dividendos": {
-  "dividend_yield": 0.0026715065,
-  "payout_ratio": 0.096999995
+  "dividend_yield": null,
+  "payout_ratio": null
  },
  "tamano": {
-  "market_cap": 248075190272.0,
-  "enterprise_value": 283518205952.0
+  "market_cap": 254944564785.4983,
+  "enterprise_value": null
  },
  "precio": {
-  "actual": 669.54,
-  "low_52w": 435.27,
-  "high_52w": 727.56,
-  "beta": 0.845
+  "actual": 688.0800170898438,
+  "low_52w": 435.2699890136719,
+  "high_52w": 727.5599975585938,
+  "beta": null
  },
  "proximos": {
-  "earnings_date": "2027-01-28",
-  "ex_div_date": "2026-12-15"
+  "earnings_date": null,
+  "ex_div_date": null
  },
- "obtenido": "2026-11-21"
+ "obtenido": "2026-11-24"
 }

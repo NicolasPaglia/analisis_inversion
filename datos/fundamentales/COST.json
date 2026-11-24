@@ -2,43 +2,43 @@
  "ticker": "COST",
  "yf_symbol": "COST",
  "meta": {
-  "nombre": "Costco Wholesale Corporation",
-  "sector": "Consumer Defensive",
-  "industria": "Discount Stores",
-  "pais": "United States",
+  "nombre": null,
+  "sector": null,
+  "industria": null,
+  "pais": null,
   "moneda": "USD",
   "exchange": "NMS"
  },
  "valuacion": {
-  "pe": 53.090076,
-  "forward_pe": 44.009495,
-  "pb": 13.645368,
-  "peg": 5.48,
-  "ev_ebitda": 33.715
+  "pe": null,
+  "forward_pe": null,
+  "pb": null,
+  "peg": null,
+  "ev_ebitda": null
  },
  "rentabilidad": {
-  "roe": 0.28402,
-  "roa": 0.0866,
-  "margen_operativo": 0.03797,
-  "margen_neto": 0.03043
+  "roe": null,
+  "roa": null,
+  "margen_operativo": null,
+  "margen_neto": null
  },
  "dividendos": {
-  "dividend_yield": 0.0050647724,
-  "payout_ratio": 0.2669
+  "dividend_yield": null,
+  "payout_ratio": null
  },
  "tamano": {
-  "market_cap": 488395014144.0,
-  "enterprise_value": 478249910272.0
+  "market_cap": 486516158706.6127,
+  "enterprise_value": null
  },
  "precio": {
-  "actual": 1102.15,
-  "low_52w": 844.06,
-  "high_52w": 1123.67,
-  "beta": 0.852
+  "actual": 1097.9100341796875,
+  "low_52w": 844.0599975585938,
+  "high_52w": 1123.6700439453125,
+  "beta": null
  },
  "proximos": {
-  "earnings_date": "2026-12-10",
-  "ex_div_date": "2026-11-24"
+  "earnings_date": null,
+  "ex_div_date": null
  },
- "obtenido": "2026-11-21"
+ "obtenido": "2026-11-24"
 }

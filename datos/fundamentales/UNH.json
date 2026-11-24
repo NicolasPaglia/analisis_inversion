@@ -2,43 +2,43 @@
  "ticker": "UNH",
  "yf_symbol": "UNH",
  "meta": {
-  "nombre": "UnitedHealth Group Incorporated",
-  "sector": "Healthcare",
-  "industria": "Healthcare Plans",
-  "pais": "United States",
+  "nombre": null,
+  "sector": null,
+  "industria": null,
+  "pais": null,
   "moneda": "USD",
   "exchange": "NYQ"
  },
  "valuacion": {
-  "pe": 19.397831,
-  "forward_pe": 14.477794,
-  "pb": 3.1041632,
-  "peg": 0.84,
-  "ev_ebitda": 12.377
+  "pe": null,
+  "forward_pe": null,
+  "pb": null,
+  "peg": null,
+  "ev_ebitda": null
  },
  "rentabilidad": {
-  "roe": 0.15773,
-  "roa": 0.05243,
-  "margen_operativo": 0.058530003,
-  "margen_neto": 0.03529
+  "roe": null,
+  "roa": null,
+  "margen_operativo": null,
+  "margen_neto": null
  },
  "dividendos": {
-  "dividend_yield": 0.02741467,
-  "payout_ratio": 0.5171
+  "dividend_yield": null,
+  "payout_ratio": null
  },
  "tamano": {
-  "market_cap": 304513286144.0,
-  "enterprise_value": 357744279552.0
+  "market_cap": 301135267073.3264,
+  "enterprise_value": null
  },
  "precio": {
-  "actual": 339.85,
-  "low_52w": 255.97,
-  "high_52w": 461.62,
-  "beta": 0.52
+  "actual": 336.0799865722656,
+  "low_52w": 255.97000122070312,
+  "high_52w": 461.6199951171875,
+  "beta": null
  },
  "proximos": {
-  "earnings_date": "2027-01-12",
-  "ex_div_date": "2026-12-07"
+  "earnings_date": null,
+  "ex_div_date": null
  },
- "obtenido": "2026-11-21"
+ "obtenido": "2026-11-24"
 }

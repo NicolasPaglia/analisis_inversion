@@ -2,43 +2,43 @@
  "ticker": "YPFD",
  "yf_symbol": "YPFD.BA",
  "meta": {
-  "nombre": "YPF Sociedad Anónima",
-  "sector": "Energy",
-  "industria": "Oil & Gas Integrated",
-  "pais": "Argentina",
+  "nombre": null,
+  "sector": null,
+  "industria": null,
+  "pais": null,
   "moneda": "ARS",
   "exchange": "BUE"
  },
  "valuacion": {
-  "pe": 7.4396605,
-  "forward_pe": 0.4696644,
-  "pb": 1.1041529,
-  "peg": 0.13,
-  "ev_ebitda": 2.971
+  "pe": null,
+  "forward_pe": null,
+  "pb": null,
+  "peg": null,
+  "ev_ebitda": null
  },
  "rentabilidad": {
-  "roe": 0.17413001,
-  "roa": 0.09919,
-  "margen_operativo": 0.22389,
-  "margen_neto": 0.09759
+  "roe": null,
+  "roa": null,
+  "margen_operativo": null,
+  "margen_neto": null
  },
  "dividendos": {
-  "dividend_yield": 0.0,
-  "payout_ratio": 0.0
+  "dividend_yield": null,
+  "payout_ratio": null
  },
  "tamano": {
-  "market_cap": 22949801230336.0,
-  "enterprise_value": 34361265094656.0
+  "market_cap": 22949801471550.0,
+  "enterprise_value": null
  },
  "precio": {
   "actual": 5835.0,
   "low_52w": 4980.0,
   "high_52w": 9220.0,
-  "beta": -0.099
+  "beta": null
  },
  "proximos": {
-  "earnings_date": "2026-10-28",
-  "ex_div_date": "2019-07-05"
+  "earnings_date": null,
+  "ex_div_date": null
  },
- "obtenido": "2026-11-21"
+ "obtenido": "2026-11-24"
 }

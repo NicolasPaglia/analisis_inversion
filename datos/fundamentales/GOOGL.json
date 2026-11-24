@@ -2,43 +2,43 @@
  "ticker": "GOOGL",
  "yf_symbol": "GOOGL",
  "meta": {
-  "nombre": "Alphabet Inc.",
-  "sector": "Communication Services",
-  "industria": "Internet Content & Information",
-  "pais": "United States",
+  "nombre": null,
+  "sector": null,
+  "industria": null,
+  "pais": null,
   "moneda": "USD",
   "exchange": "NMS"
  },
  "valuacion": {
-  "pe": 13.853265,
-  "forward_pe": 17.342186,
-  "pb": 4.9451966,
-  "peg": 0.96,
-  "ev_ebitda": 17.086
+  "pe": null,
+  "forward_pe": null,
+  "pb": null,
+  "peg": null,
+  "ev_ebitda": null
  },
  "rentabilidad": {
-  "roe": 0.44286,
-  "roa": 0.12743,
-  "margen_operativo": 0.33321,
-  "margen_neto": 0.50031
+  "roe": null,
+  "roa": null,
+  "margen_operativo": null,
+  "margen_neto": null
  },
  "dividendos": {
-  "dividend_yield": 0.0031541113,
-  "payout_ratio": 0.044899996
+  "dividend_yield": null,
+  "payout_ratio": null
  },
  "tamano": {
-  "market_cap": 3261475323904.0,
-  "enterprise_value": 3169771847680.0
+  "market_cap": 3468137475036.621,
+  "enterprise_value": null
  },
  "precio": {
-  "actual": 265.29,
-  "low_52w": 264.22,
-  "high_52w": 408.61,
-  "beta": 1.226
+  "actual": 282.1000061035156,
+  "low_52w": 264.2200012207031,
+  "high_52w": 408.6099853515625,
+  "beta": null
  },
  "proximos": {
-  "earnings_date": "2026-10-28",
-  "ex_div_date": "2026-12-07"
+  "earnings_date": null,
+  "ex_div_date": null
  },
- "obtenido": "2026-11-21"
+ "obtenido": "2026-11-24"
 }
