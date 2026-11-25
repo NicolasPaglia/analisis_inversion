@@ -2,43 +2,43 @@
  "ticker": "BMA",
  "yf_symbol": "BMA.BA",
  "meta": {
-  "nombre": null,
-  "sector": null,
-  "industria": null,
-  "pais": null,
+  "nombre": "Banco Macro S.A.",
+  "sector": "Financial Services",
+  "industria": "Banks - Regional",
+  "pais": "Argentina",
   "moneda": "ARS",
   "exchange": "BUE"
  },
  "valuacion": {
-  "pe": null,
-  "forward_pe": null,
-  "pb": null,
-  "peg": null,
+  "pe": 13.271099,
+  "forward_pe": 5.93631,
+  "pb": 0.9218086,
+  "peg": 0.06,
   "ev_ebitda": null
  },
  "rentabilidad": {
-  "roe": null,
-  "roa": null,
-  "margen_operativo": null,
-  "margen_neto": null
+  "roe": 0.07071,
+  "roa": 0.01729,
+  "margen_operativo": 0.18022,
+  "margen_neto": 0.08988
  },
  "dividendos": {
-  "dividend_yield": null,
-  "payout_ratio": null
+  "dividend_yield": 0.0,
+  "payout_ratio": 1.002
  },
  "tamano": {
-  "market_cap": 5748118805990.0,
-  "enterprise_value": null
+  "market_cap": 5799269629952.0,
+  "enterprise_value": 4098316042240.0
  },
  "precio": {
-  "actual": 8990.0,
+  "actual": 9070.0,
   "low_52w": 8695.0,
   "high_52w": 16240.0,
-  "beta": null
+  "beta": 0.428
  },
  "proximos": {
-  "earnings_date": null,
-  "ex_div_date": null
+  "earnings_date": "2026-11-25",
+  "ex_div_date": "2026-07-06"
  },
- "obtenido": "2026-11-24"
+ "obtenido": "2026-11-25"
 }

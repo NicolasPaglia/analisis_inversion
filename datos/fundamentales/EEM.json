@@ -2,7 +2,7 @@
  "ticker": "EEM",
  "yf_symbol": "EEM",
  "meta": {
-  "nombre": null,
+  "nombre": "iShares MSCI Emerging Markets ETF",
   "sector": null,
   "industria": null,
   "pais": null,
@@ -10,7 +10,7 @@
   "exchange": "PCX"
  },
  "valuacion": {
-  "pe": null,
+  "pe": 13.309869,
   "forward_pe": null,
   "pb": null,
   "peg": null,
@@ -23,7 +23,7 @@
   "margen_neto": null
  },
  "dividendos": {
-  "dividend_yield": null,
+  "dividend_yield": 0.0183,
   "payout_ratio": null
  },
  "tamano": {
@@ -31,14 +31,14 @@
   "enterprise_value": null
  },
  "precio": {
-  "actual": 57.83000183105469,
-  "low_52w": 52.58000183105469,
-  "high_52w": 71.56999969482422,
+  "actual": 56.689998626708984,
+  "low_52w": 52.58,
+  "high_52w": 71.57,
   "beta": null
  },
  "proximos": {
   "earnings_date": null,
   "ex_div_date": null
  },
- "obtenido": "2026-11-24"
+ "obtenido": "2026-11-25"
 }

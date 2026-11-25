@@ -2,43 +2,43 @@
  "ticker": "PAM",
  "yf_symbol": "PAM",
  "meta": {
-  "nombre": null,
-  "sector": null,
-  "industria": null,
-  "pais": null,
+  "nombre": "Pampa Energía S.A.",
+  "sector": "Industrials",
+  "industria": "Conglomerates",
+  "pais": "Argentina",
   "moneda": "USD",
   "exchange": "NYQ"
  },
  "valuacion": {
-  "pe": null,
-  "forward_pe": null,
-  "pb": null,
-  "peg": null,
-  "ev_ebitda": null
+  "pe": 4.8928,
+  "forward_pe": 5.1419845,
+  "pb": 0.8010478,
+  "peg": 0.17,
+  "ev_ebitda": 5.228
  },
  "rentabilidad": {
-  "roe": null,
-  "roa": null,
-  "margen_operativo": null,
-  "margen_neto": null
+  "roe": 0.17987,
+  "roa": 0.04106,
+  "margen_operativo": 0.18029,
+  "margen_neto": 0.25841
  },
  "dividendos": {
-  "dividend_yield": null,
-  "payout_ratio": null
+  "dividend_yield": 0.0,
+  "payout_ratio": 0.0
  },
  "tamano": {
-  "market_cap": 3332010397.1807137,
-  "enterprise_value": null
+  "market_cap": 3278406656.0,
+  "enterprise_value": 5063747072.0
  },
  "precio": {
-  "actual": 62.15999984741211,
-  "low_52w": 60.52000045776367,
+  "actual": 61.16,
+  "low_52w": 60.52,
   "high_52w": 94.5,
-  "beta": null
+  "beta": -0.208
  },
  "proximos": {
-  "earnings_date": null,
-  "ex_div_date": null
+  "earnings_date": "2026-11-02",
+  "ex_div_date": "2011-01-11"
  },
- "obtenido": "2026-11-24"
+ "obtenido": "2026-11-25"
 }

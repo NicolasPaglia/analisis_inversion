@@ -2,43 +2,43 @@
  "ticker": "DIS",
  "yf_symbol": "DIS",
  "meta": {
-  "nombre": null,
-  "sector": null,
-  "industria": null,
-  "pais": null,
+  "nombre": "The Walt Disney Company",
+  "sector": "Communication Services",
+  "industria": "Entertainment",
+  "pais": "United States",
   "moneda": "USD",
   "exchange": "NYQ"
  },
  "valuacion": {
-  "pe": null,
-  "forward_pe": null,
-  "pb": null,
-  "peg": null,
-  "ev_ebitda": null
+  "pe": 21.760214,
+  "forward_pe": 14.309057,
+  "pb": 1.9046066,
+  "peg": 0.55,
+  "ev_ebitda": 11.418
  },
  "rentabilidad": {
-  "roe": null,
-  "roa": null,
-  "margen_operativo": null,
-  "margen_neto": null
+  "roe": 0.09127,
+  "roa": 0.0525,
+  "margen_operativo": 0.16565001,
+  "margen_neto": 0.09672
  },
  "dividendos": {
-  "dividend_yield": null,
-  "payout_ratio": null
+  "dividend_yield": 0.01662925,
+  "payout_ratio": 0.26639998
  },
  "tamano": {
-  "market_cap": 205424722436.61783,
-  "enterprise_value": null
+  "market_cap": 209250713600.0,
+  "enterprise_value": 257562722304.0
  },
  "precio": {
-  "actual": 120.2699966430664,
-  "low_52w": 92.19000244140625,
-  "high_52w": 123.37000274658203,
-  "beta": null
+  "actual": 122.51,
+  "low_52w": 92.19,
+  "high_52w": 123.37,
+  "beta": 1.426
  },
  "proximos": {
-  "earnings_date": null,
-  "ex_div_date": null
+  "earnings_date": "2027-02-01",
+  "ex_div_date": "2026-12-16"
  },
- "obtenido": "2026-11-24"
+ "obtenido": "2026-11-25"
 }

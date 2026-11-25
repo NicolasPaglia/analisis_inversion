@@ -2,43 +2,43 @@
  "ticker": "ALUA",
  "yf_symbol": "ALUA.BA",
  "meta": {
-  "nombre": null,
-  "sector": null,
-  "industria": null,
-  "pais": null,
+  "nombre": "Aluar Aluminio Argentino S.A.I.C.",
+  "sector": "Basic Materials",
+  "industria": "Aluminum",
+  "pais": "Argentina",
   "moneda": "ARS",
   "exchange": "BUE"
  },
  "valuacion": {
-  "pe": null,
-  "forward_pe": null,
-  "pb": null,
-  "peg": null,
-  "ev_ebitda": null
+  "pe": 5.6108046,
+  "forward_pe": 32.239384,
+  "pb": 0.9104598,
+  "peg": 0.07,
+  "ev_ebitda": 3.118
  },
  "rentabilidad": {
-  "roe": null,
-  "roa": null,
-  "margen_operativo": null,
-  "margen_neto": null
+  "roe": 0.19556999,
+  "roa": 0.11545,
+  "margen_operativo": 0.21500999,
+  "margen_neto": 0.13972001
  },
  "dividendos": {
-  "dividend_yield": null,
-  "payout_ratio": null
+  "dividend_yield": 0.0035008872,
+  "payout_ratio": 0.0199
  },
  "tamano": {
-  "market_cap": 2367400000000.0,
-  "enterprise_value": null
+  "market_cap": 2337999945728.0,
+  "enterprise_value": 2323949813760.0
  },
  "precio": {
-  "actual": 845.5,
+  "actual": 835.0,
   "low_52w": 703.0,
   "high_52w": 1110.0,
   "beta": null
  },
  "proximos": {
   "earnings_date": null,
-  "ex_div_date": null
+  "ex_div_date": "2026-01-02"
  },
- "obtenido": "2026-11-24"
+ "obtenido": "2026-11-25"
 }

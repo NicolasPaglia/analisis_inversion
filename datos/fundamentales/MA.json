@@ -2,43 +2,43 @@
  "ticker": "MA",
  "yf_symbol": "MA",
  "meta": {
-  "nombre": null,
-  "sector": null,
-  "industria": null,
-  "pais": null,
+  "nombre": "Mastercard Incorporated",
+  "sector": "Financial Services",
+  "industria": "Credit Services",
+  "pais": "United States",
   "moneda": "USD",
   "exchange": "NYQ"
  },
  "valuacion": {
-  "pe": null,
-  "forward_pe": null,
-  "pb": null,
-  "peg": null,
-  "ev_ebitda": null
+  "pe": 33.879642,
+  "forward_pe": 27.953949,
+  "pb": 83.61617,
+  "peg": 1.76,
+  "ev_ebitda": 25.077
  },
  "rentabilidad": {
-  "roe": null,
-  "roa": null,
-  "margen_operativo": null,
-  "margen_neto": null
+  "roe": 2.31366,
+  "roa": 0.24451,
+  "margen_operativo": 0.60069,
+  "margen_neto": 0.46732
  },
  "dividendos": {
-  "dividend_yield": null,
-  "payout_ratio": null
+  "dividend_yield": 0.005476176,
+  "payout_ratio": 0.17629999
  },
  "tamano": {
-  "market_cap": 553614979909.5615,
-  "enterprise_value": null
+  "market_cap": 564034273280.0,
+  "enterprise_value": 577495236608.0
  },
  "precio": {
-  "actual": 635.47998046875,
-  "low_52w": 464.5199890136719,
-  "high_52w": 681.989990234375,
-  "beta": null
+  "actual": 647.44,
+  "low_52w": 464.52,
+  "high_52w": 681.99,
+  "beta": 0.77
  },
  "proximos": {
-  "earnings_date": null,
-  "ex_div_date": null
+  "earnings_date": "2027-01-28",
+  "ex_div_date": "2026-10-09"
  },
- "obtenido": "2026-11-24"
+ "obtenido": "2026-11-25"
 }

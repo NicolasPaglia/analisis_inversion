@@ -2,43 +2,43 @@
  "ticker": "TGNO4",
  "yf_symbol": "TGNO4.BA",
  "meta": {
-  "nombre": null,
-  "sector": null,
-  "industria": null,
-  "pais": null,
+  "nombre": "Transportadora de Gas del Norte S.A.",
+  "sector": "Energy",
+  "industria": "Oil & Gas Midstream",
+  "pais": "Argentina",
   "moneda": "ARS",
   "exchange": "BUE"
  },
  "valuacion": {
-  "pe": null,
-  "forward_pe": null,
-  "pb": null,
-  "peg": null,
-  "ev_ebitda": null
+  "pe": 5.421532,
+  "forward_pe": 70.416664,
+  "pb": 0.83646584,
+  "peg": 0.04,
+  "ev_ebitda": 2.66
  },
  "rentabilidad": {
-  "roe": null,
-  "roa": null,
-  "margen_operativo": null,
-  "margen_neto": null
+  "roe": 0.13196,
+  "roa": 0.104720004,
+  "margen_operativo": 0.39259997,
+  "margen_neto": 0.25801
  },
  "dividendos": {
-  "dividend_yield": null,
-  "payout_ratio": null
+  "dividend_yield": 0.0,
+  "payout_ratio": 0.97019994
  },
  "tamano": {
-  "market_cap": 1057573071173.0,
-  "enterprise_value": null
+  "market_cap": 1113813024768.0,
+  "enterprise_value": 778661003264.0
  },
  "precio": {
-  "actual": 2407.0,
+  "actual": 2535.0,
   "low_52w": 2266.0,
   "high_52w": 5235.0,
-  "beta": null
+  "beta": 0.089
  },
  "proximos": {
   "earnings_date": null,
-  "ex_div_date": null
+  "ex_div_date": "2026-08-12"
  },
- "obtenido": "2026-11-24"
+ "obtenido": "2026-11-25"
 }

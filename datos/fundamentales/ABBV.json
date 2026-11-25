@@ -2,43 +2,43 @@
  "ticker": "ABBV",
  "yf_symbol": "ABBV",
  "meta": {
-  "nombre": null,
-  "sector": null,
-  "industria": null,
-  "pais": null,
+  "nombre": "AbbVie Inc.",
+  "sector": "Healthcare",
+  "industria": "Drug Manufacturers - General",
+  "pais": "United States",
   "moneda": "USD",
   "exchange": "NYQ"
  },
  "valuacion": {
-  "pe": null,
-  "forward_pe": null,
-  "pb": null,
-  "peg": null,
-  "ev_ebitda": null
+  "pe": 51.5945,
+  "forward_pe": 18.515514,
+  "pb": -115.80409,
+  "peg": 6.98,
+  "ev_ebitda": 18.881
  },
  "rentabilidad": {
   "roe": null,
-  "roa": null,
-  "margen_operativo": null,
-  "margen_neto": null
+  "roa": 0.10736,
+  "margen_operativo": 0.36635,
+  "margen_neto": 0.15666
  },
  "dividendos": {
-  "dividend_yield": null,
-  "payout_ratio": null
+  "dividend_yield": 0.023990292,
+  "payout_ratio": 1.1735
  },
  "tamano": {
-  "market_cap": 509868945043.0475,
-  "enterprise_value": null
+  "market_cap": 530779799552.0,
+  "enterprise_value": 601367838720.0
  },
  "precio": {
-  "actual": 288.45001220703125,
+  "actual": 300.28,
   "low_52w": 190.75,
-  "high_52w": 302.92999267578125,
-  "beta": null
+  "high_52w": 302.93,
+  "beta": 0.192
  },
  "proximos": {
-  "earnings_date": null,
-  "ex_div_date": null
+  "earnings_date": "2027-02-03",
+  "ex_div_date": "2027-01-15"
  },
- "obtenido": "2026-11-24"
+ "obtenido": "2026-11-25"
 }

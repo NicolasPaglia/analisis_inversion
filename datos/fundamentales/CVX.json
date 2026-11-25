@@ -2,43 +2,43 @@
  "ticker": "CVX",
  "yf_symbol": "CVX",
  "meta": {
-  "nombre": null,
-  "sector": null,
-  "industria": null,
-  "pais": null,
+  "nombre": "Chevron Corporation",
+  "sector": "Energy",
+  "industria": "Oil & Gas Integrated",
+  "pais": "United States",
   "moneda": "USD",
   "exchange": "NYQ"
  },
  "valuacion": {
-  "pe": null,
-  "forward_pe": null,
-  "pb": null,
-  "peg": null,
-  "ev_ebitda": null
+  "pe": 15.325256,
+  "forward_pe": 12.634628,
+  "pb": 2.095872,
+  "peg": 0.72,
+  "ev_ebitda": 7.465
  },
  "rentabilidad": {
-  "roe": null,
-  "roa": null,
-  "margen_operativo": null,
-  "margen_neto": null
+  "roe": 0.13853,
+  "roa": 0.0647,
+  "margen_operativo": 0.15105,
+  "margen_neto": 0.11923
  },
  "dividendos": {
-  "dividend_yield": null,
-  "payout_ratio": null
+  "dividend_yield": 0.034195084,
+  "payout_ratio": 0.5176
  },
  "tamano": {
-  "market_cap": 402289968869.7678,
-  "enterprise_value": null
+  "market_cap": 407285170176.0,
+  "enterprise_value": 433665179648.0
  },
  "precio": {
-  "actual": 206.1699981689453,
-  "low_52w": 146.49000549316406,
-  "high_52w": 236.47999572753906,
-  "beta": null
+  "actual": 208.73,
+  "low_52w": 146.49,
+  "high_52w": 236.48,
+  "beta": 0.453
  },
  "proximos": {
-  "earnings_date": null,
-  "ex_div_date": null
+  "earnings_date": "2027-01-29",
+  "ex_div_date": "2026-11-18"
  },
- "obtenido": "2026-11-24"
+ "obtenido": "2026-11-25"
 }

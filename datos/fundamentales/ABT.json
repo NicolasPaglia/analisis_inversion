@@ -2,43 +2,43 @@
  "ticker": "ABT",
  "yf_symbol": "ABT",
  "meta": {
-  "nombre": null,
-  "sector": null,
-  "industria": null,
-  "pais": null,
+  "nombre": "Abbott Laboratories",
+  "sector": "Healthcare",
+  "industria": "Medical Devices",
+  "pais": "United States",
   "moneda": "USD",
   "exchange": "NYQ"
  },
  "valuacion": {
-  "pe": null,
-  "forward_pe": null,
-  "pb": null,
-  "peg": null,
-  "ev_ebitda": null
+  "pe": 38.604397,
+  "forward_pe": 17.771444,
+  "pb": 3.57715,
+  "peg": 16.47,
+  "ev_ebitda": 18.351
  },
  "rentabilidad": {
-  "roe": null,
-  "roa": null,
-  "margen_operativo": null,
-  "margen_neto": null
+  "roe": 0.09137999,
+  "roa": 0.04902,
+  "margen_operativo": 0.15648,
+  "margen_neto": 0.09747
  },
  "dividendos": {
-  "dividend_yield": null,
-  "payout_ratio": null
+  "dividend_yield": 0.024390243,
+  "payout_ratio": 0.9254
  },
  "tamano": {
-  "market_cap": 178944205686.77338,
-  "enterprise_value": null
+  "market_cap": 182529327104.0,
+  "enterprise_value": 210265325568.0
  },
  "precio": {
-  "actual": 103.31999969482422,
-  "low_52w": 81.97000122070312,
-  "high_52w": 129.85000610351562,
-  "beta": null
+  "actual": 105.39,
+  "low_52w": 81.97,
+  "high_52w": 129.85,
+  "beta": 0.537
  },
  "proximos": {
-  "earnings_date": null,
-  "ex_div_date": null
+  "earnings_date": "2027-01-28",
+  "ex_div_date": "2026-10-15"
  },
- "obtenido": "2026-11-24"
+ "obtenido": "2026-11-25"
 }

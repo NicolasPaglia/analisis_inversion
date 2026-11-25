@@ -2,43 +2,43 @@
  "ticker": "WMT",
  "yf_symbol": "WMT",
  "meta": {
-  "nombre": null,
-  "sector": null,
-  "industria": null,
-  "pais": null,
+  "nombre": "Walmart Inc.",
+  "sector": "Consumer Defensive",
+  "industria": "Discount Stores",
+  "pais": "United States",
   "moneda": "USD",
   "exchange": "NMS"
  },
  "valuacion": {
-  "pe": null,
-  "forward_pe": null,
-  "pb": null,
-  "peg": null,
-  "ev_ebitda": null
+  "pe": 47.938404,
+  "forward_pe": 40.984417,
+  "pb": 10.696903,
+  "peg": 2.18,
+  "ev_ebitda": 23.08
  },
  "rentabilidad": {
-  "roe": null,
-  "roa": null,
-  "margen_operativo": null,
-  "margen_neto": null
+  "roe": 0.20552999,
+  "roa": 0.06909,
+  "margen_operativo": 0.04453,
+  "margen_neto": 0.02802
  },
  "dividendos": {
-  "dividend_yield": null,
-  "payout_ratio": null
+  "dividend_yield": 0.0074471366,
+  "payout_ratio": 0.3496
  },
  "tamano": {
-  "market_cap": 1028054852435.9032,
-  "enterprise_value": null
+  "market_cap": 1052933423104.0,
+  "enterprise_value": 1123608559616.0
  },
  "precio": {
-  "actual": 129.5800018310547,
-  "low_52w": 102.1500015258789,
-  "high_52w": 135.16000366210938,
-  "beta": null
+  "actual": 132.31,
+  "low_52w": 102.15,
+  "high_52w": 135.16,
+  "beta": 0.526
  },
  "proximos": {
-  "earnings_date": null,
-  "ex_div_date": null
+  "earnings_date": "2027-02-18",
+  "ex_div_date": "2026-12-11"
  },
- "obtenido": "2026-11-24"
+ "obtenido": "2026-11-25"
 }

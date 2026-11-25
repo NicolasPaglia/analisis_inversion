@@ -2,43 +2,43 @@
  "ticker": "NFLX",
  "yf_symbol": "NFLX",
  "meta": {
-  "nombre": null,
-  "sector": null,
-  "industria": null,
-  "pais": null,
+  "nombre": "Netflix, Inc.",
+  "sector": "Communication Services",
+  "industria": "Entertainment",
+  "pais": "United States",
   "moneda": "USD",
   "exchange": "NMS"
  },
  "valuacion": {
-  "pe": null,
-  "forward_pe": null,
-  "pb": null,
-  "peg": null,
-  "ev_ebitda": null
+  "pe": 16.77208,
+  "forward_pe": 15.617704,
+  "pb": 8.254347,
+  "peg": 0.64,
+  "ev_ebitda": 15.733
  },
  "rentabilidad": {
-  "roe": null,
-  "roa": null,
-  "margen_operativo": null,
-  "margen_neto": null
+  "roe": 0.53463,
+  "roa": 0.17124,
+  "margen_operativo": 0.31296,
+  "margen_neto": 0.29691
  },
  "dividendos": {
-  "dividend_yield": null,
-  "payout_ratio": null
+  "dividend_yield": 0.0,
+  "payout_ratio": 0.0
  },
  "tamano": {
-  "market_cap": 238577528698.5439,
-  "enterprise_value": null
+  "market_cap": 241739415552.0,
+  "enterprise_value": 251046248448.0
  },
  "precio": {
-  "actual": 58.099998474121094,
-  "low_52w": 56.560001373291016,
-  "high_52w": 109.7300033569336,
-  "beta": null
+  "actual": 58.87,
+  "low_52w": 56.56,
+  "high_52w": 109.73,
+  "beta": 1.606
  },
  "proximos": {
-  "earnings_date": null,
+  "earnings_date": "2027-01-19",
   "ex_div_date": null
  },
- "obtenido": "2026-11-24"
+ "obtenido": "2026-11-25"
 }

@@ -2,43 +2,43 @@
  "ticker": "AMZN",
  "yf_symbol": "AMZN",
  "meta": {
-  "nombre": null,
-  "sector": null,
-  "industria": null,
-  "pais": null,
+  "nombre": "Amazon.com, Inc.",
+  "sector": "Consumer Cyclical",
+  "industria": "Internet Retail",
+  "pais": "United States",
   "moneda": "USD",
   "exchange": "NMS"
  },
  "valuacion": {
-  "pe": null,
-  "forward_pe": null,
-  "pb": null,
-  "peg": null,
-  "ev_ebitda": null
+  "pe": 20.395311,
+  "forward_pe": 23.090624,
+  "pb": 4.4450903,
+  "peg": 0.54,
+  "ev_ebitda": 15.887
  },
  "rentabilidad": {
-  "roe": null,
-  "roa": null,
-  "margen_operativo": null,
-  "margen_neto": null
+  "roe": 0.27416,
+  "roa": 0.06618,
+  "margen_operativo": 0.13087,
+  "margen_neto": 0.16900998
  },
  "dividendos": {
-  "dividend_yield": null,
-  "payout_ratio": null
+  "dividend_yield": 0.0,
+  "payout_ratio": 0.0
  },
  "tamano": {
-  "market_cap": 2761567385369.524,
-  "enterprise_value": null
+  "market_cap": 2728046362624.0,
+  "enterprise_value": 2918661750784.0
  },
  "precio": {
-  "actual": 255.38999938964844,
+  "actual": 252.29,
   "low_52w": 196.0,
-  "high_52w": 287.20001220703125,
-  "beta": null
+  "high_52w": 287.2,
+  "beta": 1.503
  },
  "proximos": {
-  "earnings_date": null,
+  "earnings_date": "2027-02-04",
   "ex_div_date": null
  },
- "obtenido": "2026-11-24"
+ "obtenido": "2026-11-25"
 }

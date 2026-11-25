@@ -2,43 +2,43 @@
  "ticker": "NKE",
  "yf_symbol": "NKE",
  "meta": {
-  "nombre": null,
-  "sector": null,
-  "industria": null,
-  "pais": null,
+  "nombre": "NIKE, Inc.",
+  "sector": "Consumer Cyclical",
+  "industria": "Footwear & Accessories",
+  "pais": "United States",
   "moneda": "USD",
   "exchange": "NYQ"
  },
  "valuacion": {
-  "pe": null,
-  "forward_pe": null,
-  "pb": null,
-  "peg": null,
-  "ev_ebitda": null
+  "pe": 17.1875,
+  "forward_pe": 25.721275,
+  "pb": 3.483387,
+  "peg": 5.45,
+  "ev_ebitda": 11.416
  },
  "rentabilidad": {
-  "roe": null,
-  "roa": null,
-  "margen_operativo": null,
-  "margen_neto": null
+  "roe": 0.21563,
+  "roa": 0.06893,
+  "margen_operativo": 0.09028,
+  "margen_neto": 0.0674
  },
  "dividendos": {
-  "dividend_yield": null,
-  "payout_ratio": null
+  "dividend_yield": 0.048578203,
+  "payout_ratio": 0.7885
  },
  "tamano": {
-  "market_cap": 50144023573.99844,
-  "enterprise_value": null
+  "market_cap": 53099790336.0,
+  "enterprise_value": 55856791552.0
  },
  "precio": {
-  "actual": 33.7599983215332,
-  "low_52w": 31.969999313354492,
-  "high_52w": 69.13999938964844,
-  "beta": null
+  "actual": 35.75,
+  "low_52w": 31.97,
+  "high_52w": 69.14,
+  "beta": 1.031
  },
  "proximos": {
-  "earnings_date": null,
-  "ex_div_date": null
+  "earnings_date": "2026-12-17",
+  "ex_div_date": "2026-12-01"
  },
- "obtenido": "2026-11-24"
+ "obtenido": "2026-11-25"
 }

@@ -2,43 +2,43 @@
  "ticker": "JPM",
  "yf_symbol": "JPM",
  "meta": {
-  "nombre": null,
-  "sector": null,
-  "industria": null,
-  "pais": null,
+  "nombre": "JPMorgan Chase & Co.",
+  "sector": "Financial Services",
+  "industria": "Banks - Diversified",
+  "pais": "United States",
   "moneda": "USD",
   "exchange": "NYQ"
  },
  "valuacion": {
-  "pe": null,
-  "forward_pe": null,
-  "pb": null,
-  "peg": null,
+  "pe": 13.284457,
+  "forward_pe": 12.399768,
+  "pb": 2.39688,
+  "peg": 1.52,
   "ev_ebitda": null
  },
  "rentabilidad": {
-  "roe": null,
-  "roa": null,
-  "margen_operativo": null,
-  "margen_neto": null
+  "roe": 0.18013,
+  "roa": 0.01367,
+  "margen_operativo": 0.44787997,
+  "margen_neto": 0.34592
  },
  "dividendos": {
-  "dividend_yield": null,
-  "payout_ratio": null
+  "dividend_yield": 0.019421462,
+  "payout_ratio": 0.258
  },
  "tamano": {
-  "market_cap": 840925316845.0725,
-  "enterprise_value": null
+  "market_cap": 842093821952.0,
+  "enterprise_value": 606874763264.0
  },
  "precio": {
-  "actual": 316.6600036621094,
-  "low_52w": 279.1000061035156,
+  "actual": 317.1,
+  "low_52w": 279.1,
   "high_52w": 366.5,
-  "beta": null
+  "beta": 1.02
  },
  "proximos": {
-  "earnings_date": null,
-  "ex_div_date": null
+  "earnings_date": "2027-01-14",
+  "ex_div_date": "2026-10-06"
  },
- "obtenido": "2026-11-24"
+ "obtenido": "2026-11-25"
 }

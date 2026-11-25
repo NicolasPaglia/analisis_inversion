@@ -2,43 +2,43 @@
  "ticker": "XOM",
  "yf_symbol": "XOM",
  "meta": {
-  "nombre": null,
-  "sector": null,
-  "industria": null,
-  "pais": null,
+  "nombre": "ExxonMobil Holdings Corporation",
+  "sector": "Energy",
+  "industria": "Oil & Gas Integrated",
+  "pais": "United States",
   "moneda": "USD",
   "exchange": "NYQ"
  },
  "valuacion": {
-  "pe": null,
-  "forward_pe": null,
-  "pb": null,
-  "peg": null,
-  "ev_ebitda": null
+  "pe": 16.278805,
+  "forward_pe": 12.673365,
+  "pb": 2.428442,
+  "peg": 0.3,
+  "ev_ebitda": 8.649
  },
  "rentabilidad": {
-  "roe": null,
-  "roa": null,
-  "margen_operativo": null,
-  "margen_neto": null
+  "roe": 0.15528,
+  "roa": 0.06753,
+  "margen_operativo": 0.12875,
+  "margen_neto": 0.10463
  },
  "dividendos": {
-  "dividend_yield": null,
-  "payout_ratio": null
+  "dividend_yield": 0.026258763,
+  "payout_ratio": 0.4239
  },
  "tamano": {
-  "market_cap": 640029976566.0021,
-  "enterprise_value": null
+  "market_cap": 645455347712.0,
+  "enterprise_value": 674283388928.0
  },
  "precio": {
-  "actual": 156.89999389648438,
-  "low_52w": 114.19000244140625,
+  "actual": 158.23,
+  "low_52w": 114.19,
   "high_52w": 188.5,
-  "beta": null
+  "beta": 0.141
  },
  "proximos": {
-  "earnings_date": null,
-  "ex_div_date": null
+  "earnings_date": "2027-01-29",
+  "ex_div_date": "2026-11-16"
  },
- "obtenido": "2026-11-24"
+ "obtenido": "2026-11-25"
 }

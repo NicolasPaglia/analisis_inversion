@@ -2,7 +2,7 @@
  "ticker": "IWM",
  "yf_symbol": "IWM",
  "meta": {
-  "nombre": null,
+  "nombre": "iShares Russell 2000 ETF",
   "sector": null,
   "industria": null,
   "pais": null,
@@ -10,9 +10,9 @@
   "exchange": "PCX"
  },
  "valuacion": {
-  "pe": null,
+  "pe": 15.566982,
   "forward_pe": null,
-  "pb": null,
+  "pb": 1.2215242,
   "peg": null,
   "ev_ebitda": null
  },
@@ -23,7 +23,7 @@
   "margen_neto": null
  },
  "dividendos": {
-  "dividend_yield": null,
+  "dividend_yield": 0.007590126,
   "payout_ratio": null
  },
  "tamano": {
@@ -31,14 +31,14 @@
   "enterprise_value": null
  },
  "precio": {
-  "actual": 265.739990234375,
-  "low_52w": 238.69000244140625,
-  "high_52w": 305.17999267578125,
+  "actual": 267.1400146484375,
+  "low_52w": 238.69,
+  "high_52w": 305.18,
   "beta": null
  },
  "proximos": {
   "earnings_date": null,
   "ex_div_date": null
  },
- "obtenido": "2026-11-24"
+ "obtenido": "2026-11-25"
 }

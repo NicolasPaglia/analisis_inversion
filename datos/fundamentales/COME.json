@@ -2,43 +2,43 @@
  "ticker": "COME",
  "yf_symbol": "COME.BA",
  "meta": {
-  "nombre": null,
-  "sector": null,
-  "industria": null,
-  "pais": null,
+  "nombre": "Sociedad Comercial del Plata S.A.",
+  "sector": "Industrials",
+  "industria": "Conglomerates",
+  "pais": "Argentina",
   "moneda": "ARS",
   "exchange": "BUE"
  },
  "valuacion": {
-  "pe": null,
-  "forward_pe": null,
-  "pb": null,
-  "peg": null,
-  "ev_ebitda": null
+  "pe": 12.761261,
+  "forward_pe": 7.1002507,
+  "pb": 0.3076639,
+  "peg": 0.36,
+  "ev_ebitda": 10.667
  },
  "rentabilidad": {
-  "roe": null,
-  "roa": null,
-  "margen_operativo": null,
-  "margen_neto": null
+  "roe": 0.03929,
+  "roa": -0.00599,
+  "margen_operativo": -0.01101,
+  "margen_neto": 0.02313
  },
  "dividendos": {
-  "dividend_yield": null,
-  "payout_ratio": null
+  "dividend_yield": 0.0,
+  "payout_ratio": 0.0
  },
  "tamano": {
-  "market_cap": 191729995727.53906,
-  "enterprise_value": null
+  "market_cap": 198310002688.0,
+  "enterprise_value": 219548762112.0
  },
  "precio": {
-  "actual": 27.389999389648438,
-  "low_52w": 26.200000762939453,
+  "actual": 28.33,
+  "low_52w": 26.2,
   "high_52w": 78.0,
   "beta": null
  },
  "proximos": {
   "earnings_date": null,
-  "ex_div_date": null
+  "ex_div_date": "2025-05-12"
  },
- "obtenido": "2026-11-24"
+ "obtenido": "2026-11-25"
 }

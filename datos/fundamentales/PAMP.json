@@ -2,43 +2,43 @@
  "ticker": "PAMP",
  "yf_symbol": "PAMP.BA",
  "meta": {
-  "nombre": null,
-  "sector": null,
-  "industria": null,
-  "pais": null,
+  "nombre": "Pampa Energía S.A.",
+  "sector": "Industrials",
+  "industria": "Conglomerates",
+  "pais": "Argentina",
   "moneda": "ARS",
   "exchange": "BUE"
  },
  "valuacion": {
-  "pe": null,
-  "forward_pe": null,
-  "pb": null,
-  "peg": null,
-  "ev_ebitda": null
+  "pe": 6.2064457,
+  "forward_pe": 5.3856187,
+  "pb": 0.9474337,
+  "peg": 0.21,
+  "ev_ebitda": 6069.382
  },
  "rentabilidad": {
-  "roe": null,
-  "roa": null,
-  "margen_operativo": null,
-  "margen_neto": null
+  "roe": 0.17987,
+  "roa": 0.04106,
+  "margen_operativo": 0.18029,
+  "margen_neto": 0.25841
  },
  "dividendos": {
-  "dividend_yield": null,
-  "payout_ratio": null
+  "dividend_yield": 0.0,
+  "payout_ratio": 0.0
  },
  "tamano": {
-  "market_cap": 5842811012840.0,
-  "enterprise_value": null
+  "market_cap": 5919866355712.0,
+  "enterprise_value": 5879045816320.0
  },
  "precio": {
-  "actual": 4360.0,
+  "actual": 4417.5,
   "low_52w": 4070.0,
   "high_52w": 5750.0,
-  "beta": null
+  "beta": -0.208
  },
  "proximos": {
-  "earnings_date": null,
-  "ex_div_date": null
+  "earnings_date": "2026-11-02",
+  "ex_div_date": "2011-03-21"
  },
- "obtenido": "2026-11-24"
+ "obtenido": "2026-11-25"
 }

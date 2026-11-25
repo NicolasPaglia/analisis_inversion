@@ -2,43 +2,43 @@
  "ticker": "ORCL",
  "yf_symbol": "ORCL",
  "meta": {
-  "nombre": null,
-  "sector": null,
-  "industria": null,
-  "pais": null,
+  "nombre": "Oracle Corporation",
+  "sector": "Technology",
+  "industria": "Software - Infrastructure",
+  "pais": "United States",
   "moneda": "USD",
   "exchange": "NYQ"
  },
  "valuacion": {
-  "pe": null,
-  "forward_pe": null,
-  "pb": null,
-  "peg": null,
-  "ev_ebitda": null
+  "pe": 17.804878,
+  "forward_pe": 9.9016075,
+  "pb": 5.356095,
+  "peg": 2.52,
+  "ev_ebitda": 13.607
  },
  "rentabilidad": {
-  "roe": null,
-  "roa": null,
-  "margen_operativo": null,
-  "margen_neto": null
+  "roe": 0.41192,
+  "roa": 0.06357,
+  "margen_operativo": 0.34272,
+  "margen_neto": 0.2636
  },
  "dividendos": {
-  "dividend_yield": null,
-  "payout_ratio": null
+  "dividend_yield": 0.017593244,
+  "payout_ratio": 0.31350002
  },
  "tamano": {
-  "market_cap": 354421051620.729,
-  "enterprise_value": null
+  "market_cap": 341389017088.0,
+  "enterprise_value": 468543078400.0
  },
  "precio": {
-  "actual": 113.68000030517578,
+  "actual": 109.5,
   "low_52w": 100.25,
   "high_52w": 250.25,
-  "beta": null
+  "beta": 1.778
  },
  "proximos": {
-  "earnings_date": null,
-  "ex_div_date": null
+  "earnings_date": "2026-12-14",
+  "ex_div_date": "2026-10-09"
  },
- "obtenido": "2026-11-24"
+ "obtenido": "2026-11-25"
 }

@@ -2,43 +2,43 @@
  "ticker": "NVDA",
  "yf_symbol": "NVDA",
  "meta": {
-  "nombre": null,
-  "sector": null,
-  "industria": null,
-  "pais": null,
+  "nombre": "NVIDIA Corporation",
+  "sector": "Technology",
+  "industria": "Semiconductors",
+  "pais": "United States",
   "moneda": "USD",
   "exchange": "NMS"
  },
  "valuacion": {
-  "pe": null,
-  "forward_pe": null,
-  "pb": null,
-  "peg": null,
-  "ev_ebitda": null
+  "pe": 17.737444,
+  "forward_pe": 9.357265,
+  "pb": 14.046285,
+  "peg": 0.14,
+  "ev_ebitda": 15.151
  },
  "rentabilidad": {
-  "roe": null,
-  "roa": null,
-  "margen_operativo": null,
-  "margen_neto": null
+  "roe": 1.17364,
+  "roa": 0.56036,
+  "margen_operativo": 0.66082,
+  "margen_neto": 0.62535
  },
  "dividendos": {
-  "dividend_yield": null,
-  "payout_ratio": null
+  "dividend_yield": 0.0031505602,
+  "payout_ratio": 0.0354
  },
  "tamano": {
-  "market_cap": 3985462423690.796,
-  "enterprise_value": null
+  "market_cap": 3751960903680.0,
+  "enterprise_value": 3686007308288.0
  },
  "precio": {
-  "actual": 165.0500030517578,
+  "actual": 155.38,
   "low_52w": 124.5,
-  "high_52w": 243.3699951171875,
-  "beta": null
+  "high_52w": 243.37,
+  "beta": 2.247
  },
  "proximos": {
-  "earnings_date": null,
-  "ex_div_date": null
+  "earnings_date": "2026-11-17",
+  "ex_div_date": "2026-12-02"
  },
- "obtenido": "2026-11-24"
+ "obtenido": "2026-11-25"
 }

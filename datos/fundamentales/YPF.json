@@ -2,43 +2,43 @@
  "ticker": "YPF",
  "yf_symbol": "YPF",
  "meta": {
-  "nombre": null,
-  "sector": null,
-  "industria": null,
-  "pais": null,
+  "nombre": "YPF Sociedad Anónima",
+  "sector": "Energy",
+  "industria": "Oil & Gas Integrated",
+  "pais": "Argentina",
   "moneda": "USD",
   "exchange": "NYQ"
  },
  "valuacion": {
-  "pe": null,
-  "forward_pe": null,
-  "pb": null,
-  "peg": null,
-  "ev_ebitda": null
+  "pe": 5.839779,
+  "forward_pe": 5.2630177,
+  "pb": 0.9161009,
+  "peg": 0.12,
+  "ev_ebitda": 1.0
  },
  "rentabilidad": {
-  "roe": null,
-  "roa": null,
-  "margen_operativo": null,
-  "margen_neto": null
+  "roe": 0.17413001,
+  "roa": 0.09919,
+  "margen_operativo": 0.22389,
+  "margen_neto": 0.09759
  },
  "dividendos": {
-  "dividend_yield": null,
-  "payout_ratio": null
+  "dividend_yield": 0.0,
+  "payout_ratio": 0.0
  },
  "tamano": {
-  "market_cap": 13050118591.769539,
-  "enterprise_value": null
+  "market_cap": 12471948288.0,
+  "enterprise_value": 11561595830272.0
  },
  "precio": {
-  "actual": 33.18000030517578,
-  "low_52w": 32.15999984741211,
-  "high_52w": 57.869998931884766,
-  "beta": null
+  "actual": 31.71,
+  "low_52w": 31.65,
+  "high_52w": 57.87,
+  "beta": -0.099
  },
  "proximos": {
-  "earnings_date": null,
-  "ex_div_date": null
+  "earnings_date": "2027-02-11",
+  "ex_div_date": "2019-07-09"
  },
- "obtenido": "2026-11-24"
+ "obtenido": "2026-11-25"
 }

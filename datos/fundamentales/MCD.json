@@ -2,43 +2,43 @@
  "ticker": "MCD",
  "yf_symbol": "MCD",
  "meta": {
-  "nombre": null,
-  "sector": null,
-  "industria": null,
-  "pais": null,
+  "nombre": "McDonald's Corporation",
+  "sector": "Consumer Cyclical",
+  "industria": "Restaurants",
+  "pais": "United States",
   "moneda": "USD",
   "exchange": "NYQ"
  },
  "valuacion": {
-  "pe": null,
-  "forward_pe": null,
-  "pb": null,
-  "peg": null,
-  "ev_ebitda": null
+  "pe": 21.861372,
+  "forward_pe": 20.559254,
+  "pb": -577.572,
+  "peg": 3.98,
+  "ev_ebitda": 16.681
  },
  "rentabilidad": {
   "roe": null,
-  "roa": null,
-  "margen_operativo": null,
-  "margen_neto": null
+  "roa": 0.13194999,
+  "margen_operativo": 0.46077,
+  "margen_neto": 0.32377
  },
  "dividendos": {
-  "dividend_yield": null,
-  "payout_ratio": null
+  "dividend_yield": 0.026919458,
+  "payout_ratio": 0.5886
  },
  "tamano": {
-  "market_cap": 195064790992.93457,
-  "enterprise_value": null
+  "market_cap": 198113787904.0,
+  "enterprise_value": 251463778304.0
  },
  "precio": {
-  "actual": 276.3800048828125,
-  "low_52w": 229.1999969482422,
+  "actual": 280.7,
+  "low_52w": 229.2,
   "high_52w": 341.75,
-  "beta": null
+  "beta": 0.431
  },
  "proximos": {
-  "earnings_date": null,
-  "ex_div_date": null
+  "earnings_date": "2027-02-11",
+  "ex_div_date": "2026-12-01"
  },
- "obtenido": "2026-11-24"
+ "obtenido": "2026-11-25"
 }

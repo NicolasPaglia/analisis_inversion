@@ -2,7 +2,7 @@
  "ticker": "EWZ",
  "yf_symbol": "EWZ",
  "meta": {
-  "nombre": null,
+  "nombre": "iShares MSCI Brazil ETF",
   "sector": null,
   "industria": null,
   "pais": null,
@@ -10,9 +10,9 @@
   "exchange": "PCX"
  },
  "valuacion": {
-  "pe": null,
+  "pe": 9.368622,
   "forward_pe": null,
-  "pb": null,
+  "pb": 0.80094033,
   "peg": null,
   "ev_ebitda": null
  },
@@ -23,7 +23,7 @@
   "margen_neto": null
  },
  "dividendos": {
-  "dividend_yield": null,
+  "dividend_yield": 0.030848153,
   "payout_ratio": null
  },
  "tamano": {
@@ -31,14 +31,14 @@
   "enterprise_value": null
  },
  "precio": {
-  "actual": 29.239999771118164,
-  "low_52w": 28.459999084472656,
-  "high_52w": 43.900001525878906,
+  "actual": 29.299999237060547,
+  "low_52w": 28.46,
+  "high_52w": 43.9,
   "beta": null
  },
  "proximos": {
   "earnings_date": null,
   "ex_div_date": null
  },
- "obtenido": "2026-11-24"
+ "obtenido": "2026-11-25"
 }

@@ -2,43 +2,43 @@
  "ticker": "AMD",
  "yf_symbol": "AMD",
  "meta": {
-  "nombre": null,
-  "sector": null,
-  "industria": null,
-  "pais": null,
+  "nombre": "Advanced Micro Devices, Inc.",
+  "sector": "Technology",
+  "industria": "Semiconductors",
+  "pais": "United States",
   "moneda": "USD",
   "exchange": "NMS"
  },
  "valuacion": {
-  "pe": null,
-  "forward_pe": null,
-  "pb": null,
-  "peg": null,
-  "ev_ebitda": null
+  "pe": 88.30556,
+  "forward_pe": 23.430328,
+  "pb": 9.910314,
+  "peg": 11.99,
+  "ev_ebitda": 60.238
  },
  "rentabilidad": {
-  "roe": null,
-  "roa": null,
-  "margen_operativo": null,
-  "margen_neto": null
+  "roe": 0.1196,
+  "roa": 0.05895,
+  "margen_operativo": 0.17820999,
+  "margen_neto": 0.16769
  },
  "dividendos": {
-  "dividend_yield": null,
-  "payout_ratio": null
+  "dividend_yield": 0.0,
+  "payout_ratio": 0.0
  },
  "tamano": {
-  "market_cap": 750506020590.174,
-  "enterprise_value": null
+  "market_cap": 683988942848.0,
+  "enterprise_value": 671233867776.0
  },
  "precio": {
-  "actual": 453.4599914550781,
-  "low_52w": 188.22000122070312,
-  "high_52w": 658.52001953125,
-  "beta": null
+  "actual": 413.27,
+  "low_52w": 188.22,
+  "high_52w": 658.52,
+  "beta": 2.542
  },
  "proximos": {
-  "earnings_date": null,
-  "ex_div_date": null
+  "earnings_date": "2027-02-02",
+  "ex_div_date": "1995-04-27"
  },
- "obtenido": "2026-11-24"
+ "obtenido": "2026-11-25"
 }

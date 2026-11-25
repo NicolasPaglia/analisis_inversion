@@ -2,43 +2,43 @@
  "ticker": "TEO",
  "yf_symbol": "TEO",
  "meta": {
-  "nombre": null,
-  "sector": null,
-  "industria": null,
-  "pais": null,
+  "nombre": "Telecom Argentina S.A.",
+  "sector": "Communication Services",
+  "industria": "Telecom Services",
+  "pais": "Argentina",
   "moneda": "USD",
   "exchange": "NYQ"
  },
  "valuacion": {
-  "pe": null,
-  "forward_pe": null,
-  "pb": null,
-  "peg": null,
-  "ev_ebitda": null
+  "pe": 6.3246756,
+  "forward_pe": 10.015527,
+  "pb": 0.72536886,
+  "peg": 0.15,
+  "ev_ebitda": 1.732
  },
  "rentabilidad": {
-  "roe": null,
-  "roa": null,
-  "margen_operativo": null,
-  "margen_neto": null
+  "roe": 0.13578,
+  "roa": 0.026199998,
+  "margen_operativo": 0.08441,
+  "margen_neto": 0.11835
  },
  "dividendos": {
-  "dividend_yield": null,
-  "payout_ratio": null
+  "dividend_yield": 1.3924413,
+  "payout_ratio": 0.024
  },
  "tamano": {
-  "market_cap": 4216921107.1486645,
-  "enterprise_value": null
+  "market_cap": null,
+  "enterprise_value": 4979864633344.0
  },
  "precio": {
-  "actual": 9.789999961853027,
-  "low_52w": 9.539999961853027,
-  "high_52w": 16.34000015258789,
-  "beta": null
+  "actual": 9.74,
+  "low_52w": 9.511,
+  "high_52w": 16.34,
+  "beta": 0.407
  },
  "proximos": {
-  "earnings_date": null,
-  "ex_div_date": null
+  "earnings_date": "2026-11-13",
+  "ex_div_date": "2025-11-24"
  },
- "obtenido": "2026-11-24"
+ "obtenido": "2026-11-25"
 }

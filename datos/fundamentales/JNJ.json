@@ -2,43 +2,43 @@
  "ticker": "JNJ",
  "yf_symbol": "JNJ",
  "meta": {
-  "nombre": null,
-  "sector": null,
-  "industria": null,
-  "pais": null,
+  "nombre": "Johnson & Johnson",
+  "sector": "Healthcare",
+  "industria": "Drug Manufacturers - General",
+  "pais": "United States",
   "moneda": "USD",
   "exchange": "NYQ"
  },
  "valuacion": {
-  "pe": null,
-  "forward_pe": null,
-  "pb": null,
-  "peg": null,
-  "ev_ebitda": null
+  "pe": 40.957035,
+  "forward_pe": 23.80821,
+  "pb": 8.162386,
+  "peg": 7.67,
+  "ev_ebitda": 20.084
  },
  "rentabilidad": {
-  "roe": null,
-  "roa": null,
-  "margen_operativo": null,
-  "margen_neto": null
+  "roe": 0.20018,
+  "roa": 0.0846,
+  "margen_operativo": 0.26588,
+  "margen_neto": 0.16203
  },
  "dividendos": {
-  "dividend_yield": null,
-  "payout_ratio": null
+  "dividend_yield": 0.019649437,
+  "payout_ratio": 0.80120003
  },
  "tamano": {
-  "market_cap": 650094107947.1884,
-  "enterprise_value": null
+  "market_cap": 665525026816.0,
+  "enterprise_value": 692947976192.0
  },
  "precio": {
-  "actual": 270.04998779296875,
-  "low_52w": 199.91000366210938,
+  "actual": 276.46,
+  "low_52w": 199.91,
   "high_52w": 290.25,
-  "beta": null
+  "beta": 0.2
  },
  "proximos": {
-  "earnings_date": null,
-  "ex_div_date": null
+  "earnings_date": "2027-01-26",
+  "ex_div_date": "2026-11-24"
  },
- "obtenido": "2026-11-24"
+ "obtenido": "2026-11-25"
 }

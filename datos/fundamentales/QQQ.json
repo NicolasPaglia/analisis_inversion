@@ -2,7 +2,7 @@
  "ticker": "QQQ",
  "yf_symbol": "QQQ",
  "meta": {
-  "nombre": null,
+  "nombre": "Invesco QQQ Trust",
   "sector": null,
   "industria": null,
   "pais": null,
@@ -10,9 +10,9 @@
   "exchange": "NGM"
  },
  "valuacion": {
-  "pe": null,
+  "pe": 26.283455,
   "forward_pe": null,
-  "pb": null,
+  "pb": 1.7835281,
   "peg": null,
   "ev_ebitda": null
  },
@@ -23,7 +23,7 @@
   "margen_neto": null
  },
  "dividendos": {
-  "dividend_yield": null,
+  "dividend_yield": 0.0027187685,
   "payout_ratio": null
  },
  "tamano": {
@@ -31,14 +31,14 @@
   "enterprise_value": null
  },
  "precio": {
-  "actual": 651.030029296875,
-  "low_52w": 555.5999755859375,
-  "high_52w": 762.8599853515625,
+  "actual": 638.0999755859375,
+  "low_52w": 555.6,
+  "high_52w": 762.86,
   "beta": null
  },
  "proximos": {
   "earnings_date": null,
   "ex_div_date": null
  },
- "obtenido": "2026-11-24"
+ "obtenido": "2026-11-25"
 }

@@ -2,43 +2,43 @@
  "ticker": "BBD",
  "yf_symbol": "BBD",
  "meta": {
-  "nombre": null,
-  "sector": null,
-  "industria": null,
-  "pais": null,
+  "nombre": "Banco Bradesco S.A.",
+  "sector": "Financial Services",
+  "industria": "Banks - Regional",
+  "pais": "Brazil",
   "moneda": "USD",
   "exchange": "NYQ"
  },
  "valuacion": {
-  "pe": null,
-  "forward_pe": null,
-  "pb": null,
-  "peg": null,
+  "pe": 5.088889,
+  "forward_pe": 4.7335567,
+  "pb": 0.62381643,
+  "peg": 0.57,
   "ev_ebitda": null
  },
  "rentabilidad": {
-  "roe": null,
-  "roa": null,
-  "margen_operativo": null,
-  "margen_neto": null
+  "roe": 0.14195,
+  "roa": 0.01124,
+  "margen_operativo": 0.33207,
+  "margen_neto": 0.27267
  },
  "dividendos": {
-  "dividend_yield": null,
-  "payout_ratio": null
+  "dividend_yield": 0.5812227,
+  "payout_ratio": 0.5352
  },
  "tamano": {
-  "market_cap": 25568714921.564636,
-  "enterprise_value": null
+  "market_cap": 25568714752.0,
+  "enterprise_value": 559617015808.0
  },
  "precio": {
-  "actual": 2.2899999618530273,
-  "low_52w": 2.2200000286102295,
-  "high_52w": 4.579999923706055,
-  "beta": null
+  "actual": 2.29,
+  "low_52w": 2.22,
+  "high_52w": 4.58,
+  "beta": 0.312
  },
  "proximos": {
-  "earnings_date": null,
-  "ex_div_date": null
+  "earnings_date": "2027-02-04",
+  "ex_div_date": "2026-12-03"
  },
- "obtenido": "2026-11-24"
+ "obtenido": "2026-11-25"
 }

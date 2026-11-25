@@ -2,43 +2,43 @@
  "ticker": "MSFT",
  "yf_symbol": "MSFT",
  "meta": {
-  "nombre": null,
-  "sector": null,
-  "industria": null,
-  "pais": null,
+  "nombre": "Microsoft Corporation",
+  "sector": "Technology",
+  "industria": "Software - Infrastructure",
+  "pais": "United States",
   "moneda": "USD",
   "exchange": "NMS"
  },
  "valuacion": {
-  "pe": null,
-  "forward_pe": null,
-  "pb": null,
-  "peg": null,
-  "ev_ebitda": null
+  "pe": 25.89405,
+  "forward_pe": 20.500528,
+  "pb": 7.8314466,
+  "peg": 1.54,
+  "ev_ebitda": 18.25
  },
  "rentabilidad": {
-  "roe": null,
-  "roa": null,
-  "margen_operativo": null,
-  "margen_neto": null
+  "roe": 0.34221,
+  "roa": 0.14408,
+  "margen_operativo": 0.47104,
+  "margen_neto": 0.41169998
  },
  "dividendos": {
-  "dividend_yield": null,
-  "payout_ratio": null
+  "dividend_yield": 0.007532995,
+  "payout_ratio": 0.19
  },
  "tamano": {
-  "market_cap": 3657400816860.0,
-  "enterprise_value": null
+  "market_cap": 3684357898240.0,
+  "enterprise_value": 3753779920896.0
  },
  "precio": {
-  "actual": 492.5,
-  "low_52w": 349.20001220703125,
-  "high_52w": 559.1500244140625,
-  "beta": null
+  "actual": 496.13,
+  "low_52w": 349.2,
+  "high_52w": 559.15,
+  "beta": 1.045
  },
  "proximos": {
-  "earnings_date": null,
-  "ex_div_date": null
+  "earnings_date": "2027-01-27",
+  "ex_div_date": "2026-11-19"
  },
- "obtenido": "2026-11-24"
+ "obtenido": "2026-11-25"
 }

@@ -2,43 +2,43 @@
  "ticker": "BBAR",
  "yf_symbol": "BBAR.BA",
  "meta": {
-  "nombre": null,
-  "sector": null,
-  "industria": null,
-  "pais": null,
+  "nombre": "Banco BBVA Argentina S.A.",
+  "sector": "Financial Services",
+  "industria": "Banks - Regional",
+  "pais": "Argentina",
   "moneda": "ARS",
   "exchange": "BUE"
  },
  "valuacion": {
-  "pe": null,
-  "forward_pe": null,
-  "pb": null,
-  "peg": null,
+  "pe": 8.865736,
+  "forward_pe": 1.3112015,
+  "pb": 0.80192506,
+  "peg": 0.14,
   "ev_ebitda": null
  },
  "rentabilidad": {
-  "roe": null,
-  "roa": null,
-  "margen_operativo": null,
-  "margen_neto": null
+  "roe": 0.08121,
+  "roa": 0.01244,
+  "margen_operativo": 0.14333999,
+  "margen_neto": 0.086219996
  },
  "dividendos": {
-  "dividend_yield": null,
-  "payout_ratio": null
+  "dividend_yield": 0.0,
+  "payout_ratio": 0.38889998
  },
  "tamano": {
-  "market_cap": 3232045666725.0,
-  "enterprise_value": null
+  "market_cap": 3357651238912.0,
+  "enterprise_value": 3438706688000.0
  },
  "precio": {
-  "actual": 5275.0,
+  "actual": 5480.0,
   "low_52w": 5145.0,
   "high_52w": 11250.0,
-  "beta": null
+  "beta": -0.047
  },
  "proximos": {
   "earnings_date": null,
-  "ex_div_date": null
+  "ex_div_date": "2026-08-03"
  },
- "obtenido": "2026-11-24"
+ "obtenido": "2026-11-25"
 }

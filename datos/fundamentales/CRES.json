@@ -2,43 +2,43 @@
  "ticker": "CRES",
  "yf_symbol": "CRES.BA",
  "meta": {
-  "nombre": null,
-  "sector": null,
-  "industria": null,
-  "pais": null,
+  "nombre": "Cresud Sociedad Anónima, Comercial, Inmobiliaria, Financiera y Agropecuaria",
+  "sector": "Industrials",
+  "industria": "Conglomerates",
+  "pais": "Argentina",
   "moneda": "ARS",
   "exchange": "BUE"
  },
  "valuacion": {
-  "pe": null,
-  "forward_pe": null,
-  "pb": null,
-  "peg": null,
-  "ev_ebitda": null
+  "pe": 6.4085927,
+  "forward_pe": 800.0,
+  "pb": 0.6640867,
+  "peg": 0.14,
+  "ev_ebitda": 16.417
  },
  "rentabilidad": {
-  "roe": null,
-  "roa": null,
-  "margen_operativo": null,
-  "margen_neto": null
+  "roe": 0.08635,
+  "roa": 0.02217,
+  "margen_operativo": 0.17241,
+  "margen_neto": 0.09559
  },
  "dividendos": {
-  "dividend_yield": null,
-  "payout_ratio": null
+  "dividend_yield": 0.0,
+  "payout_ratio": 0.46490002
  },
  "tamano": {
-  "market_cap": 1002173025132.0,
-  "enterprise_value": null
+  "market_cap": 1015648813056.0,
+  "enterprise_value": 4193482964992.0
  },
  "precio": {
-  "actual": 1413.0,
+  "actual": 1432.0,
   "low_52w": 1350.0,
   "high_52w": 2210.0,
-  "beta": null
+  "beta": -0.015
  },
  "proximos": {
-  "earnings_date": null,
-  "ex_div_date": null
+  "earnings_date": "2027-02-10",
+  "ex_div_date": "2026-10-27"
  },
- "obtenido": "2026-11-24"
+ "obtenido": "2026-11-25"
 }
