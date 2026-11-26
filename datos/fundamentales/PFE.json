@@ -23,7 +23,7 @@
   "margen_neto": 0.06339
  },
  "dividendos": {
-  "dividend_yield": 0.07846716,
+  "dividend_yield": 0.07554463,
   "payout_ratio": 2.4571002
  },
  "tamano": {
@@ -40,5 +40,5 @@
   "earnings_date": "2027-02-02",
   "ex_div_date": "2026-11-06"
  },
- "obtenido": "2026-11-25"
+ "obtenido": "2026-11-26"
 }

@@ -10,7 +10,7 @@
   "exchange": "PCX"
  },
  "valuacion": {
-  "pe": 21.715399,
+  "pe": 21.676123,
   "forward_pe": null,
   "pb": null,
   "peg": null,
@@ -31,7 +31,7 @@
   "enterprise_value": null
  },
  "precio": {
-  "actual": 353.8399963378906,
+  "actual": 353.20001220703125,
   "low_52w": 310.4,
   "high_52w": 385.12,
   "beta": null
@@ -40,5 +40,5 @@
   "earnings_date": null,
   "ex_div_date": null
  },
- "obtenido": "2026-11-25"
+ "obtenido": "2026-11-26"
 }
