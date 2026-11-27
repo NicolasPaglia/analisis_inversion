@@ -13,7 +13,7 @@
   "pe": 47.804348,
   "forward_pe": 40.86981,
   "pb": 10.66699,
-  "peg": 2.18,
+  "peg": 2.21,
   "ev_ebitda": 23.019
  },
  "rentabilidad": {
@@ -27,7 +27,7 @@
   "payout_ratio": 0.3496
  },
  "tamano": {
-  "market_cap": 1049988956160.0,
+  "market_cap": 1046778478592.0,
   "enterprise_value": 1120674119680.0
  },
  "precio": {
@@ -40,5 +40,5 @@
   "earnings_date": "2027-02-18",
   "ex_div_date": "2026-12-11"
  },
- "obtenido": "2026-11-26"
+ "obtenido": "2026-11-27"
 }

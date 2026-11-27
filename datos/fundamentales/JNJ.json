@@ -10,7 +10,7 @@
   "exchange": "NYQ"
  },
  "valuacion": {
-  "pe": 41.950993,
+  "pe": 41.569042,
   "forward_pe": 23.591194,
   "pb": 8.087984,
   "peg": 7.66,
@@ -40,5 +40,5 @@
   "earnings_date": "2027-01-26",
   "ex_div_date": "2026-11-24"
  },
- "obtenido": "2026-11-26"
+ "obtenido": "2026-11-27"
 }

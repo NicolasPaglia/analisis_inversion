@@ -12,7 +12,7 @@
  "valuacion": {
   "pe": 21.676123,
   "forward_pe": null,
-  "pb": null,
+  "pb": 2.531791,
   "peg": null,
   "ev_ebitda": null
  },
@@ -23,7 +23,7 @@
   "margen_neto": null
  },
  "dividendos": {
-  "dividend_yield": 0.0106,
+  "dividend_yield": 0.007918834,
   "payout_ratio": null
  },
  "tamano": {
@@ -40,5 +40,5 @@
   "earnings_date": null,
   "ex_div_date": null
  },
- "obtenido": "2026-11-26"
+ "obtenido": "2026-11-27"
 }

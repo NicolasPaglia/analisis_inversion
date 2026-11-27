@@ -11,7 +11,7 @@
  },
  "valuacion": {
   "pe": 52.35116,
-  "forward_pe": 43.39696,
+  "forward_pe": 43.36832,
   "pb": 13.455448,
   "peg": 4.07,
   "ev_ebitda": 33.167
@@ -40,5 +40,5 @@
   "earnings_date": "2026-12-10",
   "ex_div_date": "2026-11-24"
  },
- "obtenido": "2026-11-26"
+ "obtenido": "2026-11-27"
 }

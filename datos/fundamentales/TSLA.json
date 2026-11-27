@@ -11,15 +11,15 @@
  },
  "valuacion": {
   "pe": 417.73627,
-  "forward_pe": 176.05432,
+  "forward_pe": 175.6833,
   "pb": 16.82929,
   "peg": 38.0,
-  "ev_ebitda": 149.847
+  "ev_ebitda": 144.134
  },
  "rentabilidad": {
   "roe": 0.03844,
-  "roa": 0.01345,
-  "margen_operativo": 0.03026,
+  "roa": 0.01512,
+  "margen_operativo": 0.03403,
   "margen_neto": 0.031070001
  },
  "dividendos": {
@@ -40,5 +40,5 @@
   "earnings_date": "2027-01-27",
   "ex_div_date": null
  },
- "obtenido": "2026-11-26"
+ "obtenido": "2026-11-27"
 }

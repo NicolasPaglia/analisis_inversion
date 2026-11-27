@@ -10,7 +10,7 @@
   "exchange": "NMS"
  },
  "valuacion": {
-  "pe": 17.022923,
+  "pe": 17.17052,
   "forward_pe": 15.7609625,
   "pb": 8.330062,
   "peg": 0.66,
@@ -40,5 +40,5 @@
   "earnings_date": "2027-01-19",
   "ex_div_date": null
  },
- "obtenido": "2026-11-26"
+ "obtenido": "2026-11-27"
 }
